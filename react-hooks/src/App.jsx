@@ -3,6 +3,7 @@ import StateHooks from './StateHooks';
 import EffectHook from './EffectHook';
 import Test from './Test';
 import RefHook from './RefHook';
+import Post from './Post';
 const App = () => {
   return (
    <>
@@ -11,6 +12,8 @@ const App = () => {
     <EffectHook />
     {/* <Test /> */}
     <RefHook />
+    <Post />
+
    </>
   )
 }
