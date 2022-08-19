@@ -3,7 +3,7 @@ import styled from "styled-components";
 import girl from "../assets/girl.png";
 import MultipleButtons from "./MultipleButtons";
 import Courses from "./Courses";
-
+import Dynamic from "./Dynamic";
 const MainDiv = styled.div`
   display: grid;
   grid-template-columns: 2fr 2fr;
@@ -157,8 +157,8 @@ const Home = () => {
         </MainDiv>
       </center>
      
-        <Courses/>
-     
+        {/* <Courses/> */}
+     <Dynamic/>
     </>
   );
 };
