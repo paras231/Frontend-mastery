@@ -61,6 +61,20 @@ const CardLower = styled.div`
   margin-top: 30px;
   margin-left: -110px;
   gap: 20px;
+
+  @media (min-width: 320px) and (max-width: 375px) {
+    margin-top: 10px;
+  }
+  @media (min-width: 376px) and (max-width: 420px) {
+    margin-top: 10px;
+  }
+  @media (min-width: 421px) and (max-width: 480px) {
+    margin-top: 10px;
+  }
+  @media (min-width: 481px) and (max-width: 560px) {
+    margin-top: 10px;
+  }
+
 `;
 
 const Duration = styled.p`

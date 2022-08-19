@@ -8,6 +8,20 @@ const MainDiv = styled.div`
   margin-top: 20vh;
   gap: 20px;
   width: 90%;
+
+  @media (min-width: 320px) and (max-width: 375px) {
+    display:none;
+  }
+  @media (min-width: 376px) and (max-width: 420px) {
+    display:none;
+  }
+  @media (min-width: 421px) and (max-width: 480px) {
+    display:none;
+  }
+  @media (min-width: 481px) and (max-width: 560px) {
+    display:none;
+  }
+
 `;
 
 const Button = styled.button`
