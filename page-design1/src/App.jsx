@@ -5,6 +5,7 @@ import Products from "./components/Products";
 import Footer from "./components/Footer";
 import Signup from "./components/Signup";
 import Home from "./components/Home";
+import Test from "./components/Test";
 const App = () => {
   return (
     <>
@@ -12,7 +13,8 @@ const App = () => {
       <Products />
       <Footer /> */}
       {/* <Signup /> */}
-      <Home />
+      {/* <Home /> */}
+      <Test />
     </>
   );
 };
