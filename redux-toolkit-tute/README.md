@@ -9,3 +9,5 @@ Documentation to use redux toolkit with slice method.
 4. Dispatch the action whenever you need to update the state.
 
 5. Wrap the app component with provider.
+
+6. used createAsyncThunk to fetch data.
