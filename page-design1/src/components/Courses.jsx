@@ -5,6 +5,8 @@ import button from "../assets/button.png";
 
 const MainDiv = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  
   gap: 30px;
   margin-top: 20vh;
   margin-bottom: 20vh;
@@ -154,6 +156,7 @@ const Courses = () => {
               <Application>Mobile Application</Application>
             </CardLower>
           </CardMain>
+       
           <CardMain>
             <CardUpper>
               <img src={woman} />
@@ -165,17 +168,8 @@ const Courses = () => {
               <Application>Mobile Application</Application>
             </CardLower>
           </CardMain>
-          <CardMain>
-            <CardUpper>
-              <img src={woman} />
-            </CardUpper>
-            <VideoButton src={button} />
-            <CardLower>
-              <Duration>-2h 45min</Duration>
-              <LanguageName>Core Java</LanguageName>
-              <Application>Mobile Application</Application>
-            </CardLower>
-          </CardMain>
+       
+        
         </MainDiv>
       </center>
     </>
