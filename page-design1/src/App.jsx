@@ -8,6 +8,8 @@ import Home from "./components/Home";
 import Test from "./components/Test";
 import Courses from "./components/Courses";
 import Sidebar from "./components/Sidebar";
+import Test2 from "./components/Test2";
+
 const App = () => {
   return (
     <>
@@ -18,7 +20,8 @@ const App = () => {
       {/* <Home /> */}
       {/* <Test /> */}
  
-      <Sidebar/>
+      {/* <Sidebar/> */}
+      <Test2/>
     </>
   );
 };
