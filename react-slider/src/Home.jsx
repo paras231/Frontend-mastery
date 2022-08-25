@@ -48,7 +48,7 @@ const NextButton = (props) => {
   );
 };
 const settings = {
-  dots: true,
+ 
   infinite: true,
   slidesToShow: 3,
   slidesToScroll: 2,
@@ -84,8 +84,11 @@ const settings = {
     {
       breakpoint: 320,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 1,
+        vertical: true,
+        verticalSwiping: true,
+        centerMode: true,
       },
     },
   ],
