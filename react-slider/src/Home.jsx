@@ -99,7 +99,7 @@ const Home = () => {
       <div style={{ width: "80%", margin: "0 auto", marginTop: "10vh" }}>
         <div >
           <PrevButton onClick={() => gotoPrev()} />
-          <NextButton onClick={() => gotoNext()} />
+          <NextButton onClick={() => gotoNext()} /> 
         </div>
         <Slider {...settings} ref={customeSlider}>
           {images.map((i, index) => {
