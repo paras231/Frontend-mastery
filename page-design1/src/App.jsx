@@ -22,9 +22,9 @@ const App = () => {
       {/* <Test /> */}
  
       {/* <Sidebar/> */}
-      {/* <Test2/> */}
+      <Test2/>
       {/* <InputComponents/> */}
-      <Cards/>
+      {/* <Cards/> */}
     </>
   );
 };
