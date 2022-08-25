@@ -31,6 +31,9 @@ const Test2 = () => {
     { value: "vanilla", label: "Vanilla" },
   ];
 
+  const myData = {
+    image:hotel
+  }
   return (
     <>
       <MainDiv></MainDiv>
@@ -42,7 +45,7 @@ const Test2 = () => {
         />
       </div>
 
-      <Container style={{ backgroundImage: `url(${hotel})` }}>
+      <Container style={{ backgroundImage: `url(${myData.image})` }}>
         <Text>HELLO WORLD</Text>
       </Container>
     </>
