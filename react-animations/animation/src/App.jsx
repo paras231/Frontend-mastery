@@ -4,6 +4,7 @@ import Card from "./Card";
 import Test from "./Test";
 import Test1 from "./Test1";
 import Test2 from "./Test2";
+import Loader from "./Loader";
 const App = () => {
   console.log(import.meta.env.VITE_SOME_KEY); // working
   console.log(import.meta.env.VITE_SOME_KEY_2); // working
@@ -13,7 +14,8 @@ const App = () => {
       {/* <Card /> */}
       {/* <Test/> */}
       {/* <Test1 /> */}
-      <Test2 />
+      {/* <Test2 /> */}
+      <Loader/>
     </>
   );
 };
