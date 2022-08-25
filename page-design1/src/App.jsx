@@ -10,6 +10,7 @@ import Courses from "./components/Courses";
 import Sidebar from "./components/Sidebar";
 import Test2 from "./components/Test2";
 import InputComponents from "./components/InputComponents";
+import Cards from "./components/Cards";
 const App = () => {
   return (
     <>
@@ -22,7 +23,8 @@ const App = () => {
  
       {/* <Sidebar/> */}
       {/* <Test2/> */}
-      <InputComponents/>
+      {/* <InputComponents/> */}
+      <Cards/>
     </>
   );
 };
