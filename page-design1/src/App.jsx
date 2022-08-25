@@ -9,7 +9,7 @@ import Test from "./components/Test";
 import Courses from "./components/Courses";
 import Sidebar from "./components/Sidebar";
 import Test2 from "./components/Test2";
-
+import InputComponents from "./components/InputComponents";
 const App = () => {
   return (
     <>
@@ -21,7 +21,8 @@ const App = () => {
       {/* <Test /> */}
  
       {/* <Sidebar/> */}
-      <Test2/>
+      {/* <Test2/> */}
+      <InputComponents/>
     </>
   );
 };
