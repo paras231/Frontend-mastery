@@ -11,6 +11,7 @@ import Sidebar from "./components/Sidebar";
 import Test2 from "./components/Test2";
 import InputComponents from "./components/InputComponents";
 import Cards from "./components/Cards";
+import Footer2 from "./components/Footer2";
 const App = () => {
   return (
     <>
@@ -22,9 +23,10 @@ const App = () => {
       {/* <Test /> */}
  
       {/* <Sidebar/> */}
-      <Test2/>
-      {/* <InputComponents/> */}
+      {/* <Test2/> */}
+      <InputComponents/>
       {/* <Cards/> */}
+      {/* <Footer2/> */}
     </>
   );
 };

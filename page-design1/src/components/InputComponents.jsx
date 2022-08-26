@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { GrLocation } from "react-icons/gr";
+import { HiLocationMarker } from "react-icons/hi";
 
 const Container = styled.div`
   display: flex;
@@ -17,6 +17,13 @@ const SelectInput = styled.select`
   color: rgba(255, 255, 255, 0.7);
 `;
 
+const Options = styled.option`
+    width: 15vmax;
+  height: 3vmax;
+  background-color: #145843;
+  outline: none;
+  color: rgba(255, 255, 255, 0.7);
+`
 const MainDiv = styled.div`
   display: flex;
   margin-left: 20vmax;
@@ -38,26 +45,21 @@ const IconDiv = styled.div`
 //? This is an important property.
 
 const InputComponents = () => {
+  
+
+  
+
   return (
     <>
       <MainDiv>
-        <IconDiv>
-          <GrLocation
-            style={{
-              color: "red",
-              height: "2vmax",
-              width: "1.5vmax",
-              marginTop: "0.5vmax",
-              marginLeft: "1vmax",
-            }}
-          />
-        </IconDiv>
-        <SelectInput>
-          <option value="volvo">Country</option>
-          <option value="saab">Saab</option>
-          <option value="opel">Opel</option>
-          <option value="audi">Audi</option>
+       
+        <SelectInput >
+          <Options value="volvo"><HiLocationMarker style={{color:"yellow"}}/> Location</Options>
+          <Options value="saab">Saab</Options>
+          <Options value="opel">Opel</Options>
+          <Options value="audi">Audi</Options>
         </SelectInput>
+       
       </MainDiv>
     </>
   );
