@@ -12,6 +12,7 @@ import Test2 from "./components/Test2";
 import InputComponents from "./components/InputComponents";
 import Cards from "./components/Cards";
 import Footer2 from "./components/Footer2";
+import Input from "./AdvancedComponents/Input";
 const App = () => {
   return (
     <>
@@ -24,9 +25,10 @@ const App = () => {
  
       {/* <Sidebar/> */}
       {/* <Test2/> */}
-      <InputComponents/>
+      {/* <InputComponents/> */}
       {/* <Cards/> */}
       {/* <Footer2/> */}
+      <Input/>
     </>
   );
 };
