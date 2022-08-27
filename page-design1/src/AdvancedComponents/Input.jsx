@@ -5,8 +5,8 @@ const Input = () => {
   return (
     <>
     <div className="wrapper">
-    <input className="input-1" type="text" placeholder="Type Something" />
-    <input className="input-1" type="text" placeholder="Type Something" />
+    <input className="input-1" type="text" placeholder="Email" />
+    <input className="input-1" type="text" placeholder="Name" />
     </div>
    
     </>

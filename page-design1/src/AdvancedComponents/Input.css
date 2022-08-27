@@ -10,6 +10,9 @@
   color: rgb(238, 34, 34);
   width: 10vmax;
   height: 2vmax;
+  
+  border-bottom-left-radius:3px ;
+  border-top-left-radius: 6px;
 }
 
 .input-1::placeholder {
