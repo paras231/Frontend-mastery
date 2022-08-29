@@ -63,17 +63,88 @@ const myStr2 = "i am the best boy";
 
 //? lets use spread operator inside a funciton.
 
-let value = ["a", "b", "c","d","e"];
+let value = ["a", "b", "c", "d", "e"];
 const myFunc = (x, y, z) => {
   // console.log(x, y, z);
 };
-myFunc(...value);   // a,b,c will be passed as argument -> x,y,z respectively
+myFunc(...value); // a,b,c will be passed as argument -> x,y,z respectively
 
 //!  rest argument and spread operator are different.
 
 //? example  of rest argument
 
-function randomFunc(x,y,z,...p){
-  console.log(x,y,z,p);    // p is basically an array.
+function randomFunc(x, y, z, ...p) {
+  // console.log(x,y,z,p);    // p is basically an array.
 }
-randomFunc(1,2,3,20,30,40,80);
+randomFunc(1, 2, 3, 20, 30, 40, 80);
+
+//? create a next previous button using vanilla javascript.
+const userdata = [
+  {
+    id: 1,
+    name: "John Doe",
+    age: 32,
+  },
+  {
+    id: 2,
+    name: "Jane Doe",
+    age: 30,
+  },
+  {
+    id: 3,
+    name: "Jack Doe",
+    age: 25,
+  },
+  {
+    id: 4,
+    name: "Jill Doe",
+    age: 27,
+  },
+  {
+    id: 5,
+    name: "Yatharth Doe",
+    age: 28,
+  },
+  {
+    id: 7,
+    name: "Raja Doe",
+    age: 29,
+  },
+  {
+    id: 8,
+    name: "Shaym Doe",
+    age: 29,
+  },
+  {
+    id: 9,
+    name: "Paras Doe",
+    age: 29,
+  },
+];
+
+const currentPage = 1;
+
+const userPerPage = 2;
+
+const indexOfLastUser = currentPage * userPerPage;
+const indexOfFirstUser = indexOfLastUser - userPerPage;
+
+const currentUsers = userdata.slice(indexOfFirstUser, indexOfLastUser);
+
+// console.log(indexOfLastUser, "index of last user");
+// console.log(indexOfFirstUser, "index of first user");
+// console.log(currentUsers, "current users");
+
+const newvalue = Math.ceil(userdata.length / userPerPage);
+
+// console.log(newvalue, "new value here");
+
+//? selecting a user from list and showing his data after clicking on it
+
+function selectUser() {
+  console.log(userdata.map((i) => i.id));
+}
+
+const selectBtn = document.getElementById("myBtn");
+
+selectBtn.addEventListener("click", selectUser);
