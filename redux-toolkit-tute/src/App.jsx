@@ -2,12 +2,14 @@ import React from "react";
 import Todo from "./Todo";
 import Home from "./Home";
 import Post from "./Post";
+import Cart from "./Cart";
 const App = () => {
   return (
     <>
-      <Todo />
+      {/* <Todo />
       <Home />
-      <Post />
+      <Post /> */}
+      <Cart/>
     </>
   );
 };
