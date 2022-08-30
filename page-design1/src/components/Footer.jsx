@@ -9,6 +9,7 @@ import styled from "styled-components";
 import Typography from "@mui/material/Typography";
 import footerbg from "../assets/footerbg.png";
 import { FiArrowRight } from "react-icons/fi";
+import "./Footer.css";
 const MainDiv = styled.div`
   margin-top: 10vmax;
   background: url(${footerbg});
@@ -159,16 +160,34 @@ const Input = styled.input`
     padding-left: 14px;
   }
   border: 2px solid #0da274;
+  @media (min-width: 320px) and (max-width: 375px) {
+   height:3vmax;
+  }
+  @media (min-width: 376px) and (max-width: 420px) {
+    height:3vmax;
+  }
+  @media (min-width: 421px) and (max-width: 480px) {
+    height:3vmax;
+  }
 `;
 
 const Button = styled.button`
   width: 4vmax;
-  height: 3vmax;
+  height: 4vmax;
   color: white;
   background-color: #0da274;
   border: none;
   outline: none;
   cursor: pointer;
+  @media (min-width: 320px) and (max-width: 375px) {
+   height:3.5vmax;
+  }
+  @media (min-width: 376px) and (max-width: 420px) {
+    height:3.5vmax;
+  }
+  @media (min-width: 421px) and (max-width: 480px) {
+    height:3.5vmax;
+  }
 `;
 
 const Copyright = styled.p`
@@ -191,7 +210,7 @@ const Footer = () => {
               <Para>Get exclusive offer updates straight to your inbox.</Para>
               <center>
                 <InputWrapper>
-                  <Input type="email" placeholder="Email Address" />
+                  <Input className="input-tab" type="email" placeholder="Email Address" />
                   <Button>
                     <FiArrowRight />
                   </Button>
