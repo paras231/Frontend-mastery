@@ -13,6 +13,7 @@ import InputComponents from "./components/InputComponents";
 import Cards from "./components/Cards";
 import Footer2 from "./components/Footer2";
 import Input from "./AdvancedComponents/Input";
+import AmazoneHome from "./Pages/AmazoneHome";
 const App = () => {
   return (
     <>
@@ -28,7 +29,8 @@ const App = () => {
       {/* <InputComponents/> */}
       {/* <Cards/> */}
       {/* <Footer2/> */}
-      <Input/>
+      {/* <Input/> */}
+      <AmazoneHome/>
     </>
   );
 };

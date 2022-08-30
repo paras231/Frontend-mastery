@@ -14,6 +14,9 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-select": "^5.4.0",
+    "react-simple-image-slider": "^2.4.1",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
