@@ -3,11 +3,25 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   position: absolute;
+  margin-left: 10vmax;
   margin-top: -10vmax;
+  @media (min-width: 320px) and (max-width: 375px) {
+    margin-left: 1.5vmax;
+  }
+  @media (min-width: 376px) and (max-width: 420px) {
+    margin-left: 1vmax;
+  }
+  /* for height */
+  @media (min-height: 600px) and (max-height: 720px) {
+    margin-left: 6vmax;
+  }
+  @media (min-height: 721px) and (max-height: 800px) {
+    margin-left: 6vmax;
+  }
 `;
 const MainDiv = styled.div`
   display: flex;
-  gap:2vmax;
+  gap: 2vmax;
 `;
 
 const Container = styled.div`
@@ -16,7 +30,14 @@ const Container = styled.div`
 
   background-color: white;
   display: grid;
-  /* margin-left: 10vmax; */
+  @media (min-width: 320px) and (max-width: 375px) {
+    width: 13vmax;
+    height: 20vmax;
+  }
+  @media (min-width: 376px) and (max-width: 420px) {
+    width: 13vmax;
+    height: 20vmax;
+  }
 `;
 const UpperDiv = styled.div`
   display: flex;
@@ -35,6 +56,14 @@ const Image = styled.img`
   width: 10vmax;
   height: 10vmax;
   cursor: pointer;
+  @media (min-width: 320px) and (max-width: 375px) {
+    width: 4vmax;
+    height: 4vmax;
+  }
+  @media (min-width: 376px) and (max-width: 420px) {
+    width: 4vmax;
+    height: 4vmax;
+  }
 `;
 
 const img1 =
@@ -54,6 +83,16 @@ const Card = () => {
     <>
       <Wrapper>
         <MainDiv>
+          <Container>
+            <UpperDiv>
+              <Image src={img1} />
+              <Image src={img2} />
+            </UpperDiv>
+            <LowerDiv>
+              <Image src={img1} />
+              <Image src={img2} />
+            </LowerDiv>
+          </Container>
           <Container>
             <UpperDiv>
               <Image src={img1} />
