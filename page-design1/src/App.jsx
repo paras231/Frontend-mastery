@@ -30,7 +30,8 @@ const App = () => {
       {/* <Cards/> */}
       {/* <Footer2/> */}
       {/* <Input/> */}
-      <AmazoneHome/>
+      {/* <AmazoneHome/> */}
+      <Footer/>
     </>
   );
 };
