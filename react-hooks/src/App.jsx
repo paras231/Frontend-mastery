@@ -1,22 +1,23 @@
-import React from 'react'
-import StateHooks from './StateHooks';
-import EffectHook from './EffectHook';
-import Test from './Test';
-import RefHook from './RefHook';
-import Post from './Post';
+import React from "react";
+import StateHooks from "./StateHooks";
+import EffectHook from "./EffectHook";
+import Test from "./Test";
+import RefHook from "./RefHook";
+import Post from "./Post";
 import Users from "./Components/Users";
+import WIndowscroll from "./Customhooks/WIndowscroll";
 const App = () => {
   return (
-   <>
-   <h1>HELLO WORLD</h1>
-    {/* <StateHooks /> */}
-    {/* <EffectHook /> */}
-    {/* <Test /> */}
-    {/* <RefHook /> */}
-    {/* <Post /> */}
-  <Users/>
-   </>
-  )
-}
+    <>
+      {/* <StateHooks /> */}
+      {/* <EffectHook /> */}
+      {/* <Test /> */}
+      {/* <RefHook /> */}
+      {/* <Post /> */}
+      <WIndowscroll />
+      <Users />
+    </>
+  );
+};
 
-export default App
+export default App;
