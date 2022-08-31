@@ -1,4 +1,4 @@
-input:focus {
+.input-tab:focus {
  border:none;
  outline:none;
 }
