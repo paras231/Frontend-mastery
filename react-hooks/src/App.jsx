@@ -6,6 +6,7 @@ import RefHook from "./RefHook";
 import Post from "./Post";
 import Users from "./Components/Users";
 import WIndowscroll from "./Customhooks/WIndowscroll";
+import Form from "./Formvalidation/Form";
 const App = () => {
   return (
     <>
@@ -14,8 +15,9 @@ const App = () => {
       {/* <Test /> */}
       {/* <RefHook /> */}
       {/* <Post /> */}
-      <WIndowscroll />
-      <Users />
+      {/* <WIndowscroll /> */}
+      {/* <Users /> */}
+      <Form/>
     </>
   );
 };
