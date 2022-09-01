@@ -1,0 +1,22 @@
+.list-wrapper {
+  display: none;
+  position: absolute;
+}
+.container{
+    position: relative;
+  display: inline-block;
+}
+/* selecting  container class because it is parent div*/
+.container:hover .list-wrapper {
+  display: block;
+}
+.list-wrapper > ul {
+  list-style-type: none;
+}
+.list-wrapper{
+    width:10vmax;
+}
+.list-wrapper>ul>li:hover{
+    background-color:rgba(219, 188, 193, 0.679);
+    cursor: pointer;
+}
