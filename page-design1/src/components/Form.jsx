@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { ImUser } from "react-icons/im";
+import {FaLock} from "react-icons/fa";
 import loginimg from "../assets/loginimg.png";
 import Checkbox from "@mui/material/Checkbox";
 import logo from "../assets/sealogo.png";
@@ -36,6 +37,13 @@ const Icon = styled(ImUser)`
   width: 30px;
   height: 36px;
 `;
+const Icon2 = styled(FaLock)`
+   position: absolute;
+  margin-left: 12px;
+  margin-top: 9px;
+  width: 30px;
+  height: 28px;
+`
 const Button = styled.button`
   height: 50px;
   width: 100%;
@@ -49,21 +57,27 @@ const ButtonWrapper = styled.div`
   width: 290px;
   height: 60px;
   border-radius: 40px;
+  margin-left:20px;
+  margin-top:20px;
 `;
 
 const LoginButton = styled.button`
   width: 145px;
-  height: 50px;
+  height: 40px;
   border-radius: 40px;
   position: relative;
   margin-right: -30px;
   background-color: #145843;
   color: white;
+  outline: none;
+  border: none;
 `;
 const SignupButton = styled.button`
   width: 145px;
-  height: 50px;
+  height: 40px;
   border-radius: 40px;
+  outline: none;
+  border: none;
 `;
 const CheckBoxWrapper = styled.div`
   display: flex;
@@ -72,14 +86,21 @@ const PasswordText = styled.p`
   margin-top: 12px;
 `;
 const Logo = styled.img`
-  height: 130px;
-  width: 130px;
+  height: 110px;
+  width: 110px;
 `;
 
+const LoginHeader = styled.img`
+  background: url(${loginimg});
+  width: 100%;
+`;
 const Form = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <>
-      <img src={loginimg} />
+      <LoginHeader src={loginimg} />
       <center>
         <Logo src={logo} />
       </center>
@@ -89,17 +110,23 @@ const Form = () => {
           <SignupButton>Signup</SignupButton>
         </ButtonWrapper>
       </center>
-      <FormWrapper className="form-wrapper">
+      <FormWrapper onSubmit={handleSubmit} className="form-wrapper">
         <IconInputWrapper>
           <Icon className="icon" />
-          <Input1 className="myinput" placeholder="Enter Name" type="email" />
+          <Input1
+            required
+            className="myinput"
+            placeholder="Enter Name"
+            type="email"
+          />
         </IconInputWrapper>
         <IconInputWrapper>
-          <Icon />
+          <Icon2 />
           <Input1
             className="myinput"
             placeholder="Enter Name"
             type="password"
+            required
           />
         </IconInputWrapper>
 

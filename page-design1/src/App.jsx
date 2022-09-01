@@ -14,7 +14,14 @@ import Cards from "./components/Cards";
 import Footer2 from "./components/Footer2";
 import AmazoneHome from "./Pages/AmazoneHome";
 import Form from "./components/Form";
+import Login from "./components/Login";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTheme } from "@mui/material/styles";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 const App = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  const user = true;
   return (
     <>
       {/* <Category />
@@ -23,7 +30,7 @@ const App = () => {
       {/* <Signup /> */}
       {/* <Home /> */}
       {/* <Test /> */}
- 
+
       {/* <Sidebar/> */}
       {/* <Test2/> */}
       {/* <InputComponents/> */}
@@ -31,8 +38,14 @@ const App = () => {
       {/* <Footer2/> */}
       {/* <Input/> */}
       {/* <AmazoneHome/> */}
-      <Footer/>
-      {/* <Form/> */}
+
+   
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={ user && isMobile ? <Form /> : <Login />} />  // matching user and mobile condition   if user is logged in 
+          <Route path=""/>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 };
