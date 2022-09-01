@@ -39,11 +39,14 @@ const App = () => {
       {/* <Input/> */}
       {/* <AmazoneHome/> */}
 
-   
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={ user && isMobile ? <Form /> : <Login />} />  // matching user and mobile condition   if user is logged in 
-          <Route path=""/>
+          {user && isMobile ? (
+            <Route path="/" element={<Form />} />
+          ) : user && !isMobile ? (
+            <Route path="/" element={<Login />} />
+          ) : null}
+          // matching user and mobile condition if user is logged in
         </Routes>
       </BrowserRouter>
     </>
