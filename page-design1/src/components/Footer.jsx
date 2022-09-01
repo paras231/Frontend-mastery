@@ -161,13 +161,13 @@ const Input = styled.input`
   }
   border: 2px solid #0da274;
   @media (min-width: 320px) and (max-width: 375px) {
-   height:3vmax;
+    height: 28px;
   }
   @media (min-width: 376px) and (max-width: 420px) {
-    height:3vmax;
+    height: 22px;
   }
   @media (min-width: 421px) and (max-width: 480px) {
-    height:3vmax;
+    height: 24px;
   }
 `;
 
@@ -180,13 +180,13 @@ const Button = styled.button`
   outline: none;
   cursor: pointer;
   @media (min-width: 320px) and (max-width: 375px) {
-   height:3.5vmax;
+    height: 32px;
   }
   @media (min-width: 376px) and (max-width: 420px) {
-    height:3.5vmax;
+    height: 24px;
   }
   @media (min-width: 421px) and (max-width: 480px) {
-    height:3.5vmax;
+    height: 24px;
   }
 `;
 
@@ -199,6 +199,11 @@ const Copyright = styled.p`
 const Footer = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  const copyRef = React.useRef();
+
+  React.useEffect(() => {
+    copyRef.current.style.display = "none";
+  });
 
   return (
     <>
@@ -210,13 +215,17 @@ const Footer = () => {
               <Para>Get exclusive offer updates straight to your inbox.</Para>
               <center>
                 <InputWrapper>
-                  <Input className="input-tab" type="email" placeholder="Email Address" />
+                  <Input
+                    className="input-tab"
+                    type="email"
+                    placeholder="Email Address"
+                  />
                   <Button>
                     <FiArrowRight />
                   </Button>
                 </InputWrapper>
               </center>
-              <Accordion sx={{ marginTop: "5vmax" }}>
+              <Accordion sx={{ marginTop: "8vh" }}>
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon />}
                   aria-controls="panel1a-content"
@@ -264,7 +273,9 @@ const Footer = () => {
                   </ListWrapper2>
                 </AccordionDetails>
               </Accordion>
-              <Copyright>Copyright @ 2022. All Rights Reserved</Copyright>
+              <Copyright ref={copyRef}>
+                Copyright @ 2022. All Rights Reserved
+              </Copyright>
             </Container>
           </center>
         </MainDiv>

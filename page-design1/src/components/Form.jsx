@@ -40,8 +40,8 @@ const Button = styled.button`
   height: 50px;
   width: 100%;
   border-radius: 35px;
-  outline:none;
-  border:none;
+  outline: none;
+  border: none;
   background: linear-gradient(90deg, #2fbf8c 0%, #0da274 54.69%, #4ed19e 100%);
 `;
 const ButtonWrapper = styled.div`
