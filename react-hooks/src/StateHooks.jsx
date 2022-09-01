@@ -2,7 +2,10 @@ import React, { useState } from "react";
 
 const StateHooks = () => {
   // handeling multiple inputs in easy way
-
+  const [showText, setShowText] = useState(false);
+  const handleShowText = () => {
+    setShowText(!showText);
+  };
   const [values, setValues] = useState({
     name: "",
     email: "",
@@ -83,6 +86,11 @@ const StateHooks = () => {
         />
         <button type="submit">Submit</button>
       </form>
+      <button onClick={handleShowText}>Show Text</button>
+      {showText ? <h1>Text is displaying</h1> : null}
+      {/* using && operator with condition , so above condition can also be written like*/}
+      {/* {showText && <h1>Text is displaying</h1> } */}
+      {/* (if this part is true) && (this part will execute) */}
     </>
   );
 };

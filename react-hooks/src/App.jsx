@@ -10,7 +10,7 @@ import Form from "./Formvalidation/Form";
 const App = () => {
   return (
     <>
-      {/* <StateHooks /> */}
+      <StateHooks />
       {/* <EffectHook /> */}
       {/* <Test /> */}
       {/* <RefHook /> */}
