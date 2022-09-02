@@ -7,17 +7,19 @@ import Post from "./Post";
 import Users from "./Components/Users";
 import WIndowscroll from "./Customhooks/WIndowscroll";
 import Form from "./Formvalidation/Form";
+import EventHandling from "./EventHandling/EventHandling";
 const App = () => {
   return (
     <>
-      <StateHooks />
+      {/* <StateHooks /> */}
       {/* <EffectHook /> */}
       {/* <Test /> */}
       {/* <RefHook /> */}
       {/* <Post /> */}
       {/* <WIndowscroll /> */}
       {/* <Users /> */}
-      <Form/>
+      {/* <Form/> */}
+      <EventHandling />
     </>
   );
 };
