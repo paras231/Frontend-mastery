@@ -142,9 +142,19 @@ const newvalue = Math.ceil(userdata.length / userPerPage);
 //? selecting a user from list and showing his data after clicking on it
 
 function selectUser() {
-  console.log(userdata.map((i) => i.id));
+  // console.log(userdata.map((i) => i.id));
 }
 
 const selectBtn = document.getElementById("myBtn");
 
-selectBtn.addEventListener("click", selectUser);
+// selectBtn.addEventListener("click", selectUser);
+
+
+//? hoisting in javascript->
+
+doSomething();  // accessing the function before initialization -> it will print and work.
+
+function doSomething(){
+  console.log("do something running");
+}
+

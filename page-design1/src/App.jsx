@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Share from "./Pages/Share";
 import Category from "./components/Category";
 import Products from "./components/Products";
 import Footer from "./components/Footer";
@@ -24,6 +25,7 @@ const App = () => {
   const user = true;
   return (
     <>
+    {/* <Share/> */}
       {/* <Category />
       <Products />
       <Footer /> */}
