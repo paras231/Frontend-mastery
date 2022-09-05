@@ -16,6 +16,7 @@ import Footer2 from "./components/Footer2";
 import AmazoneHome from "./Pages/AmazoneHome";
 import Form from "./components/Form";
 import Login from "./components/Login";
+import MultipleInputs from "./AdvancedComponents/MultipleInputs";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -25,6 +26,7 @@ const App = () => {
   const user = true;
   return (
     <>
+    <MultipleInputs/>
     {/* <Share/> */}
       {/* <Category />
       <Products />
@@ -41,7 +43,7 @@ const App = () => {
       {/* <Input/> */}
       {/* <AmazoneHome/> */}
 
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
           {user && isMobile ? (
             <Route path="/" element={<Form />} />
@@ -50,7 +52,7 @@ const App = () => {
           ) : null}
           // matching user and mobile condition if user is logged in
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </>
   );
 };
