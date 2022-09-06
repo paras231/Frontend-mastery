@@ -4,7 +4,7 @@ import RadioButtonFilter from "./Components/Filters/RadioButtonFilter";
 const App = () => {
   return (
     <>
-    {/* <Dropdown/> */}
+    <Dropdown/>
     <RadioButtonFilter/>
     </>
   )

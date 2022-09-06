@@ -5,7 +5,7 @@ export const packageData = [
   { id: 4, name: "Fourth Package" },
 ];
 
- export const ferryData = [
+export const ferryData = [
   {
     id: 1,
     name: "Frist Ferry",
@@ -22,4 +22,22 @@ export const packageData = [
     id: 4,
     name: "Fourth Ferry",
   },
+];
+
+export const userProfiles = [
+  {
+    id: 1,
+    name: "Jhon",
+    gender: "Male",
+  },
+  {
+    id: 2,
+    name: "Sam",
+    gender: "Male",
+  },
+  {
+    id:3,
+    name:"Lol",
+    
+  }
 ];
