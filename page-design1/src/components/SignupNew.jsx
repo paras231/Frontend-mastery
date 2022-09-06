@@ -86,8 +86,8 @@ const LoginButton = styled.button`
   position: relative;
   margin-right: -30px;
   background-color: white;
-  color: #145843;;
-  border: 2px solid #145843;;
+  color: #145843;
+  border: 2px solid #145843; ;
 `;
 const SignupButton = styled.button`
   width: 145px;
