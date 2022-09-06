@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import SignupNew from "./components/SignupNew";
 import Share from "./Pages/Share";
 import Category from "./components/Category";
 import Products from "./components/Products";
@@ -26,7 +27,7 @@ const App = () => {
   const user = true;
   return (
     <>
-    <MultipleInputs/>
+    {/* <MultipleInputs/> */}
     {/* <Share/> */}
       {/* <Category />
       <Products />
@@ -43,16 +44,16 @@ const App = () => {
       {/* <Input/> */}
       {/* <AmazoneHome/> */}
 
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <Routes>
           {user && isMobile ? (
-            <Route path="/" element={<Form />} />
+            <Route path="/" element={<SignupNew />} />
           ) : user && !isMobile ? (
             <Route path="/" element={<Login />} />
           ) : null}
           // matching user and mobile condition if user is logged in
         </Routes>
-      </BrowserRouter> */}
+      </BrowserRouter>
     </>
   );
 };
