@@ -2,7 +2,7 @@ export const cabsData = [
   {
     id: 1,
     image:
-      "https://media.istockphoto.com/photos/detail-of-a-taxi-car-picture-id1407151630?b=1&k=20&m=1407151630&s=170667a&w=0&h=e0ZITPfwJGjC9D5wKeiwXNhcy_DTAMLzvQSJF57tSew=",
+      "https://images.unsplash.com/photo-1484490548882-460414740a0f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2Fic3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
     name: "Maruti Suzuki Ertiga",
     title: "SUV . AC . 5 Seats",
     size: "Large Car",
@@ -13,7 +13,7 @@ export const cabsData = [
   {
     id: 2,
     image:
-      "https://media.istockphoto.com/photos/detail-of-a-taxi-car-picture-id1407151630?b=1&k=20&m=1407151630&s=170667a&w=0&h=e0ZITPfwJGjC9D5wKeiwXNhcy_DTAMLzvQSJF57tSew=",
+      "https://images.unsplash.com/photo-1484490548882-460414740a0f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2Fic3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
     name: "Maruti Suzuki Ertiga",
     title: "SUV . AC . 5 Seats",
     size: "Large Car",
