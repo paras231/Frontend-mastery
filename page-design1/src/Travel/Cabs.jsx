@@ -10,7 +10,10 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import { Button, Menu, MenuItem } from "@mui/material";
 import { MdArrowDropDown } from "react-icons/md";
+import { AiOutlineClose } from "react-icons/ai";
+import { AiOutlineMenu } from "react-icons/ai";
 import "./dropdown.css";
+import "./filter.css";
 const StyledHeader = styled.div``;
 const HeaderImage = styled.img`
   width: 100%;
@@ -363,7 +366,7 @@ const BookNow = styled.button`
   @media (min-width: 376px) and (max-width: 420px) {
     margin-left: 9vw;
     width: 32vw;
-    height: 7vh;
+    height: 5vh;
     margin-top: 10vh;
   }
 `;
@@ -413,17 +416,14 @@ const LineImage = styled.img`
 `;
 
 const Cabs = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const handleShow = () => {
+    setShowMenu(!showMenu);
+  };
+
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
 
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -451,38 +451,40 @@ const Cabs = () => {
         </StyledHeader>
         {isMobile ? (
           <>
-            <div class="dropdown">
-              <div class="dropbtn">
-                <MdArrowDropDown />
+            <div className="dropdown">
+              <div className="dropbtn">
+                <AiOutlineMenu onClick={handleShow} />
               </div>
-              <div class="dropdown-content">
-                <DestinationWrapper>
-                  <FormWrapper>
-                    <FormText>From</FormText>
-                    <FormContent>
-                      <FormContentText>Port Blair</FormContentText>
-                    </FormContent>
-                  </FormWrapper>
-                  <FormWrapper>
-                    <FormText>To</FormText>
-                    <FormContent>
-                      <FormContentText>Ross Garden</FormContentText>
-                    </FormContent>
-                  </FormWrapper>
-                  <FormWrapper>
-                    <FormText>Pick-Up Date</FormText>
-                    <FormContent>
-                      <FormContentText>Sept 8, 2022</FormContentText>
-                    </FormContent>
-                  </FormWrapper>
-                  <FormWrapper>
-                    <FormText>Pick-Up Time </FormText>
-                    <FormContent>
-                      <FormContentText>2:24 PM</FormContentText>
-                    </FormContent>
-                  </FormWrapper>
-                </DestinationWrapper>
-              </div>
+              {showMenu && (
+                <div className="dropdown-content">
+                  <DestinationWrapper>
+                    <FormWrapper>
+                      <FormText>From</FormText>
+                      <FormContent>
+                        <FormContentText>Port Blair</FormContentText>
+                      </FormContent>
+                    </FormWrapper>
+                    <FormWrapper>
+                      <FormText>To</FormText>
+                      <FormContent>
+                        <FormContentText>Ross Garden</FormContentText>
+                      </FormContent>
+                    </FormWrapper>
+                    <FormWrapper>
+                      <FormText>Pick-Up Date</FormText>
+                      <FormContent>
+                        <FormContentText>Sept 8, 2022</FormContentText>
+                      </FormContent>
+                    </FormWrapper>
+                    <FormWrapper>
+                      <FormText>Pick-Up Time </FormText>
+                      <FormContent>
+                        <FormContentText>2:24 PM</FormContentText>
+                      </FormContent>
+                    </FormWrapper>
+                  </DestinationWrapper>
+                </div>
+              )}
             </div>
           </>
         ) : (

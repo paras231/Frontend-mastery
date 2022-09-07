@@ -1,0 +1,43 @@
+.dropbtn-filter-button {
+    color: black;
+  
+    font-size: 1rem;
+    border: none;
+  }
+  
+  .dropdown-filter {
+    position: relative;
+    display: inline-block;
+    margin-left:120vw;
+    
+    text-align: center;
+    /* overflow-x: hidden; */
+  }
+  
+  .dropdown-filter-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    width: 100%;
+  }
+  
+  .dropdown-content a {
+    color: black;
+  
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown-filter:hover .dropdown-filter-content {
+    display: block;
+  }
+  
+  
+  
+  

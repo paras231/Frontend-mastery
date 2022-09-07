@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Cabs from "./Travel/Cabs";
+import FerryInputComponent from "./Travel/FerryInputComponent";
 import SignupNew from "./components/SignupNew";
 import Share from "./Pages/Share";
 import Category from "./components/Category";
@@ -28,7 +29,8 @@ const App = () => {
   const user = true;
   return (
     <>
-    <Cabs/>
+    <FerryInputComponent/>
+    {/* <Cabs/> */}
     {/* <MultipleInputs/> */}
     {/* <Share/> */}
       {/* <Category />

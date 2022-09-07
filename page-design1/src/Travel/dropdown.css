@@ -1,7 +1,7 @@
 .dropbtn {
   color: black;
 
-  font-size: 4rem;
+  font-size: 2rem;
   border: none;
 }
 
@@ -40,6 +40,8 @@
 
 .dropdown:hover .dropbtn {
 }
+
+
 
 @media (min-width: 376px) and (max-width: 420px) {
   
