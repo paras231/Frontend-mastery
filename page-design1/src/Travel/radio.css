@@ -1,0 +1,9 @@
+
+input[type='radio']:after {
+    background-color: #d1d3d1;
+}
+
+
+input[type='radio']:checked::after{
+    background-color: #ffa500;
+}
