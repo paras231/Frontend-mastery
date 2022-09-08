@@ -1,3 +1,5 @@
+import ferry1 from "../assets/ferry1.png";
+
 export const cabsData = [
   {
     id: 1,
@@ -86,5 +88,40 @@ export const cabsData = [
     desc: "Ac pellentesque massa praesent nibh facilisis In placerat pretium malesuada feugiat.",
     price: 500,
     taxes: 100,
+  },
+];
+
+export const ferryData = [
+  {
+    id: 1,
+    image:ferry1,
+    name: "Green Ocean 1",
+    dtime: "7:00 am",
+    atime: "7:00 am",
+    location: "PORTBLAIR → HAVELOCK",
+  },
+  {
+    id: 2,
+    image:ferry1,
+    name: "Green Ocean 1",
+    dtime: "7:00 am",
+    atime: "7:00 am",
+    location: "PORTBLAIR → HAVELOCK",
+  },
+  {
+    id: 3,
+    image:ferry1,
+    name: "Green Ocean 1",
+    dtime: "7:00 am",
+    atime: "7:00 am",
+    location: "PORTBLAIR → HAVELOCK",
+  },
+  {
+    id: 4,
+    image:ferry1,
+    name: "Green Ocean 1",
+    dtime: "7:00 am",
+    atime: "7:00 am",
+    location: "PORTBLAIR → HAVELOCK",
   },
 ];
