@@ -1,16 +1,25 @@
-import React from 'react'
+import React from "react";
 import "./Input.css";
 
 const Input = () => {
+  const [show, setShow] = React.useState("");
+  const handleShow = () => {
+    setShow(!show);
+  };
   return (
     <>
-    <div className="wrapper">
-    <input className="input-1" type="text" placeholder="Email" />
-    <input className="input-1" type="text" placeholder="Name" />
-    </div>
-   
-    </>
-  )
-}
+      <input onClick={handleShow} style={{ width: "10vmax" }} />
 
-export default Input
+      {show && (
+        <div style={{ display: "grid" }}>
+          <input style={{ width: "6vmax" }} type="text" />
+          <input style={{ width: "6vmax" }} type="text" />
+          <input style={{ width: "6vmax" }} type="text" />
+          <input style={{ width: "6vmax" }} type="text" />
+        </div>
+      )}
+    </>
+  );
+};
+
+export default Input;
