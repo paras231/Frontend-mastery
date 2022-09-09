@@ -2,6 +2,8 @@ import React from "react";
 import ferry1 from "../assets/ferry1.png";
 import styled from "styled-components";
 import { ferryData } from "./data";
+import tick from "../assets/tick.png";
+import whitetick from "../assets/whitetick.png";
 
 const CardMainContainer = styled.div`
   display: flex;
@@ -82,17 +84,139 @@ const MainWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 4vmax;
+  width: 40vmax;
 `;
 const SliderWrapper = styled.div``;
-const SelectSeatText = styled.p``;
+const SelectSeatText = styled.p`
+  font-size: 1.2rem;
+  font-weight: 700;
+`;
 const SeatWrapper = styled.div`
   display: flex;
   gap: 3vmax;
+  margin-top: 2vmax;
 `;
 const Economy = styled.div`
   display: flex;
-  gap: 2vmax;
+  gap: 1vmax;
 `;
+const Luxury = styled.div`
+  display: flex;
+  gap: 1vmax;
+`;
+const Royal = styled.div`
+  display: flex;
+  gap: 1vmax;
+`;
+const RoyalText = styled.p`
+  font-size: 1rem;
+  font-weight: 600;
+`;
+const LuxuryText = styled.p`
+  font-size: 1rem;
+  font-weight: 600;
+`;
+const EconomyText = styled.p`
+  font-size: 1rem;
+  font-weight: 600;
+`;
+const AmenetiesText = styled.p`
+  font-size: 1.2rem;
+  font-weight: 700;
+`;
+
+const StyledHrTag = styled.hr`
+  width: 65vmax;
+  margin-top: -3vmax;
+  @media (min-width: 375px) and (max-width: 420px) {
+    margin-left: 0;
+    width: 70vmax;
+  }
+`;
+
+const AmenetiesWrapper = styled.div`
+  display: flex;
+  gap:14vmax;
+ 
+  margin-left: 55vmax;
+`;
+
+const GridWrapper1 = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1vmax;
+  margin-left: -50vmax;
+`;
+const GridWrapper2 = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1vmax;
+`;
+const TickImage = styled.img`
+  height: 1.7vmax;
+  width: 1.7vmax;
+`;
+const DeckDiv = styled.div`
+  display: flex;
+  gap: 1vmax;
+`;
+const HighSpeedDiv = styled.div`
+  display: flex;
+  gap: 1vmax;
+`;
+
+const AirConditionedDiv = styled.div`
+  display: flex;
+  gap: 1vmax;
+`;
+
+const CafetaeriaDiv = styled.div`
+  gap: 1vmax;
+  display: flex;
+`;
+const PermiumDiv = styled.div`
+  display: flex;
+  gap: 1vmax;
+`;
+const ExtraLegSpace = styled.div`
+  display: flex;
+`;
+const ExclusiveDiv = styled.div`
+  display: flex;
+`;
+const Snacks = styled.div`
+  display: flex;
+`;
+const MealIncluded = styled.div`
+  display: flex;
+`;
+const TextStyled = styled.p`
+  font-size: 1rem;
+  font-weight: 400;
+`;
+const TwoButtonWrapper = styled.div`
+ display:flex;
+ gap:6vmax;
+ margin-left:25vmax;
+`
+const CloseText = styled.p`
+  color: #636363;
+  font-size:1rem;
+  font-weight:500;
+
+`
+const ProceedButton = styled.button`
+background: linear-gradient(180deg, #2bbc89 0%, #10a476 47.92%, #44ca98 100%);
+  border-radius: 50px;
+  color: white;
+  width: 15vmax;
+  height: 2.5vmax;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size:1rem;
+`
+
 const FerryCard = () => {
   const [selected, setSelected] = React.useState(null);
 
@@ -100,12 +224,73 @@ const FerryCard = () => {
     return (
       <>
         <MainWrapper>
-          <SliderWrapper>
-            <SelectSeatText>
-              Select ferry
-              <button onClick={() => setSelected(null)}>Close</button>
-            </SelectSeatText>
-          </SliderWrapper>
+          <SelectSeatText>
+            Select your seat type:
+            <SeatWrapper>
+              <Economy>
+                <input type="radio" />
+                <EconomyText>Economy($230)</EconomyText>
+              </Economy>
+              <Luxury>
+                <input type="radio" />
+                <LuxuryText>Luxury($350)</LuxuryText>
+              </Luxury>
+              <Royal>
+                <input type="radio" />
+                <RoyalText>Royal($550)</RoyalText>
+              </Royal>
+            </SeatWrapper>
+          </SelectSeatText>
+
+          <AmenetiesText>Amenities - Economy</AmenetiesText>
+          <StyledHrTag />
+          <AmenetiesWrapper>
+            <GridWrapper1>
+              <DeckDiv>
+                <TickImage src={tick} />
+                <TextStyled>Open Deck Access</TextStyled>
+              </DeckDiv>
+              <HighSpeedDiv>
+                <TickImage src={tick} />
+                <TextStyled>High-Speed Ferry</TextStyled>
+              </HighSpeedDiv>
+              <AirConditionedDiv>
+                <TickImage src={tick} />
+                Air Conditioned
+              </AirConditionedDiv>
+              <CafetaeriaDiv>
+                <TickImage src={tick} />
+                Cafeteria
+              </CafetaeriaDiv>
+              <PermiumDiv>
+                <TickImage src={whitetick} />
+                <TextStyled>Premium Seating</TextStyled>
+              </PermiumDiv>
+            </GridWrapper1>
+            <GridWrapper2>
+              <PermiumDiv>
+                <TickImage src={whitetick} />
+                <TextStyled>Premium Seating</TextStyled>
+              </PermiumDiv>
+              <PermiumDiv>
+                <TickImage src={whitetick} />
+                <TextStyled>Premium Seating</TextStyled>
+              </PermiumDiv>
+              <PermiumDiv>
+                <TickImage src={whitetick} />
+                <TextStyled>Premium Seating</TextStyled>
+              </PermiumDiv>
+            </GridWrapper2>
+           
+          </AmenetiesWrapper>
+          <TwoButtonWrapper>
+        <CloseText>
+          Close
+        </CloseText>
+        <ProceedButton>
+        Proceed with Economy
+        </ProceedButton>
+            </TwoButtonWrapper>
         </MainWrapper>
       </>
     );
@@ -156,3 +341,7 @@ const FerryCard = () => {
 };
 
 export default FerryCard;
+
+{
+  /* <button onClick={() => setSelected(null)}>Close</button> */
+}
