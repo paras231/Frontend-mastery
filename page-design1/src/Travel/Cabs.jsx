@@ -215,7 +215,7 @@ const CardDetailsWrapper = styled.div`
 const CarName = styled.p`
   color: #006ce0;
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   margin-top: 2vmax;
   @media (min-width: 320px) and (max-width: 375px) {
     font-size: 15px;
@@ -232,7 +232,7 @@ const CarSize = styled.p`
   color: #000000;
   font-weight: bold;
   font-size: 1.2rem;
-  margin-top: 8vmax;
+  margin-top: 6vmax;
 `;
 const CarDesc = styled.div`
   width: 16vmax;
@@ -247,7 +247,7 @@ const Sanitized = styled.div`
   gap: 1vmax;
   margin-top: -4vmax;
   @media (min-width: 320px) and (max-width: 375px) {
-    margin-top: 8vh;
+    margin-top: 19vh;
   }
   @media (min-width: 376px) and (max-width: 420px) {
     margin-top: 8vh;
@@ -566,7 +566,7 @@ const Cabs = () => {
                       <CarDesc>{value.desc}</CarDesc>
                       <Sanitized>
                         <img style={{ height: "1.4vmax" }} src={tick} />
-                        <span style={{ fontSize: "1.2rem" }}>
+                        <span style={{ fontSize: "1rem" }}>
                           Sanitizers Installed
                         </span>
                       </Sanitized>

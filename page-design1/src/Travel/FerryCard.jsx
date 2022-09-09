@@ -7,7 +7,7 @@ const CardMainContainer = styled.div`
   display: flex;
   gap: 3vmax;
   width: 60vmax;
-  height: 24vmax;
+  height: 20vmax;
   box-sizing: border-box;
   background: #ffffff;
   box-shadow: 10px 11px 25px rgba(0, 0, 0, 0.1);
@@ -17,18 +17,18 @@ const ImageDiv = styled.div`
   
 `;
 const Image = styled.img`
-  height: 24vmax;
+  height: 20vmax;
 `;
 const DetailsMainWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 3vmax;
-  margin-top: 3vmax;
+  gap: 2.5vmax;
+  margin-top: 2.5vmax;
 `;
 const FerryNameDiv = styled.div`
   display: flex;
   gap: 1vmax;
-  font-size: 1.2rem;
+  font-size: 1rem;
 `;
 const FerryText = styled.p``;
 const GreenText = styled.p`
@@ -50,16 +50,17 @@ const TimeDiv = styled.div`
 const LoactionDiv = styled.div`
   display: flex;
   gap: 4vmax;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
+ 
 `;
 
 const PriceWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1vmax;
-  margin-top: 13vmax;
-  margin-left: 10vmax;
+  margin-top: 12vmax;
+  margin-left: 9vmax;
 `;
 const PriceText = styled.p`
   color: #b80000;
@@ -82,11 +83,11 @@ const FerryCard = () => {
 
 
   const [show, setShow] = React.useState(false);
-  const handleShow = (id) => {
-    if(ferryData.map(i=>i.id===id)){
+  const handleShow = () => {
+   
       setShow(!show);
-    console.log(id)
-    }
+ 
+    
   
   };
   return (
@@ -118,14 +119,15 @@ const FerryCard = () => {
               </DetailsMainWrapper>
               <PriceWrapper>
                 <PriceText>$45.00</PriceText>
-                <Button onClick={()=>handleShow(value.id)}>Select Seats</Button>
+                <Button onClick={handleShow}>Select Seats</Button>
               </PriceWrapper>
               
             </CardMainContainer>
-            {show && <SelectFerry id={value.id}/>}
+           
           </>
         );
       })}
+       {show && <SelectFerry />}
     </>
   );
 };

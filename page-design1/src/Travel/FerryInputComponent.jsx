@@ -94,7 +94,7 @@ const PasssangersWrapper = styled.div`
 }
 `;
 const PassangersText = styled.p`
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
   @media(min-width: 320px) and (max-width: 375px){
     font-size: 1rem;
@@ -108,7 +108,7 @@ const PassangersText = styled.p`
 }
 `;
 const AdlutText = styled.p`
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
   @media(min-width: 320px) and (max-width: 375px){
     font-size: 18px;
@@ -121,7 +121,7 @@ const AdlutText = styled.p`
 `;
 
 const InfantsText = styled.p`
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 700;
   @media(min-width: 320px) and (max-width: 375px){
     font-size: 18px;
@@ -226,7 +226,7 @@ const InputValue = styled.input`
 
 //
 const SelectTripText = styled.p`
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 700;
   margin-top: 2vmax;
   margin-left: 11vmax;
@@ -245,7 +245,7 @@ const SelectTripText = styled.p`
 `;
 
 const TripText = styled.p`
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 700;
   margin-top: 2vmax;
   margin-left: 11vmax;
