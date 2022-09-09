@@ -2,7 +2,7 @@ import React from "react";
 import ferry1 from "../assets/ferry1.png";
 import styled from "styled-components";
 import { ferryData } from "./data";
-import SelectFerry from "./SelectFerry";
+
 const CardMainContainer = styled.div`
   display: flex;
   gap: 3vmax;
@@ -76,8 +76,40 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
+//  select ferry component->
+
+const MainWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 4vmax;
+`;
+const SliderWrapper = styled.div``;
+const SelectSeatText = styled.p``;
+const SeatWrapper = styled.div`
+  display: flex;
+  gap: 3vmax;
+`;
+const Economy = styled.div`
+  display: flex;
+  gap: 2vmax;
+`;
 const FerryCard = () => {
   const [selected, setSelected] = React.useState(null);
+
+  function SelectFerry() {
+    return (
+      <>
+        <MainWrapper>
+          <SliderWrapper>
+            <SelectSeatText>
+              Select ferry
+              <button onClick={() => setSelected(null)}>Close</button>
+            </SelectSeatText>
+          </SliderWrapper>
+        </MainWrapper>
+      </>
+    );
+  }
 
   return (
     <>
@@ -109,16 +141,13 @@ const FerryCard = () => {
               <PriceWrapper>
                 <PriceText>$45.00</PriceText>
                 <Button
-                  onClick={() =>
-                    setSelected(value.detail === selected ? null : value.detail)
-                  }
+                  onClick={() => setSelected(index === selected ? null : index)}
                 >
                   Select Seats
                 </Button>
               </PriceWrapper>
-             
             </CardMainContainer>
-            {selected === value.detail && <SelectFerry />}
+            {selected === index && <SelectFerry />}
           </>
         );
       })}
