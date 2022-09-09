@@ -13,9 +13,7 @@ const CardMainContainer = styled.div`
   box-shadow: 10px 11px 25px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 `;
-const ImageDiv = styled.div`
-  
-`;
+const ImageDiv = styled.div``;
 const Image = styled.img`
   height: 20vmax;
 `;
@@ -52,7 +50,6 @@ const LoactionDiv = styled.div`
   gap: 4vmax;
   font-size: 1rem;
   font-weight: 400;
- 
 `;
 
 const PriceWrapper = styled.div`
@@ -80,19 +77,11 @@ const Button = styled.button`
 `;
 
 const FerryCard = () => {
+  const [selected, setSelected] = React.useState(null);
 
-
-  const [show, setShow] = React.useState(false);
-  const handleShow = () => {
-   
-      setShow(!show);
- 
-    
-  
-  };
   return (
     <>
-      {ferryData.map((value) => {
+      {ferryData.map((value, index) => {
         return (
           <>
             <CardMainContainer key={value.id}>
@@ -119,15 +108,20 @@ const FerryCard = () => {
               </DetailsMainWrapper>
               <PriceWrapper>
                 <PriceText>$45.00</PriceText>
-                <Button onClick={handleShow}>Select Seats</Button>
+                <Button
+                  onClick={() =>
+                    setSelected(value.detail === selected ? null : value.detail)
+                  }
+                >
+                  Select Seats
+                </Button>
               </PriceWrapper>
-              
+             
             </CardMainContainer>
-           
+            {selected === value.detail && <SelectFerry />}
           </>
         );
       })}
-       {show && <SelectFerry />}
     </>
   );
 };

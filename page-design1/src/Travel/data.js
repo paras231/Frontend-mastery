@@ -1,5 +1,5 @@
 import ferry1 from "../assets/ferry1.png";
-
+import SelectFerry from "./SelectFerry";
 export const cabsData = [
   {
     id: 1,
@@ -99,6 +99,7 @@ export const ferryData = [
     dtime: "7:00 am",
     atime: "7:00 am",
     location: "PORTBLAIR → HAVELOCK",
+    detail:"detail1"
   },
   {
     id: 2,
@@ -107,6 +108,7 @@ export const ferryData = [
     dtime: "7:00 am",
     atime: "7:00 am",
     location: "PORTBLAIR → HAVELOCK",
+    detail:"detail2"
   },
   {
     id: 3,
@@ -115,6 +117,7 @@ export const ferryData = [
     dtime: "7:00 am",
     atime: "7:00 am",
     location: "PORTBLAIR → HAVELOCK",
+    detail:"detail3"
   },
   {
     id: 4,
@@ -123,5 +126,8 @@ export const ferryData = [
     dtime: "7:00 am",
     atime: "7:00 am",
     location: "PORTBLAIR → HAVELOCK",
+    detail:"detail4"
   },
 ];
+
+

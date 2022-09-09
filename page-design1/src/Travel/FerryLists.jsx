@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Line from "../assets/line.png";
 import FerryCard from "./FerryCard";
+import SelectFerry from "./SelectFerry";
 const MainContainer = styled.div`
   display: flex;
   gap: 4vmax;
@@ -35,11 +36,11 @@ const StyledCheckBox = styled.input`
 `;
 const MorningText = styled.p`
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1rem;
 `;
 const TimingText = styled.p`
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1rem;
 `;
 
 
@@ -47,6 +48,7 @@ const StyledHeading = styled.p`
  font-weight: 600;
   font-size: 1.5rem;
   color: #145843;
+  margin-left:25%;
 `
 const FerryMainWrapper  = styled.div`
 display: flex;
@@ -54,6 +56,16 @@ display: flex;
   flex: 3;
   gap: 3vmax;
 `
+
+const LineImage = styled.img`
+  margin-top: 8vmax;
+  @media (min-width: 320px) and (max-width: 375px) {
+    display: none;
+  }
+  @media (min-width: 376px) and (max-width: 420px) {
+    display: none;
+  }
+  `
 const FerryLists = () => {
   return (
     <>
@@ -69,13 +81,14 @@ const FerryLists = () => {
             <MorningText>Evening to Morning</MorningText>
           </CheckBoxWrapper>
         </CheckBoxWrapperMain>
+        <LineImage src={Line}/>
         <FerryMainWrapper>
           
                 <StyledHeading>
                     Ferry
                 </StyledHeading>
           
-            <FerryCard/>
+            <FerryCard  />
         </FerryMainWrapper>
       </MainContainer>
 

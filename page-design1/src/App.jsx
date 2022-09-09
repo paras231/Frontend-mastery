@@ -33,11 +33,11 @@ const App = () => {
   const user = true;
   return (
     <>
-    {/* <FerryLists/> */}
+    <FerryLists/>
     {/* <FerryInputComponent/> */}
     {/* <FerryBookingProcess/> */}
     {/* <WhyBooking/> */}
-    <Cabs/>
+    {/* <Cabs/> */}
     {/* <MultipleInputs/> */}
     {/* <Share/> */}
       {/* <Category />
