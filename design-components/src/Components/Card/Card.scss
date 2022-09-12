@@ -1,0 +1,44 @@
+@mixin mobile {
+  @media (min-width: 320px) and (max-width: 480px) {
+    @content;
+  }
+}
+
+.main-container {
+  display: flex;
+  margin-top: 10%;
+  gap: 4vmax;
+  @include mobile {
+    display: grid;
+    gap: 3vh;
+    margin-left: 20%;
+  }
+  .container {
+    border-radius: 22px;
+    width: 25vmax;
+    height: 20vmax;
+    background-color: rgb(237, 135, 135);
+    @include mobile {
+      width: 30vw;
+      height: 33vh;
+      border-radius: 0;
+    }
+    .wrapper1 {
+      img {
+        width: 25vmax;
+        height: 10vmax;
+        object-fit: cover;
+        @include mobile {
+          width: 30vw;
+          height: 15vh;
+        }
+      }
+    }
+    .wrapper2 {
+      font-size: 16px;
+      @include mobile {
+        font-size: 10px;
+      }
+    }
+  }
+}

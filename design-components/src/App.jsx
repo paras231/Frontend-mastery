@@ -1,11 +1,13 @@
 import React from 'react'
+import Card from "./Components/Card/Card";
 import Dropdown from './Components/Dropdown/Dropdown';
 import RadioButtonFilter from "./Components/Filters/RadioButtonFilter";
 const App = () => {
   return (
     <>
-    <Dropdown/>
-    <RadioButtonFilter/>
+    <Card/>
+    {/* <Dropdown/>
+    <RadioButtonFilter/> */}
     </>
   )
 }
