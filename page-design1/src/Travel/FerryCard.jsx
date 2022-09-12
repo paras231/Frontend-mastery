@@ -136,8 +136,8 @@ const StyledHrTag = styled.hr`
 
 const AmenetiesWrapper = styled.div`
   display: flex;
-  gap:14vmax;
- 
+  gap: 14vmax;
+
   margin-left: 55vmax;
 `;
 
@@ -195,31 +195,31 @@ const TextStyled = styled.p`
   font-weight: 400;
 `;
 const TwoButtonWrapper = styled.div`
- display:flex;
- gap:6vmax;
- margin-left:25vmax;
-`
+  display: flex;
+  gap: 6vmax;
+  margin-left: 20vmax;
+`;
 const CloseText = styled.p`
   color: #636363;
-  font-size:1rem;
-  font-weight:500;
-
-`
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+`;
 const ProceedButton = styled.button`
-background: linear-gradient(180deg, #2bbc89 0%, #10a476 47.92%, #44ca98 100%);
+  background: linear-gradient(180deg, #2bbc89 0%, #10a476 47.92%, #44ca98 100%);
   border-radius: 50px;
   color: white;
-  width: 15vmax;
+  width: 26vmax;
   height: 2.5vmax;
   border: none;
   outline: none;
   cursor: pointer;
-  font-size:1rem;
-`
+  font-size: 13px;
+`;
 
 const FerryCard = () => {
   const [selected, setSelected] = React.useState(null);
-
+  const [selectSeat, setSelectSeat] = React.useState("Economy");
   function SelectFerry() {
     return (
       <>
@@ -228,15 +228,36 @@ const FerryCard = () => {
             Select your seat type:
             <SeatWrapper>
               <Economy>
-                <input type="radio" />
+                <input
+                  style={{ cursor: "pointer" }}
+                  type="radio"
+                  name="package"
+                  value="Economy"
+                  checked={selectSeat === "Economy"}
+                  onChange={() => setSelectSeat("Economy")}
+                />
                 <EconomyText>Economy($230)</EconomyText>
               </Economy>
               <Luxury>
-                <input type="radio" />
+                <input
+                  style={{ cursor: "pointer" }}
+                  type="radio"
+                  name="package"
+                  value="Luxury"
+                  checked={selectSeat === "Luxury"}
+                  onChange={() => setSelectSeat("Luxury")}
+                />
                 <LuxuryText>Luxury($350)</LuxuryText>
               </Luxury>
               <Royal>
-                <input type="radio" />
+                <input
+                  style={{ cursor: "pointer" }}
+                  type="radio"
+                  name="package"
+                  value="Royal"
+                  checked={selectSeat === "Royal"}
+                  onChange={() => setSelectSeat("Royal")}
+                />
                 <RoyalText>Royal($550)</RoyalText>
               </Royal>
             </SeatWrapper>
@@ -281,16 +302,11 @@ const FerryCard = () => {
                 <TextStyled>Premium Seating</TextStyled>
               </PermiumDiv>
             </GridWrapper2>
-           
           </AmenetiesWrapper>
           <TwoButtonWrapper>
-        <CloseText>
-          Close
-        </CloseText>
-        <ProceedButton>
-        Proceed with Economy
-        </ProceedButton>
-            </TwoButtonWrapper>
+            <CloseText onClick={() => setSelected(null)}>Close</CloseText>
+            <ProceedButton>Proceed with {selectSeat}</ProceedButton>
+          </TwoButtonWrapper>
         </MainWrapper>
       </>
     );

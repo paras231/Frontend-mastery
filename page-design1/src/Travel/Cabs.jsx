@@ -44,6 +44,9 @@ const DestinationWrapper = styled.div`
     display: grid;
     height: 90vh;
   }
+  @media(min-width:992px) and (max-width: 1024px) {
+    height: 8.5vmax;
+  }
 `;
 
 const GreenWrapper = styled.div`
@@ -98,6 +101,9 @@ const FormContent = styled.div`
   @media (min-width: 376px) and (max-width: 420px) {
     width: 90vw;
     height: 20vh;
+  }
+  @media(min-width:992px) and (max-width: 1024px) {
+    height: 8.5vmax;
   }
 `;
 const FormContentText = styled.p`
@@ -245,7 +251,7 @@ const CarDesc = styled.div`
 const Sanitized = styled.div`
   display: flex;
   gap: 1vmax;
-  margin-top: -4vmax;
+  margin-top: -2vmax;
   @media (min-width: 320px) and (max-width: 375px) {
     margin-top: 19vh;
   }
@@ -265,7 +271,7 @@ const CardBookinWrapper = styled.div`
 const Cancellation = styled.div`
   width: 22vmax;
   height: 1.4vmax;
-  font-size: 1rem;
+  font-size: 14px;
   text-align: center;
   border-radius: 30px;
   border: 1px solid #0a8607;
@@ -291,6 +297,7 @@ const Cancellation = styled.div`
 const CancelText = styled.p``;
 
 const Discount = styled.div`
+font-size:14px;
   background: #ffecec;
   border: 1px solid #850000;
   border-radius: 30px;
@@ -316,6 +323,7 @@ const Discount = styled.div`
     font-size: 10px;
   }
   @media (min-width: 992px) and (max-width: 1024px) {
+    font-size:14px;
     width: 16vmax;
     height: 2vmax;
     margin-top: 12vmax;
