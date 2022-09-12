@@ -15,8 +15,17 @@ const WIndowscroll = () => {
   onWindowScroll((event) => {
     setScrollY(window.scrollY);
   });
-
-  return <>{scrollY ? <h1>hi you have scrolled</h1> : <Header />}</>;
+console.log(scrollY);
+  return (
+    <>
+      {scrollY === 100 ? (
+       document.body.style.backgroundColor="red"
+      ) : (
+       
+        document.body.style.backgroundColor="white"
+      )}
+    </>
+  );
 };
 
 export default WIndowscroll;

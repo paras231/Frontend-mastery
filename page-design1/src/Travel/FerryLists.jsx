@@ -2,11 +2,19 @@ import React from "react";
 import styled from "styled-components";
 import Line from "../assets/line.png";
 import FerryCard from "./FerryCard";
-import SelectFerry from "./SelectFerry";
+import FerryCheckbox from "./MobileView/FerryCheckbox";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTheme } from "@mui/material/styles";
 const MainContainer = styled.div`
   display: flex;
   gap: 4vmax;
   margin-top: 10vmax;
+  @media (min-width: 320px) and (max-width: 375px) {
+    padding: 10px;
+  }
+  @media (min-width: 376px) and (max-width: 420px) {
+    padding: 10px;
+  }
 `;
 
 const CheckBoxWrapperMain = styled.div`
@@ -43,19 +51,21 @@ const TimingText = styled.p`
   font-size: 1rem;
 `;
 
-
 const StyledHeading = styled.p`
- font-weight: 600;
+  font-weight: 600;
   font-size: 1.5rem;
   color: #145843;
-  margin-left:25%;
-`
-const FerryMainWrapper  = styled.div`
-display: flex;
+  margin-left: 25%;
+  @media (min-width: 320px) and (max-width: 375px) {
+    margin-left: 45%;
+  }
+`;
+const FerryMainWrapper = styled.div`
+  display: flex;
   flex-direction: column;
   flex: 3;
   gap: 3vmax;
-`
+`;
 
 const LineImage = styled.img`
   margin-top: 8vmax;
@@ -65,11 +75,16 @@ const LineImage = styled.img`
   @media (min-width: 376px) and (max-width: 420px) {
     display: none;
   }
-  `
+`;
 const FerryLists = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
     <>
+     {isMobile ? <FerryCheckbox /> : null}
       <MainContainer>
+       
         <CheckBoxWrapperMain>
           <TimingText>Timing:</TimingText>
           <CheckBoxWrapper>
@@ -81,17 +96,13 @@ const FerryLists = () => {
             <MorningText>Evening to Morning</MorningText>
           </CheckBoxWrapper>
         </CheckBoxWrapperMain>
-        <LineImage src={Line}/>
+        <LineImage src={Line} />
         <FerryMainWrapper>
-          
-                <StyledHeading>
-                    Ferry
-                </StyledHeading>
-          
-            <FerryCard  />
+          <StyledHeading>Ferry</StyledHeading>
+
+          <FerryCard />
         </FerryMainWrapper>
       </MainContainer>
-
     </>
   );
 };

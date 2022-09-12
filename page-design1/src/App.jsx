@@ -37,8 +37,8 @@ const App = () => {
     <>
     {/* <DivInput/> */}
     {/* <FerrySlider/> */}
-    {/* <FerryLists/> */}
-    <FerryInputComponent/>
+    <FerryLists/>
+    {/* <FerryInputComponent/> */}
     {/* <FerryBookingProcess/> */}
     {/* <WhyBooking/> */}
     {/* <Cabs/> */}

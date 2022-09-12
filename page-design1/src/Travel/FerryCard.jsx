@@ -14,21 +14,55 @@ const CardMainContainer = styled.div`
   background: #ffffff;
   box-shadow: 10px 11px 25px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  @media(min-width:320px) and (max-width: 375px) {
+    width:98%;
+    height:40vh;
+    gap:60px;
+    
+  }
+  @media(min-width:376px) and (max-width: 420px) {
+    width:99%;
+    height:40vh;
+    gap:60px;
+    
+  }
 `;
 const ImageDiv = styled.div``;
 const Image = styled.img`
   height: 20vmax;
+  @media(min-width:320px) and (max-width: 375px) {
+    height:40vh;
+  }
+  @media(min-width:376px) and (max-width: 420px) {
+    height:40vh;
+  }
 `;
 const DetailsMainWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2.5vmax;
   margin-top: 2.5vmax;
+  @media(min-width: 320px) and (max-width: 375px){
+   justify-items:end;
+   width:60vw;
+  }
+  @media(min-width: 376px) and (max-width: 420px){
+   justify-items:end;
+   width:60vw;
+  }
 `;
 const FerryNameDiv = styled.div`
   display: flex;
   gap: 1vmax;
   font-size: 1rem;
+  @media(min-width:320px) and (max-width: 375px) {
+    font-size:20px;
+    gap:3px;
+  }
+  @media(min-width:376px) and (max-width: 420px) {
+    font-size:20px;
+    gap:3px;
+  }
 `;
 const FerryText = styled.p``;
 const GreenText = styled.p`
@@ -40,18 +74,44 @@ const DerpartureArrivalWrapper = styled.div`
   gap: 3vmax;
   font-size: 1.2rem;
   font-weight: 400;
+  @media(min-width:320px) and (max-width: 375px) {
+    font-size:20px;
+    gap: 10px;
+  }
+  @media(min-width:376px) and (max-width: 420px) {
+    font-size:20px;
+    gap: 10px;
+  }
 `;
 const TimeDiv = styled.div`
   display: flex;
   gap: 4vmax;
   font-size: 1.2rem;
   font-weight: 400;
+  @media(min-width:320px) and (max-width: 375px) {
+    font-size:20px;
+    gap: 12px;
+  }
+  @media(min-width:376px) and (max-width: 420px) {
+    font-size:20px;
+    gap: 12px;
+  }
 `;
 const LoactionDiv = styled.div`
   display: flex;
   gap: 4vmax;
   font-size: 1rem;
   font-weight: 400;
+  @media(min-width: 320px) and (max-width: 375px){
+    font-size:16px;
+    gap: 10px;
+    font-weight: 400;
+  }
+  @media(min-width: 376px) and (max-width: 420px){
+    font-size:16px;
+    gap: 10px;
+    font-weight: 400;
+  }
 `;
 
 const PriceWrapper = styled.div`
@@ -60,12 +120,35 @@ const PriceWrapper = styled.div`
   gap: 1vmax;
   margin-top: 12vmax;
   margin-left: 9vmax;
+  @media(min-wdith: 320px) and (max-wdith:375px){
+  
+    display:none;
+  
+  }
+  @media(min-wdith: 376px) and (max-wdith:420px){
+  
+  display:none;
+
+}
 `;
 const PriceText = styled.p`
   color: #b80000;
   font-weight: 600;
   font-size: 1.5rem;
   margin-left: 1vmax;
+  @media(min-width: 320px) and (max-width: 375px){
+    font-weight: 400;
+  font-size: 14px;
+  margin-top:17vh;
+  margin-left:-60vw;
+  
+  }
+  @media(min-width: 376px) and (max-width: 420px){
+    font-weight: 400;
+  font-size: 14px;
+  margin-top:17vh;
+  margin-left:-60vw;
+  }
 `;
 const Button = styled.button`
   background: linear-gradient(180deg, #2bbc89 0%, #10a476 47.92%, #44ca98 100%);
@@ -76,6 +159,16 @@ const Button = styled.button`
   border: none;
   outline: none;
   cursor: pointer;
+  @media(min-width:320px) and (max-width: 375px) {
+    margin-left:-60vw;
+    height: 6vh;
+    width: 28vw;
+  }
+  @media(min-width:376px) and (max-width: 420px) {
+    margin-left:-60vw;
+    height: 6vh;
+    width: 25vw;
+  }
 `;
 
 //  select ferry component->
@@ -85,7 +178,21 @@ const MainWrapper = styled.div`
   flex-direction: column;
   gap: 4vmax;
   width: 40vmax;
+  @media(min-width: 320px) and (max-width: 375px){
+    width: 98%;
+    
+  }
+  @media(min-width: 376px) and (max-width: 420px){
+    width: 100%;
+    
+  }
 `;
+const StyledRadio = styled.input`
+@media(min-width:320px) and(max-width:375px){
+  width:60vw;
+  height:30vh;
+}
+`
 const SliderWrapper = styled.div``;
 const SelectSeatText = styled.p`
   font-size: 1.2rem;
@@ -95,6 +202,9 @@ const SeatWrapper = styled.div`
   display: flex;
   gap: 3vmax;
   margin-top: 2vmax;
+  @media(min-width: 320px) and (max-width: 375px){
+    gap: 30vw;
+  }
 `;
 const Economy = styled.div`
   display: flex;
@@ -130,7 +240,7 @@ const StyledHrTag = styled.hr`
   margin-top: -3vmax;
   @media (min-width: 375px) and (max-width: 420px) {
     margin-left: 0;
-    width: 70vmax;
+    width: 100%;
   }
 `;
 
@@ -139,6 +249,9 @@ const AmenetiesWrapper = styled.div`
   gap: 14vmax;
 
   margin-left: 55vmax;
+  @media(min-width: 320px) and (max-width: 375px){
+   
+  }
 `;
 
 const GridWrapper1 = styled.div`
@@ -198,6 +311,9 @@ const TwoButtonWrapper = styled.div`
   display: flex;
   gap: 6vmax;
   margin-left: 20vmax;
+  @media(min-width:320px) and (max-width: 375px){
+    margin-left:30vw;
+  }
 `;
 const CloseText = styled.p`
   color: #636363;
@@ -215,6 +331,16 @@ const ProceedButton = styled.button`
   outline: none;
   cursor: pointer;
   font-size: 13px;
+  @media(min-width: 320px) and (max-width: 375px){
+    height: 6vh;
+    font-weight: 700;
+    font-size:0.8rem;
+  }
+  @media(min-width: 376px) and (max-width: 420px){
+    height: 6vh;
+    font-size:1rem;
+    font-weight: 700;
+  }
 `;
 
 const FerryCard = () => {
@@ -239,7 +365,7 @@ const FerryCard = () => {
                 <EconomyText>Economy($230)</EconomyText>
               </Economy>
               <Luxury>
-                <input
+                <StyledRadio
                   style={{ cursor: "pointer" }}
                   type="radio"
                   name="package"
@@ -250,7 +376,7 @@ const FerryCard = () => {
                 <LuxuryText>Luxury($350)</LuxuryText>
               </Luxury>
               <Royal>
-                <input
+                <StyledRadio
                   style={{ cursor: "pointer" }}
                   type="radio"
                   name="package"
