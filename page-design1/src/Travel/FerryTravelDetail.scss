@@ -14,6 +14,9 @@
   gap: 3vmax;
   margin-top: 10vmax;
   flex: 1;
+  @include ipad {
+    margin-left: 10%;
+  }
 }
 
 .summary-wrapper {
@@ -357,4 +360,24 @@
 }
 .mobile-input::placeholder {
   padding-left: 10px;
+}
+
+.button-proceed {
+  width: 10vmax;
+  height: 2.5vmax;
+  margin-bottom: 10px;
+  border-radius: 35px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 40%;
+  background: linear-gradient(90deg, #2fbf8c 0%, #0da274 54.69%, #4ed19e 100%);
+  @include mobile {
+    width: 33vw;
+    height: 5vh;
+    margin-left: 35%;
+  }
 }
