@@ -4,7 +4,8 @@ import Home from "./Home";
 import Post from "./Post";
 import Cart from "./Cart";
 import Page1 from "./Pages/Page1";
-import {BrowserRouter,Route,Routes} from "react-router-dom";
+import Page2 from "./Pages/Page2";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 const App = () => {
   return (
     <>
@@ -13,9 +14,10 @@ const App = () => {
       <Post /> */}
       {/* <Cart/> */}
       <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Page1/>}/>
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Page1 />} />
+          <Route path="/page2" element={<Page2 />} />
+        </Routes>
       </BrowserRouter>
     </>
   );

@@ -2,43 +2,46 @@ import React from "react";
 import { addInput } from "../Redux/inputSlice";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 const Page1 = () => {
   // this is the parent page
   const dispatch = useDispatch();
 
-  const [name, setName] = React.useState("");
-  const [age, setAge] = React.useState("");
-  const [location, setLocation] = React.useState("");
+  const [username, setUsrename] = React.useState("");
+  const [email, setEmail] = React.useState("");
+  const [password, setPassword] = React.useState("");
+
   const handleClick = (e) => {
     e.preventDefault();
-    dispatch(addInput(name));
-    console.log(name,age,location)
+    console.log(username, email, password);
+    dispatch(addInput({username, email, password }));
   };
-  const  inputs  = useSelector((state) => state.inputs);
+  const inputs = useSelector((state) => state.inputs);
   console.log(inputs, "all data here");
   return (
     <>
       <form onSubmit={handleClick}>
         <input
+          placeholder="username"
           type="text"
-          placeholder="Name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
+          value={username}
+          onChange={(e) => setUsrename(e.target.value)}
         />
         <input
+          placeholder="email"
           type="text"
-          placeholder="Age"
-          value={age}
-          onChange={(e) => setAge(e.target.value)}
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
         <input
+          placeholder="password"
           type="text"
-          placeholder="Location"
-          value={location}
-          onChange={(e) => setLocation(e.target.value)}
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
         />
         <button type="submit">Submit</button>
       </form>
+      <Link to="/page2">Page2</Link>
     </>
   );
 };
