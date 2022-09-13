@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import FerryTravelDetail from "./Travel/FerryTravelDetail";
 import DivInput from "./AdvancedComponents/DivInput";
 import FerrySlider from "./Travel/FerrySlider";
 import FerryLists from "./Travel/FerryLists";
@@ -35,15 +36,16 @@ const App = () => {
   const user = true;
   return (
     <>
-    {/* <DivInput/> */}
-    {/* <FerrySlider/> */}
-    <FerryLists/>
-    {/* <FerryInputComponent/> */}
-    {/* <FerryBookingProcess/> */}
-    {/* <WhyBooking/> */}
-    {/* <Cabs/> */}
-    {/* <MultipleInputs/> */}
-    {/* <Share/> */}
+      <FerryTravelDetail />
+      {/* <DivInput/> */}
+      {/* <FerrySlider/> */}
+      {/* <FerryLists/> */}
+      {/* <FerryInputComponent/> */}
+      {/* <FerryBookingProcess/> */}
+      {/* <WhyBooking/> */}
+      {/* <Cabs/> */}
+      {/* <MultipleInputs/> */}
+      {/* <Share/> */}
       {/* <Category />
       <Products />
       <Footer /> */}

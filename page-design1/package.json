@@ -23,6 +23,7 @@
     "react-simple-image-slider": "^2.4.1",
     "react-slick": "^0.29.0",
     "react-slideshow-image": "^4.0.5",
+    "sass": "^1.54.9",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.5"
   },
