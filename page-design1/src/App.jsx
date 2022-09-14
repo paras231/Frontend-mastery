@@ -1,7 +1,8 @@
 import React from "react";
 import "./App.css";
+import LayoutTesting from "./AntDesignComponents/LayoutTesting";
+import Test1 from "./AntDesignComponents/Test1";
 import EditFerryTravelDetail from "./Travel/EditFerryTravelDetail";
-
 import FerryTravelDetail from "./Travel/FerryTravelDetail";
 import DivInput from "./AdvancedComponents/DivInput";
 import FerrySlider from "./Travel/FerrySlider";
@@ -38,7 +39,9 @@ const App = () => {
   const user = true;
   return (
     <>
-    <EditFerryTravelDetail/>
+      {/* <LayoutTesting /> */}
+      {/* <Test1/> */}
+      <EditFerryTravelDetail/>
       {/* <FerryTravelDetail /> */}
       {/* <DivInput/> */}
       {/* <FerrySlider/> */}

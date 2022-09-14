@@ -58,15 +58,41 @@
   font-size: 16px;
   font-weight: 500;
 }
-.passanger-detail{
-    display: flex;
-    gap: 3vmax;
+.passanger-detail {
+  display: flex;
+  gap: 3vmax;
 }
-.passanger-wrapper{
-    display: flex;
-    flex-direction: column;
+.passanger-wrapper {
+  display: flex;
+  flex-direction: column;
 }
-.passanger-text{
-    font-size: 0.9rem;
-    font-weight: 600;
+.passanger-text {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.payment-process-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3vmax;
+}
+.grand-total-wrapper {
+  display: flex;
+  gap: 43vmax;
+}
+.grand-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.pay-now-wrapper {
+  display: flex;
+  gap: 46vmax;
+}
+.payment-confirmation-wrapper {
+  display: flex;
+  gap: 35.5vmax;
+}
+
+.line-image{
+  height: 90vmax;
 }

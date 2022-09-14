@@ -1,0 +1,58 @@
+@mixin mobile {
+  @media (min-width: 320px) and (max-width: 480px) {
+    @content;
+  }
+}
+
+.container {
+  text-align: center;
+}
+.main-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+}
+
+.nav-wrapper {
+  ul {
+    display: flex;
+    gap: 3vmax;
+    list-style-type: none;
+  }
+  ul > li {
+    cursor: pointer;
+  }
+  ul > li:hover {
+    color: crimson;
+  }
+  @include mobile {
+    display: none;
+  }
+}
+
+.main-layout {
+  text-align: center;
+  @include mobile {
+    height: 40vh;
+  }
+}
+
+.content-container {
+  img {
+    object-fit: contain;
+    width: 100%;
+    height: 70%;
+    @include mobile {
+      width: 60%;
+    }
+  }
+}
+
+.sider-container {
+  img {
+    height: 12vmax;
+    width: 100%;
+  }
+  background-color: white;
+}
