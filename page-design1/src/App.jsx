@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.css";
+import EditFerryTravelDetail from "./Travel/EditFerryTravelDetail";
+
 import FerryTravelDetail from "./Travel/FerryTravelDetail";
 import DivInput from "./AdvancedComponents/DivInput";
 import FerrySlider from "./Travel/FerrySlider";
@@ -36,7 +38,8 @@ const App = () => {
   const user = true;
   return (
     <>
-      <FerryTravelDetail />
+    <EditFerryTravelDetail/>
+      {/* <FerryTravelDetail /> */}
       {/* <DivInput/> */}
       {/* <FerrySlider/> */}
       {/* <FerryLists/> */}

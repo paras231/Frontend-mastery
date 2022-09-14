@@ -4,7 +4,7 @@ import Line from "../assets/line.png";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import FerryTravelSummary from "./MobileView/FerryTravelSummary";
-
+import { useForm } from "react-hook-form";
 const FerryTravelDetail = () => {
   const nationList = [
     "India",
@@ -26,6 +26,7 @@ const FerryTravelDetail = () => {
   const [email, setEmail] = useState("");
   const [mobile, setMobile] = useState("");
   const [alternateMobile, setAlternateMobile] = useState("");
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(
