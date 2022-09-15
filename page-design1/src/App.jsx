@@ -31,6 +31,7 @@ import Footer2 from "./components/Footer2";
 import AmazoneHome from "./Pages/AmazoneHome";
 import Form from "./components/Form";
 import Login from "./components/Login";
+import Test3 from "./components/Test3";
 import MultipleInputs from "./AdvancedComponents/MultipleInputs";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
@@ -41,8 +42,9 @@ const App = () => {
   const user = true;
   return (
     <>
-    <HotelSelection/>
-    {/* <WaterActivityMain/> */}
+      <Test3 />
+      <HotelSelection/>
+      {/* <WaterActivityMain/> */}
       {/* <LayoutTesting /> */}
       {/* <Test1/> */}
       {/* <EditFerryTravelDetail/> */}

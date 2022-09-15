@@ -4,7 +4,7 @@
 
 .hotel-detail-section {
   width: 90vmax;
-  height: 40vmax;
+  height: 27vmax;
   display: flex;
   gap: 2vmax;
   margin-left: 5%;
@@ -13,7 +13,7 @@
 .big {
   img {
     width: 40vmax;
-    height: 20vmax;
+    height: 27vmax;
     border-radius: 5px;
   }
 }
@@ -92,4 +92,54 @@
   border: none;
   outline: none;
   cursor: pointer;
+}
+.checkout-detail-div {
+  display: flex;
+  flex-direction: column;
+  gap: 3vmax;
+  margin-top: 3vmax;
+}
+
+.breakfast-free {
+  width: 33vmax;
+  height: 3vmax;
+  border: 1px;
+  box-sizing: border-box;
+  border: 1px solid #2fbf8c;
+  text-align: center;
+  color: #145843;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+.checkout-checkin{
+  text-align: center;
+  gap: 6vmax;
+  display: flex;
+  border: 1px solid #2fbf8c;
+  width: 33vmax;
+  height: 4vmax;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.checkin{
+  display: flex;
+  flex-direction: column;
+  gap: 0.3vmax;
+
+}
+
+.about-hotel{
+  color: #145843;
+  margin-top: 4vmax;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.about-para{
+  width: 90vmax;
+}
+.heading_styled{
+  color: red;
 }

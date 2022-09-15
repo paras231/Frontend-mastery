@@ -42,8 +42,35 @@ const HotelSelection = () => {
                 View 5 More Options
               </button>
             </div>
+            <div className="checkout-detail-div">
+              <div className="breakfast-free">Free Breakfast Available</div>
+              <div className="checkout-checkin">
+                <div className="checkin">
+                  <p>check in</p>
+                  <p> 12pm</p>
+                </div>
+                <div className="checkin">
+                  <p>check out</p>
+                  <p> 12pm</p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
+        {/* section finished */}
+        {/* centered about text */}
+        <center className="about-hotel">About Vulputate mattis Hotel</center>
+        <center>
+          <div className="about-para">
+            Felis vitae, habitasse ipsum dolor semper semper sed. Augue nibh
+            diam amet, donec integer egestas faucibus non augue. Id ullamcorper
+            ullamcorper integer volutpat. Turpis et, sed tellus a nullam odio
+            nibh imperdiet id. Nulla tincidunt fermentum habitant donec. Massa a
+            commodo, tellus fusce. Semper molestie morbi aliquam, in
+            pellentesque.
+          </div>
+          <h1 className="heading_styled">Hello new heading</h1>
+        </center>
       </div>
     </>
   );
