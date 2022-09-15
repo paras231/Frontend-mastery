@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import HotelSelection from "./Travel/Hotel/HotelSelection";
 import WaterActivityMain from "./Travel/Wateractivity/WaterActivityMain";
 import LayoutTesting from "./AntDesignComponents/LayoutTesting";
 import Test1 from "./AntDesignComponents/Test1";
@@ -40,7 +41,8 @@ const App = () => {
   const user = true;
   return (
     <>
-    <WaterActivityMain/>
+    <HotelSelection/>
+    {/* <WaterActivityMain/> */}
       {/* <LayoutTesting /> */}
       {/* <Test1/> */}
       {/* <EditFerryTravelDetail/> */}

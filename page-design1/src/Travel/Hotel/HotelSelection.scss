@@ -1,0 +1,95 @@
+.hotel-selection-main-container {
+  margin-top: 5vmax;
+}
+
+.hotel-detail-section {
+  width: 90vmax;
+  height: 40vmax;
+  display: flex;
+  gap: 2vmax;
+  margin-left: 5%;
+  box-sizing: border-box;
+}
+.big {
+  img {
+    width: 40vmax;
+    height: 20vmax;
+    border-radius: 5px;
+  }
+}
+.image-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2vmax;
+  img {
+    width: 9vmax;
+    height: 9vmax;
+    border-radius: 5px;
+  }
+}
+.hotel-room-detail {
+  background: rgba(92, 203, 160, 0.5);
+  gap: 1vmax;
+  height: 14vmax;
+  width: 33vmax;
+  border-radius: 10px;
+}
+.hotel-room-detail-child {
+  display: flex;
+  padding: 3%;
+  width: 29vmax;
+  height: 12vmax;
+}
+.price-detail-div {
+  display: flex;
+  flex-direction: column;
+  width: 40vmax;
+  margin-top: 3%;
+}
+
+.price-detail-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+.price-detail-text-red {
+  color: #bd0000;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.adult-count {
+  display: flex;
+  flex-direction: column;
+  gap: 2vmax;
+}
+
+.coupel-image-text {
+  margin-left: 3vmax;
+  width: 10vmax;
+  display: flex;
+  gap: 3px;
+  font-size: 15px;
+  font-weight: 400;
+  img {
+    width: 1.5vmax;
+    height: 1.5vmax;
+  }
+}
+
+.view-option {
+  position: absolute;
+  margin-left: 7vmax;
+  margin-top: -2vmax;
+}
+
+.view-option-button {
+  background: linear-gradient(90deg, #2fbf8c 0%, #0da274 54.69%, #4ed19e 100%);
+  font-size: 1.2rem;
+  color: white;
+  width: 19vmax;
+  height: 3vmax;
+  border-radius: 35px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
