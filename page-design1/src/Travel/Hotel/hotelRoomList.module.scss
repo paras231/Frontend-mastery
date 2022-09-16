@@ -22,6 +22,7 @@
   display: flex;
   flex-direction: column;
   gap: 2vmax;
+  margin-top: 2vmax;
 }
 .detailCard1 {
   display: flex;
@@ -81,6 +82,7 @@
   display: flex;
   flex-direction: column;
   gap: 6vmax;
+  margin-top: 2vmax;
 }
 .grid2Child {
   height: 30vmax;
@@ -98,6 +100,58 @@
     }
     .blueText {
       color: #0085ff;
+    }
+  }
+}
+
+.gridDiv3 {
+  display: flex;
+  flex-direction: column;
+  gap: 5vmax;
+  margin-top: 2vmax;
+  .inclusionDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 1vmax;
+    width: 17vmax;
+    .inclusionChild1 {
+      display: flex;
+      gap: 2vmax;
+      width: 16vmax;
+      img {
+        width: 2vmax;
+        height: 2vmax;
+      }
+    }
+  }
+}
+
+.gridDiv4 {
+  display: flex;
+  flex-direction: column;
+  gap: 5vmax;
+  margin-top: 2vmax;
+  .priceDiv {
+    display: flex;
+    flex-direction: column;
+
+    .darkPrice {
+      font-weight: 600;
+    }
+    .redPrice {
+      color: #bd0000;
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+    .selectButton {
+      width: 10vmax;
+      height: 2vmax;
+      background-color: transparent;
+      border: 1px solid #3362cc;
+      cursor: pointer;
+      color: #3362cc;
+      font-weight: 600;
+      margin-top: 2vmax;
     }
   }
 }

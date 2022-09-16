@@ -5,6 +5,7 @@ import Couple from "../../assets/Couple.png";
 import roomsize from "../../assets/roomsize.png";
 import kingsizebed from "../../assets/kingsizebed.png";
 import windowimg from "../../assets/window.png";
+import checkmark from "../../assets/checkmark.png";
 
 const HotelRoomList = () => {
   return (
@@ -130,6 +131,135 @@ const HotelRoomList = () => {
                 <p className={styles.textRed}>Non Refundable</p>
                 <p className={styles.blueText}>Cancelletion Policy</p>
               </div>
+            </div>
+          </div>
+          <div className={styles.gridDiv3}>
+            <div className={styles.inclusionDiv}>
+              <div className={styles.inclusionChild1}>
+                <img src={checkmark} alt="check" />
+                <p>
+                  Book now & avail happy hours from 1100 hrs to 1800 hrs and 10%
+                  discount on food and 20% discount on Buffet
+                </p>
+              </div>
+              <div className={styles.inclusionChild1}>
+                <img src={checkmark} alt="check" />
+                <p>Late Check out up-to 2 hours (subject to availability)</p>
+              </div>
+            </div>
+            <div className={styles.inclusionDiv}>
+              <div className={styles.inclusionChild1}>
+                <img src={checkmark} alt="check" />
+                <p>
+                  Book now & avail happy hours from 1100 hrs to 1800 hrs and 10%
+                  discount on food and 20% discount on Buffet
+                </p>
+              </div>
+              <div className={styles.inclusionChild1}>
+                <img src={checkmark} alt="check" />
+                <p>Late Check out up-to 2 hours (subject to availability)</p>
+              </div>
+            </div>
+            <div className={styles.inclusionDiv}>
+              <div className={styles.inclusionChild1}>
+                <img src={checkmark} alt="check" />
+                <p>
+                  Book now & avail happy hours from 1100 hrs to 1800 hrs and 10%
+                  discount on food and 20% discount on Buffet
+                </p>
+              </div>
+              <div className={styles.inclusionChild1}>
+                <img src={checkmark} alt="check" />
+                <p>Late Check out up-to 2 hours (subject to availability)</p>
+              </div>
+            </div>
+            <div className={styles.inclusionDiv}>
+              <div className={styles.inclusionChild1}>
+                <img src={checkmark} alt="check" />
+                <p>
+                  Book now & avail happy hours from 1100 hrs to 1800 hrs and 10%
+                  discount on food and 20% discount on Buffet
+                </p>
+              </div>
+              <div className={styles.inclusionChild1}>
+                <img src={checkmark} alt="check" />
+                <p>Late Check out up-to 2 hours (subject to availability)</p>
+              </div>
+            </div>
+            <div className={styles.inclusionDiv}>
+              <div className={styles.inclusionChild1}>
+                <img src={checkmark} alt="check" />
+                <p>
+                  Book now & avail happy hours from 1100 hrs to 1800 hrs and 10%
+                  discount on food and 20% discount on Buffet
+                </p>
+              </div>
+              <div className={styles.inclusionChild1}>
+                <img src={checkmark} alt="check" />
+                <p>Late Check out up-to 2 hours (subject to availability)</p>
+              </div>
+            </div>
+          </div>
+          <div className={styles.gridDiv4}>
+            <div className={styles.priceDiv}>
+                <p>Price Starts At</p>
+                <p>Per Night</p>
+                <p className={styles.darkPrice}>$365</p>
+                <p className={styles.redPrice}>$250</p>
+                <p>+$25 taxes & fees</p>
+                <button className={styles.selectButton}>
+                Select Room
+                </button>
+            </div>
+            <div className={styles.priceDiv}>
+                <p>Price Starts At</p>
+                <p>Per Night</p>
+                <p className={styles.darkPrice}>$365</p>
+                <p className={styles.redPrice}>$250</p>
+                <p>+$25 taxes & fees</p>
+                <button className={styles.selectButton}>
+                Select Room
+                </button>
+            </div>
+            <div className={styles.priceDiv}>
+                <p>Price Starts At</p>
+                <p>Per Night</p>
+                <p className={styles.darkPrice}>$365</p>
+                <p className={styles.redPrice}>$250</p>
+                <p>+$25 taxes & fees</p>
+                <button className={styles.selectButton}>
+                Select Room
+                </button>
+            </div>
+            <div className={styles.priceDiv}>
+                <p>Price Starts At</p>
+                <p>Per Night</p>
+                <p className={styles.darkPrice}>$365</p>
+                <p className={styles.redPrice}>$250</p>
+                <p>+$25 taxes & fees</p>
+                <button className={styles.selectButton}>
+                Select Room
+                </button>
+            </div>
+            <div className={styles.priceDiv}>
+                <p>Price Starts At</p>
+                <p>Per Night</p>
+                <p className={styles.darkPrice}>$365</p>
+                <p className={styles.redPrice}>$250</p>
+                <p>+$25 taxes & fees</p>
+                <button className={styles.selectButton}>
+                Select Room
+                </button>
+            </div>
+            <div className={styles.priceDiv}>
+                <p>Price Starts At</p>
+                <p>Per Night</p>
+                <p className={styles.darkPrice}>$365</p>
+                <p className={styles.redPrice}>$250</p>
+                <p>+$25 taxes & fees</p>
+                <button className={styles.selectButton}>
+                Select Room
+                </button>
             </div>
           </div>
         </div>

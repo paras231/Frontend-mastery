@@ -9,6 +9,7 @@ import Line from "../../assets/line.png";
 import { BsArrowRight } from "react-icons/bs";
 import { IoIosBed } from "react-icons/io";
 import HotelRoomList from "./HotelRoomList";
+
 const HotelSelection = () => {
   return (
     <>
