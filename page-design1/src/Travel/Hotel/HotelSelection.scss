@@ -1,3 +1,9 @@
+@mixin ipad {
+  @media (min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
+    @content;
+  }
+}
+
 .hotel-selection-main-container {
   margin-top: 5vmax;
 }
@@ -9,12 +15,20 @@
   gap: 2vmax;
   margin-left: 5%;
   box-sizing: border-box;
+  @include ipad {
+    width: 70vmax;
+    margin-left: 2%;
+  }
 }
 .big {
   img {
     width: 40vmax;
     height: 27vmax;
     border-radius: 5px;
+    @include ipad {
+      width: 25vmax;
+      height: 25vmax;
+    }
   }
 }
 .image-grid {
@@ -50,6 +64,9 @@
 .price-detail-text {
   font-size: 16px;
   font-weight: 500;
+  @include ipad {
+    font-size: 12px;
+  }
 }
 .price-detail-text-red {
   color: #bd0000;
@@ -70,6 +87,9 @@
   gap: 3px;
   font-size: 15px;
   font-weight: 400;
+  @include ipad {
+    font-size: 13px;
+  }
   img {
     width: 1.5vmax;
     height: 1.5vmax;
@@ -80,6 +100,9 @@
   position: absolute;
   margin-left: 7vmax;
   margin-top: -2vmax;
+  @include ipad {
+    margin-left: 9vmax;
+  }
 }
 
 .view-option-button {
@@ -92,6 +115,10 @@
   border: none;
   outline: none;
   cursor: pointer;
+  @include ipad {
+    width: 15vmax;
+    font-size: 14px;
+  }
 }
 .checkout-detail-div {
   display: flex;
@@ -110,9 +137,12 @@
   color: #145843;
   font-weight: 500;
   padding-top: 10px;
+  @include ipad {
+    padding-top: 3px;
+  }
 }
 
-.checkout-checkin{
+.checkout-checkin {
   text-align: center;
   gap: 6vmax;
   display: flex;
@@ -121,73 +151,86 @@
   height: 4vmax;
   font-size: 1rem;
   font-weight: 500;
+  @include ipad {
+    font-size: 12px;
+    font-weight: 600;
+  }
 }
 
-.checkin{
+.checkin {
   display: flex;
   flex-direction: column;
   gap: 0.3vmax;
-
 }
 
-.about-hotel{
+.about-hotel {
   color: #145843;
   margin-top: 4vmax;
   font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
 }
-.about-para{
+.about-para {
   width: 90vmax;
+  @include ipad {
+    width: 60vmax;
+    font-size :13px;
+  }
 }
 
 // middle section styles->
-.middle-section{
+.middle-section {
   margin-left: 5%;
   margin-top: 3vmax;
 }
 
-.middle-sectin-div{
+.middle-sectin-div {
   display: flex;
-  gap:4vmax;
+  gap: 4vmax;
   height: 12vmax;
 }
-.middle-section-left-part{
+.middle-section-left-part {
   display: flex;
   flex-direction: column;
   gap: 2vmax;
 }
-.circle-text-wrapper{
+.circle-text-wrapper {
   display: flex;
   gap: 1vmax;
-  img{
+  img {
     width: 1.2vmax;
     height: 1.3vmax;
   }
-  p{
+  p {
     font-size: 1rem;
     font-weight: 400;
+    @include ipad {
+      font-size:12px
+    }
   }
 }
-.middle-section-right-part{
+.middle-section-right-part {
   display: flex;
   gap: 2vmax;
 }
-.middle-right-grid-1{
+.middle-right-grid-1 {
   display: flex;
   flex-direction: column;
   gap: 2vmax;
 }
-.right-detail-div{
+.right-detail-div {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   border: 1px solid #2fbf8c;
   width: 17vmax;
   height: 2vmax;
   cursor: pointer;
   font-size: 15px;
+  @include ipad{
+    font-size:12px;
+  }
 }
-.right-arrow{
+.right-arrow {
   width: 1.5vmax;
   height: 1.5vmax;
   margin-top: 0.2vmax;

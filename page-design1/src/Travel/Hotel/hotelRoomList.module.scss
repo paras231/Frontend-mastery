@@ -1,5 +1,15 @@
+
+@mixin ipad {
+  @media (min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
+    @content;
+  }
+}
+
 .hotelListMainWrapper {
   margin-top: 3vmax;
+  @include ipad{
+    margin-top: 10vmax;
+  }
 }
 .mainGreenbgDiv {
   width: 96%;
@@ -23,6 +33,10 @@
   flex-direction: column;
   gap: 2vmax;
   margin-top: 2vmax;
+  @include ipad{
+    gap: 5vmax;
+    
+  }
 }
 .detailCard1 {
   display: flex;
@@ -31,10 +45,17 @@
   height: 34vmax;
   border: 2px solid #e9e9e9;
   width: 25vmax;
+  @include ipad{
+   font-size:12px;
+    
+  }
 }
 .roomTitle {
   font-size: 1.2rem;
   font-weight: 600;
+  @include ipad{
+    font-size:12px;
+  }
 }
 .accomodations {
   display: flex;
@@ -75,6 +96,9 @@
     font-size: 1.2rem;
     font-weight: 600;
     cursor: pointer;
+    @include ipad {
+      font-size:14px;
+    }
   }
 }
 
@@ -87,6 +111,9 @@
 .grid2Child {
   height: 30vmax;
   width: 15vmax;
+  @include ipad {
+    font-size:12px
+  }
   .child1 {
     display: flex;
     flex-direction: column;
@@ -118,6 +145,9 @@
       display: flex;
       gap: 2vmax;
       width: 16vmax;
+      @include ipad {
+        font-size: 12px;
+      }
       img {
         width: 2vmax;
         height: 2vmax;
@@ -131,6 +161,9 @@
   flex-direction: column;
   gap: 5vmax;
   margin-top: 2vmax;
+  @include ipad {
+    font-size:12px
+  }
   .priceDiv {
     display: flex;
     flex-direction: column;
