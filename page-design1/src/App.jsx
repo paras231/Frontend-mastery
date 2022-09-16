@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import HotelPaymentDetail from  "./Travel/Hotel/HotelPaymentDetail";
 import HotelSelection from "./Travel/Hotel/HotelSelection";
 import WaterActivityMain from "./Travel/Wateractivity/WaterActivityMain";
 import LayoutTesting from "./AntDesignComponents/LayoutTesting";
@@ -43,7 +44,8 @@ const App = () => {
   return (
     <>
       {/* <Test3 /> */}
-      <HotelSelection/>
+      {/* <HotelSelection/> */}
+      <HotelPaymentDetail/>
       {/* <WaterActivityMain/> */}
       {/* <LayoutTesting /> */}
       {/* <Test1/> */}

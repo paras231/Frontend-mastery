@@ -5,7 +5,7 @@
 }
 
 .hotel-selection-main-container {
-  margin-top: 5vmax;
+  margin-top: 15vmax;
 }
 
 .hotel-detail-section {
@@ -174,7 +174,7 @@
   width: 90vmax;
   @include ipad {
     width: 60vmax;
-    font-size :13px;
+    font-size: 13px;
   }
 }
 
@@ -205,7 +205,7 @@
     font-size: 1rem;
     font-weight: 400;
     @include ipad {
-      font-size:12px
+      font-size: 12px;
     }
   }
 }
@@ -226,8 +226,8 @@
   height: 2vmax;
   cursor: pointer;
   font-size: 15px;
-  @include ipad{
-    font-size:12px;
+  @include ipad {
+    font-size: 12px;
   }
 }
 .right-arrow {

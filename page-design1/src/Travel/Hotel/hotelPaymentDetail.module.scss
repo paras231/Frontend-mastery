@@ -1,0 +1,52 @@
+.mainContainer {
+  display: flex;
+  gap: 2vmax;
+  width: 96%;
+  margin-left: 2%;
+  box-sizing: border-box;
+  margin-top: 15vmax;
+}
+.leftMainSection {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  height: 140vmax;
+  background-color: yellow;
+  .leftMainDiv1 {
+    background: purple;
+    width: 100%;
+    height: 40%;
+    box-shadow: 6px 8px 23px rgba(122, 122, 122, 0.1);
+    border-radius: 12px;
+    border: 1px solid red;
+    .infoText {
+      margin:2vmax 4vmax;
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+  }
+}
+
+.rightMainSection {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: red;
+  height: 140vmax;
+}
+
+
+.hotelInfo{
+    display: flex;
+    gap: 2vmax;
+   margin: 2vmax 2vmax;
+}
+.infoDetail{
+    display: flex;
+    flex-direction: column;
+    gap: 1vmax;
+    .starDiv{
+        display: flex;
+        gap: 1vmax;
+    }
+}

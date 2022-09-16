@@ -263,7 +263,9 @@ const HotelRoomList = () => {
             </div>
           </div>
         </div>
+       
       </section>
+
     </>
   );
 };
