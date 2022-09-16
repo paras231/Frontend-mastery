@@ -140,6 +140,56 @@
 .about-para{
   width: 90vmax;
 }
-.heading_styled{
-  color: red;
+
+// middle section styles->
+.middle-section{
+  margin-left: 5%;
+  margin-top: 3vmax;
+}
+
+.middle-sectin-div{
+  display: flex;
+  gap:4vmax;
+  height: 12vmax;
+}
+.middle-section-left-part{
+  display: flex;
+  flex-direction: column;
+  gap: 2vmax;
+}
+.circle-text-wrapper{
+  display: flex;
+  gap: 1vmax;
+  img{
+    width: 1.2vmax;
+    height: 1.3vmax;
+  }
+  p{
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+.middle-section-right-part{
+  display: flex;
+  gap: 2vmax;
+}
+.middle-right-grid-1{
+  display: flex;
+  flex-direction: column;
+  gap: 2vmax;
+}
+.right-detail-div{
+  display: flex;
+  justify-content:space-around;
+  border: 1px solid #2fbf8c;
+  width: 17vmax;
+  height: 2vmax;
+  cursor: pointer;
+  font-size: 15px;
+}
+.right-arrow{
+  width: 1.5vmax;
+  height: 1.5vmax;
+  margin-top: 0.2vmax;
+  font-weight: bold;
 }

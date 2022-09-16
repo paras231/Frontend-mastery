@@ -42,7 +42,7 @@ const App = () => {
   const user = true;
   return (
     <>
-      <Test3 />
+      {/* <Test3 /> */}
       <HotelSelection/>
       {/* <WaterActivityMain/> */}
       {/* <LayoutTesting /> */}

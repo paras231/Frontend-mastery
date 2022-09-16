@@ -1,0 +1,103 @@
+.hotelListMainWrapper {
+  margin-top: 3vmax;
+}
+.mainGreenbgDiv {
+  width: 96%;
+  background: linear-gradient(90deg, #2ebe8b 0%, #11a576 49.48%, #49ce9b 100%);
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  color: white;
+  padding-top: 1vmax;
+  height: 3vmax;
+  margin-left: 2%;
+  font-weight: 600;
+}
+.gridMainDiv {
+  width: 96%;
+  display: flex;
+  justify-content: space-around;
+}
+.gridDiv1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2vmax;
+}
+.detailCard1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1vmax;
+  height: 34vmax;
+  border: 2px solid #e9e9e9;
+  width: 25vmax;
+}
+.roomTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.accomodations {
+  display: flex;
+  gap: 1vmax;
+  img {
+    height: 1.5vmax;
+    width: 1.5vmax;
+  }
+}
+.roomSize {
+  display: flex;
+  gap: 1vmax;
+  img {
+    height: 1.5vmax;
+    width: 1.5vmax;
+  }
+}
+.kingSizedBed {
+  display: flex;
+  gap: 1vmax;
+  img {
+    height: 1.5vmax;
+    width: 1.5vmax;
+  }
+}
+.cityView {
+  display: flex;
+  gap: 1vmax;
+  img {
+    height: 1.5vmax;
+    width: 1.5vmax;
+  }
+}
+.viewMore {
+  p {
+    text-decoration: underline;
+    color: #0085ff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
+
+.gridDiv2 {
+  display: flex;
+  flex-direction: column;
+  gap: 6vmax;
+}
+.grid2Child {
+  height: 30vmax;
+  width: 15vmax;
+  .child1 {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e9e9e9;
+    height: 20vmax;
+    .textdark {
+      font-weight: 700;
+    }
+    .textRed {
+      color: #c90e0e;
+    }
+    .blueText {
+      color: #0085ff;
+    }
+  }
+}

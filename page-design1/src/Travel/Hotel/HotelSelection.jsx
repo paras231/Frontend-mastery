@@ -4,7 +4,11 @@ import bedroom from "../../assets/bedroom.png";
 import hotel1 from "../../assets/hotel1.png";
 import hotel2 from "../../assets/hotel2.png";
 import Couple from "../../assets/Couple.png";
-
+import green from "../../assets/green_circle.png";
+import Line from "../../assets/line.png";
+import { BsArrowRight } from "react-icons/bs";
+import { IoIosBed } from "react-icons/io";
+import HotelRoomList from "./HotelRoomList";
 const HotelSelection = () => {
   return (
     <>
@@ -69,9 +73,73 @@ const HotelSelection = () => {
             commodo, tellus fusce. Semper molestie morbi aliquam, in
             pellentesque.
           </div>
-          <h1 className="heading_styled">Hello new heading</h1>
         </center>
+        <section className="middle-section">
+          <div className="middle-sectin-div">
+            <div className="middle-section-left-part">
+              <div className="circle-text-wrapper">
+                <img src={green} alt="greenbg" />
+                <p>
+                  Blandit diam quisque pellentesque habitant suspendisse nam
+                  feugiat.
+                </p>
+              </div>
+              <div className="circle-text-wrapper">
+                <img src={green} alt="greenbg" />
+                <p>
+                  Blandit diam quisque pellentesque habitant suspendisse nam
+                  feugiat.
+                </p>
+              </div>
+              <div className="circle-text-wrapper">
+                <img src={green} alt="greenbg" />
+                <p>
+                  Blandit diam quisque pellentesque habitant suspendisse nam
+                  feugiat.
+                </p>
+              </div>
+            </div>
+            <img src={Line} className="middle-section-line" />
+            <div className="middle-section-right-part">
+              <div className="middle-right-grid-1">
+                <div className="right-detail-div">
+                  <IoIosBed />
+                  <p>Food And Dining</p>
+                  <BsArrowRight className="right-arrow" />
+                </div>
+                <div className="right-detail-div">
+                  <IoIosBed />
+                  <p>Food And Dining</p>
+                  <BsArrowRight className="right-arrow" />
+                </div>
+                <div className="right-detail-div">
+                  <IoIosBed />
+                  <p>Food And Dining</p>
+                  <BsArrowRight className="right-arrow" />
+                </div>
+              </div>
+              <div className="middle-right-grid-1">
+                <div className="right-detail-div">
+                  <IoIosBed />
+                  <p>Food And Dining</p>
+                  <BsArrowRight className="right-arrow" />
+                </div>
+                <div className="right-detail-div">
+                  <IoIosBed />
+                  <p>Food And Dining</p>
+                  <BsArrowRight className="right-arrow" />
+                </div>
+                <div className="right-detail-div">
+                  <IoIosBed />
+                  <p>Food And Dining</p>
+                  <BsArrowRight className="right-arrow" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
+      <HotelRoomList/>
     </>
   );
 };
