@@ -10,17 +10,16 @@
   display: flex;
   flex-direction: column;
   flex: 2;
-  height: 140vmax;
-  background-color: yellow;
+  height: 160vmax;
+  // background-color: yellow;
   .leftMainDiv1 {
-    background: purple;
+    background: rgba(92, 203, 160, 0.15);
     width: 100%;
     height: 40%;
     box-shadow: 6px 8px 23px rgba(122, 122, 122, 0.1);
     border-radius: 12px;
-    border: 1px solid red;
     .infoText {
-      margin:2vmax 4vmax;
+      margin: 2vmax 4vmax;
       font-size: 1.2rem;
       font-weight: 700;
     }
@@ -31,22 +30,384 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  background-color: red;
   height: 140vmax;
 }
 
-
-.hotelInfo{
-    display: flex;
-    gap: 2vmax;
-   margin: 2vmax 2vmax;
+.hotelInfo {
+  display: flex;
+  gap: 2vmax;
+  margin: 2vmax 2vmax;
 }
-.infoDetail{
+.infoDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 1vmax;
+  .starDiv {
+    display: flex;
+    gap: 1vmax;
+  }
+  .hotelName {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .locationDiv {
+    display: flex;
+    gap: 1vmax;
+    .pinIcon {
+      height: 2vmax;
+      width: 2vmax;
+    }
+  }
+}
+
+.checkinCheckoutDiv {
+  width: 90%;
+  margin-left: 5%;
+  height: 12vmax;
+  background: #ffffff;
+  box-shadow: 3px 4px 19px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: flex;
+  gap: 8vmax;
+  .checkinDiv {
     display: flex;
     flex-direction: column;
     gap: 1vmax;
-    .starDiv{
-        display: flex;
-        gap: 1vmax;
-    }
+    margin-left: 6%;
+    margin-top: 2%;
+  }
+  .checkOutdiv {
+    display: flex;
+    flex-direction: column;
+    gap: 1vmax;
+    margin-left: 2%;
+    margin-top: 2%;
+  }
+  .guestDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 1vmax;
+    margin-left: 2%;
+    margin-top: 2%;
+  }
 }
+.adultDetailDiv {
+  margin-top: 3%;
+  gap: 10%;
+  width: 90%;
+  margin-left: 5%;
+  height: 16vmax;
+  background: #ffffff;
+  box-shadow: 3px 4px 19px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: flex;
+  .adultDetailChild1 {
+    width: 40%;
+    height: 100%;
+
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vmax;
+    .roomText {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    .greenSmallText {
+      font-size: 12px;
+      color: #036f00;
+    }
+    .superiorText {
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+    .adultIconTextWrapper {
+      display: flex;
+      gap: 1vmax;
+      img {
+        width: 2vmax;
+        height: 2vmax;
+      }
+    }
+    .cancelText {
+      color: #0088a6;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  .adultDetailChild2 {
+    display: flex;
+    gap: 1vmax;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    margin-top: 4%;
+    .checkOne {
+      display: flex;
+      gap: 2vmax;
+      img {
+        width: 2vmax;
+        height: 2vmax;
+      }
+    }
+    .checkTwo {
+      display: flex;
+      gap: 2vmax;
+      img {
+        width: 2vmax;
+        height: 2vmax;
+      }
+    }
+  }
+}
+
+.leftMainDiv2 {
+  background: rgba(92, 203, 160, 0.15);
+  margin-top: 10%;
+  width: 100%;
+  height: 25%;
+  box-shadow: 6px 8px 23px rgba(122, 122, 122, 0.1);
+  border-radius: 12px;
+  .guestHeading {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 2% 3%;
+  }
+}
+.formDetailWrapper1 {
+  margin: 6% 5%;
+  display: flex;
+  gap: 8vmax;
+  .titleDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 1vmax;
+    .selectTitle {
+      width: 6vmax;
+      height: 2vmax;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+  }
+  .firstNameDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 1vmax;
+    input {
+      width: 15vmax;
+      height: 1.8vmax;
+      &::placeholder {
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+.formDetailWrapper2 {
+  margin: 6% 5%;
+  display: flex;
+  gap: 4vmax;
+  .emailWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2vmax;
+    .emailTextWrapper {
+      display: flex;
+      .smallText {
+        font-size: 12px;
+        margin-top: 2%;
+      }
+    }
+    input {
+      width: 15vmax;
+      height: 1.8vmax;
+      &::placeholder {
+        padding-left: 10px;
+      }
+    }
+  }
+  .mobileNumberWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2vmax;
+    input {
+      width: 15vmax;
+      height: 1.8vmax;
+      &::placeholder {
+        padding-left: 10px;
+      }
+    }
+  }
+}
+.gstChekboxDiv {
+  display: flex;
+  gap: 1vmax;
+  margin: 6% 5%;
+}
+
+.leftMainDiv3 {
+  height: 25%;
+  width: 100%;
+  margin-top: 10%;
+  box-shadow: 6px 8px 23px rgba(122, 122, 122, 0.1);
+  background: rgba(92, 203, 160, 0.15);
+  .secureText {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 2% 3%;
+  }
+  .insuranceText {
+    margin: 2% 3%;
+  }
+  .worryFree {
+    margin: 2% 3%;
+  }
+  .listItem {
+    display: flex;
+    flex-direction: column;
+    gap: 2vmax;
+    margin: 2% 6%;
+    ul > li {
+      font-size: 13px;
+    }
+  }
+  .addButtonDiv {
+    margin-left: 80%;
+    .wrapperButton {
+      display: flex;
+      flex-direction: column;
+      font-size: 12px;
+      .gstValue::first-line {
+        font-weight: 700;
+      }
+      .addbtn {
+        width: 6vmax;
+        height: 2.5vmax;
+        cursor: pointer;
+        font-weight: 600;
+      }
+    }
+  }
+  .proceedToPaymentOption {
+    margin-left: 30%;
+    border: none;
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+    outline: none;
+    width: 21vmax;
+    height: 3vmax;
+    background: linear-gradient(
+      90deg,
+      #2fbf8c 0%,
+      #0da274 54.69%,
+      #4ed19e 100%
+    );
+    border-radius: 35px;
+    cursor: pointer;
+  }
+  .termText {
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 10%;
+    margin-top: 3%;
+  }
+}
+
+// right section styles ->
+
+.rightMainDiv1 {
+  width: 100%;
+  height: 30%;
+  background: rgba(92, 203, 160, 0.15);
+box-shadow: 6px 8px 23px rgba(122, 122, 122, 0.1);
+border-radius: 12px;
+  .priceSummaryText {
+    margin: 7% 3%;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .roomCharge {
+    display: flex;
+    gap: 4vmax;
+    font-size: 14px;
+    margin: 7% 3%;
+  }
+  .discount {
+    display: flex;
+    gap: 4vmax;
+    font-size: 14px;
+    margin: 7% 3%;
+  }
+  .coupon {
+    display: flex;
+    gap: 2vmax;
+    margin: 7% 3%;
+    img {
+      width: 1.2vmax;
+      height: 1.2vmax;
+    }
+    p {
+      font-weight: 600;
+      font-size: 14px;
+      color: #036f00;
+    }
+  }
+  .afterDiscount {
+    display: flex;
+    gap: 10vmax;
+    font-size: 14px;
+    margin: 7% 3%;
+  }
+  .taxfee {
+    display: flex;
+    gap: 14vmax;
+    font-size: 14px;
+    margin: 7% 3%;
+  }
+  .payableNow {
+    display: flex;
+    font-size: 1rem;
+    font-weight: 700;
+    gap: 14vmax;
+    margin: 7% 3%;
+  }
+  .logiBtnHere {
+    width: 15vmax;
+    height: 2vmax;
+    background: #0da174;
+    border-radius: 0px 20px 20px 0px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 3%;
+    color: white;
+  }
+}
+
+.rightMainDiv2 {
+  width: 100%;
+ 
+  margin-top: 20%;
+  background: rgba(92, 203, 160, 0.15);
+box-shadow: 6px 8px 23px rgba(122, 122, 122, 0.1);
+border-radius: 12px;
+  .offerText{
+    margin: 7% 3%;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .couponTextWraper{
+    margin: 7% 3%;
+    display: flex;
+    gap: 3vmax;
+    p{
+      color: #0A8607;
+      font-weight: 600;
+    }
+  }
+  .couponDesc{
+    margin: 7% 3%;
+  }
+}
+
