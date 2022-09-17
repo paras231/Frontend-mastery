@@ -149,12 +149,18 @@ const selectBtn = document.getElementById("myBtn");
 
 // selectBtn.addEventListener("click", selectUser);
 
-
 //? hoisting in javascript->
 
-doSomething();  // accessing the function before initialization -> it will print and work.
+doSomething(); // accessing the function before initialization -> it will print and work.
 
-function doSomething(){
+function doSomething() {
   console.log("do something running");
 }
 
+//? while loop js->
+
+
+// let i = 0;
+// while (i < 10) {
+//   console.log("hellow world");
+// }
