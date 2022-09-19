@@ -1,0 +1,280 @@
+.detailCardWrapper {
+  display: flex;
+  gap: 4vmax;
+  box-shadow: 10px 11px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  // background-color: red;
+  width: 51vmax;
+  height: 22vmax;
+  margin-top: 4%;
+  .imageDiv {
+    img {
+      width: 13vmax;
+      height: 13vmax;
+      margin: 4% 3%;
+    }
+  }
+  .cabDetailDiv {
+    display: flex;
+    flex-direction: column;
+    .cabNameText {
+      font-size: 1rem;
+      color: #006ce0;
+      font-weight: 500;
+    }
+    .cabTitleText {
+      margin-top: 3%;
+      margin-left: -9%;
+    }
+    .cabSize {
+      margin-top: 7vmax;
+      margin-left: -5vmax;
+      font-weight: 600;
+    }
+    .cabDescDiv {
+      margin-left: -0.5vmax;
+      width: 12vmax;
+      font-size: 10px;
+    }
+    .sanitizedDiv {
+      display: flex;
+      gap: 0.5vmax;
+      margin-left: 2px;
+      margin-top: 1vmax;
+      img {
+        width: 1.2vmax;
+        margin-top: 2px;
+        height: 1.2vmax;
+      }
+    }
+  }
+  .bookNowDiv {
+    display: flex;
+    flex-direction: column;
+    .cancellation {
+      background: #bdffbc;
+      border: 1px solid #0a8607;
+      border-radius: 30px;
+      width: 15vmax;
+      height: 1.4vmax;
+      font-size: 10px;
+      text-align: center;
+      padding-top: 0.5vmax;
+    }
+    .cheaperDiv {
+      background: #ffecec;
+      border: 1px solid #850000;
+      border-radius: 30px;
+      width: 14vmax;
+      height: 1.4vmax;
+      margin-top: 9vmax;
+      color: #850000;
+      font-weight: 500;
+      font-size: 13px;
+    }
+    .priceDiv {
+      margin-top: 2vmax;
+      display: flex;
+      gap: 1vmax;
+      .smallPrice {
+        text-decoration-line: line-through;
+
+        color: #8d8d8d;
+      }
+    }
+    .bookNowBtn {
+      width: 9vmax;
+      height: 2vmax;
+      background: linear-gradient(
+        180deg,
+        #2bbc89 0%,
+        #10a476 47.92%,
+        #44ca98 100%
+      );
+      border-radius: 50px;
+      border: none;
+      outline: none;
+      color: white;
+      cursor: pointer;
+      margin-top: 2vmax;
+    }
+  }
+}
+
+.secondaryDiv {
+  display: flex;
+  gap: 3vmax;
+  width: 98%;
+  height: 100vmax;
+  margin-left: 2%;
+}
+.secondaryOne {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  background-color: red;
+  .driverText {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .hygenic {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 5vmax;
+  }
+  .safetyDiv {
+    display: flex;
+    gap: 2vmax;
+    .maskDiv {
+      display: flex;
+      gap: 1vmax;
+      img {
+        width: 2vmax;
+        height: 2vmax;
+      }
+    }
+    .sanitizedCab {
+      img {
+        width: 2vmax;
+        height: 2vmax;
+      }
+      display: flex;
+      gap: 1vmax;
+    }
+    .handSanitized {
+      display: flex;
+      gap: 1vmax;
+      img {
+        width: 2vmax;
+        height: 1.5vmax;
+      }
+    }
+  }
+  .signup {
+    color: #0085ff;
+    font-size: 1rem;
+    margin-top: 4vmax;
+    cursor: pointer;
+  }
+  .unlockDeals {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .pickupDiv {
+    display: flex;
+  }
+  .pickupDiv {
+    margin-top: 2vmax;
+    display: flex;
+    .pickupTextBold {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    .pickupsmalTxt {
+      font-size: 12px;
+      margin-top: 0.5vmax;
+    }
+  }
+  .addressInput {
+    width: 50vmax;
+    height: 2vmax;
+    margin-top: 2vmax;
+    &::placeholder {
+      margin-left: 20px;
+    }
+  }
+  .confirmText {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 2vmax;
+  }
+  .inputsWrapper {
+    display: flex;
+    gap: 16vmax;
+    .nameInputDiv {
+      margin-top: 3vmax;
+      display: flex;
+      flex-direction: column;
+      gap: 1vmax;
+      p {
+        font-weight: 600;
+      }
+      input {
+        width: 20vmax;
+        height: 2vmax;
+      }
+    }
+    .genderInputDiv {
+      margin-top: 3vmax;
+      display: flex;
+      flex-direction: column;
+      gap: 1vmax;
+      p {
+        font-weight: 600;
+      }
+      .checkBoxWrapper {
+        display: flex;
+        gap: 2vmax;
+        .maleWrapper {
+          display: flex;
+          gap: 1vmax;
+        }
+        .femaleWrapper {
+          display: flex;
+          gap: 1vmax;
+        }
+      }
+    }
+  }
+}
+
+.emailNumberWrapper {
+  margin-top: 3vmax;
+  display: flex;
+  gap: 16vmax;
+  .emailWrapper {
+    display: flex;
+    gap: 1vmax;
+    flex-direction: column;
+    font-weight: 600;
+    input {
+      width: 20vmax;
+      height: 2vmax;
+    }
+  }
+  .contactWrapper {
+    display: flex;
+    gap: 1vmax;
+    flex-direction: column;
+    .selectInput {
+      display: flex;
+      gap: 1vmax;
+      select {
+        height: 2.3vmax;
+      }
+      input {
+        width: 20vmax;
+        height: 2vmax;
+      }
+    }
+  }
+}
+
+.readBefore {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 4vmax;
+}
+
+
+.categories{
+  display: flex;
+  gap: 3vmax;
+}
+
+.secondaryTwo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: yellow;
+}

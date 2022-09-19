@@ -37,15 +37,17 @@ import MultipleInputs from "./AdvancedComponents/MultipleInputs";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import CabDetail from "./Travel/Cab/CabDetail";
 const App = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   const user = true;
   return (
     <>
+    <CabDetail/>
       {/* <Test3 /> */}
       {/* <HotelSelection/> */}
-      <HotelPaymentDetail/>
+      {/* <HotelPaymentDetail/> */}
       {/* <WaterActivityMain/> */}
       {/* <LayoutTesting /> */}
       {/* <Test1/> */}

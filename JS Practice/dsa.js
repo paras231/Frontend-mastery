@@ -10,10 +10,11 @@
 
 function getSumZero(array) {
   for (let i = 0; i < array.length; i++) {
+    console.log(i); // i is basically index of array.
     for (let j = 1; j < array.length; j++) {
       if (i + array[j] === 0) {
         const output = [i, array[j]];
-        console.log(output);
+        console.log(output, "output result");
       }
     }
   }
@@ -22,6 +23,3 @@ getSumZero([-5, -4, -3, -2, 0, 2, 4, 6, 8]);
 
 //! solving the same problem with different logic->
 // while loop can be used for this
-
-
-
