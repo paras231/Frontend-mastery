@@ -133,14 +133,66 @@ const CabDetail = () => {
             </div>
           </div>
           <p className={styles.readBefore}>Read before you book!</p>
-          <div className={styles.categories}>
-        
+          <div className={styles.catgoryWrapper}>
             <div className={styles.cabCaterory}>
-            <p className={styles.readBefore}>Cab Category</p>
-              <p>
-                The booking will be for cab type HATCHBACK and we do not commit
-                on providing the preferred cab model (Indica, Swift or similar)
-              </p>
+              <p className={styles.readBefore}>Cab Category</p>
+              <div className={styles.categoryText}>
+                <p>
+                  The booking will be for cab type HATCHBACK and we do not
+                  commit on providing the preferred cab model (Indica, Swift or
+                  similar)
+                </p>
+              </div>
+              <p className={styles.readBefore}>Hilly Regions</p>
+              <div className={styles.categoryText}>
+                <p>The booking will be for cab type HATCHBACK</p>
+              </div>
+              <p className={styles.readBefore}>Luggage Policy</p>
+              <div className={styles.categoryText}>
+                <p>
+                  The booking will be for cab type HATCHBACK and we do not
+                  commit on providing the preferred cab model (Indica, Swift or
+                  similar)
+                </p>
+              </div>
+              <p className={styles.readBefore}>Driver Details</p>
+              <div className={styles.categoryText}>
+                <p>
+                  The booking will be for cab type HATCHBACK and we do not
+                  commit on providing the preferred cab model (Indica, Swift or
+                  similar)
+                </p>
+              </div>
+            </div>
+            <div className={styles.cabCaterory}>
+              <p className={styles.readBefore}>Cab Category</p>
+              <div className={styles.categoryText}>
+                <p>
+                  The booking will be for cab type HATCHBACK and we do not
+                  commit on providing the preferred cab model (Indica, Swift or
+                  similar)
+                </p>
+              </div>
+              <p className={styles.readBefore}>Hilly Regions</p>
+              <div className={styles.categoryText}>
+                <p>The booking will be for cab type HATCHBACK</p>
+              </div>
+              <p className={styles.readBefore}>Luggage Policy</p>
+              <div className={styles.categoryText}>
+                <p>
+                  The booking will be for cab type HATCHBACK and we do not
+                  commit on providing the preferred cab model (Indica, Swift or
+                  similar)
+                </p>
+              </div>
+              <p className={styles.readBefore}>Driver Details</p>
+              <div className={styles.categoryText}>
+                <p>
+                  The booking will be for cab type HATCHBACK and we do not
+                  commit on providing the preferred cab model (Indica, Swift or
+                  similar)
+                </p>
+              </div>
             </div>
           </div>
         </div>

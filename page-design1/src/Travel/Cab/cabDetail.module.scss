@@ -105,14 +105,15 @@
   display: flex;
   gap: 3vmax;
   width: 98%;
-  height: 100vmax;
+  height: 140vmax;
   margin-left: 2%;
+  margin-top: 4vmax;
 }
 .secondaryOne {
   display: flex;
   flex-direction: column;
   flex: 2;
-  background-color: red;
+  // background-color: red;
   .driverText {
     font-size: 1rem;
     font-weight: 600;
@@ -266,12 +267,14 @@
   margin-top: 4vmax;
 }
 
-
-.categories{
+.catgoryWrapper {
   display: flex;
-  gap: 3vmax;
+  gap: 14vmax;
 }
 
+.categoryText {
+  width: 14vmax;
+}
 .secondaryTwo {
   display: flex;
   flex-direction: column;
