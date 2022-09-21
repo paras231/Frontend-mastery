@@ -16,10 +16,10 @@ const App = () => {
       {/* <Test /> */}
       {/* <RefHook /> */}
       {/* <Post /> */}
-      <WIndowscroll />
-      <Users />
+      {/* <WIndowscroll /> */}
+      {/* <Users /> */}
       {/* <Form/> */}
-      {/* <EventHandling /> */}
+      <EventHandling />
     </>
   );
 };
