@@ -1,4 +1,6 @@
 import React from "react";
+import Test2 from "./Components/Test2";
+import Test1 from "./Components/Test1";
 import Todo from "./Todo";
 import Home from "./Home";
 import Post from "./Post";
@@ -9,16 +11,19 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 const App = () => {
   return (
     <>
+     
+      <Test1/>
+      <Test2  />
       {/* <Todo />
       <Home />
       <Post /> */}
       {/* <Cart/> */}
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
           <Route path="/" element={<Page1 />} />
           <Route path="/page2" element={<Page2 />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </>
   );
 };

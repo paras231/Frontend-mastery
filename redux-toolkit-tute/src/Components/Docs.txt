@@ -1,0 +1,1 @@
+in this folder i will practice passing different props to component
