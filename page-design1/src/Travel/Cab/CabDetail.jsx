@@ -196,7 +196,36 @@ const CabDetail = () => {
             </div>
           </div>
         </div>
-        <div className={styles.secondaryTwo}></div>
+        <div className={styles.secondaryTwo}>
+          <div className={styles.priceSummaryWrapper}>
+            <p className={styles.priceSummary}>Price Summary</p>
+            <hr />
+            <div className={styles.partPayment}>
+              <input type="radio" name="" id="" />
+              <p>Make part payment now</p>
+              <p>$25</p>
+            </div>
+            <div className={styles.partPayment}>
+              <input type="radio" name="" id="" />
+              <p>Make full payment now</p>
+              <p>$25</p>
+            </div>
+            <hr />
+            <div className={styles.paymentNow}>
+              <p>Make Full Payment Now</p>
+              <p>$45</p>
+            </div>
+            <hr />
+            <div className={styles.couponDiv}>
+              <p>Enter Coupon Code</p>
+              <input
+                classname={styles.couponInput}
+                type="text"
+                placeholder="Coupon Code"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

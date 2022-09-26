@@ -279,5 +279,36 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  background-color: yellow;
+}
+
+.priceSummaryWrapper {
+  background: rgba(92, 203, 160, 0.15);
+  box-shadow: 6px 8px 23px rgba(122, 122, 122, 0.1);
+  border-radius: 12px;
+  height: 30vmax;
+}
+
+.priceSummary {
+  margin: 2% 4%;
+  font-weight: 600;
+}
+.partPayment {
+  margin: 2% 2%;
+  display: flex;
+  gap: 3vmax;
+}
+.paymentNow {
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 2% 0 2%;
+}
+.couponDiv {
+  margin: 4% 2% 0 4%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vmax;
+  input {
+    height: 1.5vmax;
+    width: 17vmax;
+  }
 }
