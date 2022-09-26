@@ -1,0 +1,52 @@
+.formContainer {
+  background-color: rgb(237, 156, 211);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .formWrapper {
+    form {
+      background-color: white;
+      display: flex;
+      padding: 20px 60px;
+      border-radius: 12px;
+      align-items: center;
+      flex-direction: column;
+      gap: 2vmax;
+      .logo {
+        font-weight: 600;
+        color: rgb(21, 136, 154);
+      }
+      input {
+        border: none;
+
+        width: 15vmax;
+        height: 2vmax;
+        border-bottom: 1px solid #acbcff;
+        &::placeholder {
+          padding-left: 10px;
+        }
+      }
+      button {
+        cursor: pointer;
+        width: 14vmax;
+        height: 2vmax;
+        background-color: #7b96ec;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        color: white;
+      }
+      label{
+        display: flex;
+        gap: 2vmax;
+        align-items: center;
+        font-size: 14px;
+      }
+      p{
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
+  }
+}

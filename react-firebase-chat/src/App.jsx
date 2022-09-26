@@ -1,11 +1,15 @@
 import React from "react";
-import Register from "./Components/Register";
+// import Register from "./Components/Register";
+import Register from "./Pages/Register";
+import Home from "./Pages/Home";
+import "./App.css";
 
 const App = () => {
   return (
     <>
-      <h1>Firebase chat app</h1>
-      <Register />
+      
+      {/* <Register /> */}
+      <Home/>
     </>
   );
 };
