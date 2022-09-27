@@ -44,9 +44,9 @@ const App = () => {
   const user = true;
   return (
     <>
-    <CabDetail/>
+    {/* <CabDetail/> */}
       {/* <Test3 /> */}
-      {/* <HotelSelection/> */}
+      <HotelSelection/>
       {/* <HotelPaymentDetail/> */}
       {/* <WaterActivityMain/> */}
       {/* <LayoutTesting /> */}

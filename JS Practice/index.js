@@ -159,8 +159,9 @@ function doSomething() {
 
 //? while loop js->
 
-
 // let i = 0;
 // while (i < 10) {
 //   console.log("hellow world");
 // }
+
+ 

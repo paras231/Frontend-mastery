@@ -1,13 +1,18 @@
-
 @mixin ipad {
   @media (min-width: 768px) and (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
     @content;
   }
 }
 
+@mixin desktop {
+  @media (min-width: 992px) and (max-width: 1025px) {
+    @content;
+  }
+}
+
 .hotelListMainWrapper {
   margin-top: 3vmax;
-  @include ipad{
+  @include ipad {
     margin-top: 10vmax;
   }
 }
@@ -33,9 +38,8 @@
   flex-direction: column;
   gap: 2vmax;
   margin-top: 2vmax;
-  @include ipad{
+  @include ipad {
     gap: 5vmax;
-    
   }
 }
 .detailCard1 {
@@ -45,16 +49,18 @@
   height: 34vmax;
   border: 2px solid #e9e9e9;
   width: 25vmax;
-  @include ipad{
-   font-size:12px;
-    
+  @include ipad {
+    font-size: 12px;
+  }
+  @include desktop {
+    font-size: 12px;
   }
 }
 .roomTitle {
   font-size: 1.2rem;
   font-weight: 600;
-  @include ipad{
-    font-size:12px;
+  @include ipad {
+    font-size: 12px;
   }
 }
 .accomodations {
@@ -97,7 +103,10 @@
     font-weight: 600;
     cursor: pointer;
     @include ipad {
-      font-size:14px;
+      font-size: 14px;
+    }
+    @include desktop {
+      font-size: 14px;
     }
   }
 }
@@ -112,13 +121,16 @@
   height: 30vmax;
   width: 15vmax;
   @include ipad {
-    font-size:12px
+    font-size: 12px;
   }
   .child1 {
     display: flex;
     flex-direction: column;
     border: 1px solid #e9e9e9;
     height: 20vmax;
+    @include desktop {
+      font-size: 14px;
+    }
     .textdark {
       font-weight: 700;
     }
@@ -148,6 +160,9 @@
       @include ipad {
         font-size: 12px;
       }
+      @include desktop {
+        font-size: 12px;
+      }
       img {
         width: 2vmax;
         height: 2vmax;
@@ -162,12 +177,14 @@
   gap: 5vmax;
   margin-top: 2vmax;
   @include ipad {
-    font-size:12px
+    font-size: 12px;
   }
   .priceDiv {
     display: flex;
     flex-direction: column;
-
+    @include desktop {
+      font-size: 12px;
+    }
     .darkPrice {
       font-weight: 600;
     }
@@ -189,6 +206,6 @@
   }
 }
 
-.testing{
+.testing {
   color: red;
 }

@@ -1,3 +1,9 @@
+@mixin desktop {
+  @media (min-width: 992px) and (max-width: 1025px) {
+    @content;
+  }
+}
+
 .detailCardWrapper {
   display: flex;
   gap: 4vmax;
@@ -7,6 +13,10 @@
   width: 51vmax;
   height: 22vmax;
   margin-top: 4%;
+  @include desktop {
+    width: 53vmax;
+    height: 25vmax;
+  }
   .imageDiv {
     img {
       width: 13vmax;
@@ -41,6 +51,9 @@
       gap: 0.5vmax;
       margin-left: 2px;
       margin-top: 1vmax;
+      @include desktop {
+        font-size: 12px;
+      }
       img {
         width: 1.2vmax;
         margin-top: 2px;
@@ -60,6 +73,10 @@
       font-size: 10px;
       text-align: center;
       padding-top: 0.5vmax;
+      @include desktop {
+        width: 16vmax;
+        font-size: 8px;
+      }
     }
     .cheaperDiv {
       background: #ffecec;
@@ -71,6 +88,9 @@
       color: #850000;
       font-weight: 500;
       font-size: 13px;
+      @include desktop {
+        font-size: 10px;
+      }
     }
     .priceDiv {
       margin-top: 2vmax;
