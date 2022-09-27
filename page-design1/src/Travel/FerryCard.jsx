@@ -26,6 +26,10 @@ const CardMainContainer = styled.div`
     gap:60px;
     
   }
+  @media (min-width:992px) and (max-width:1025px){
+    height:25vmax;
+    width:62vmax;
+  }
 `;
 const ImageDiv = styled.div``;
 const Image = styled.img`
@@ -340,6 +344,11 @@ const ProceedButton = styled.button`
     height: 6vh;
     font-size:1rem;
     font-weight: 700;
+  }
+  @media (min-width:992px) and (max-width:1025px){
+    height:3vmax;
+    width: 28vmax;
+    font-size:12px;
   }
 `;
 

@@ -46,7 +46,7 @@ const App = () => {
     <>
     {/* <CabDetail/> */}
       {/* <Test3 /> */}
-      <HotelSelection/>
+      {/* <HotelSelection/> */}
       {/* <HotelPaymentDetail/> */}
       {/* <WaterActivityMain/> */}
       {/* <LayoutTesting /> */}
@@ -55,7 +55,7 @@ const App = () => {
       {/* <FerryTravelDetail /> */}
       {/* <DivInput/> */}
       {/* <FerrySlider/> */}
-      {/* <FerryLists/> */}
+      <FerryLists/>
       {/* <FerryInputComponent/> */}
       {/* <FerryBookingProcess/> */}
       {/* <WhyBooking/> */}

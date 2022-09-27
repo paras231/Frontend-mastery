@@ -9,6 +9,12 @@
   }
 }
 
+@mixin desktop {
+  @media (min-width: 992px) and (max-width: 1025px) {
+    @content;
+  }
+}
+
 .main-container {
   display: flex;
   gap: 3vmax;
@@ -401,5 +407,9 @@
     width: 33vw;
     height: 5vh;
     margin-left: 35%;
+  }
+  @include desktop{
+  width: 16vmax;
+  height: 2.6vmax;
   }
 }

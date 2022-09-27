@@ -4,6 +4,12 @@
   }
 }
 
+@mixin desktop {
+  @media (min-width: 992px) and (max-width: 1025px) {
+    @content;
+  }
+}
+
 .text-icon-wrapper {
   display: flex;
   gap: 50vmax;
