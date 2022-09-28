@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import HotelPaymentDetail from  "./Travel/Hotel/HotelPaymentDetail";
+import HotelPaymentDetail from "./Travel/Hotel/HotelPaymentDetail";
 import HotelSelection from "./Travel/Hotel/HotelSelection";
 import WaterActivityMain from "./Travel/Wateractivity/WaterActivityMain";
 import LayoutTesting from "./AntDesignComponents/LayoutTesting";
@@ -38,13 +38,20 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CabDetail from "./Travel/Cab/CabDetail";
+import StepperComponent from "./Travel/StepperComponent/StepperComponent";
+import Step1 from "./Travel/StepperComponent/Step1";
+import Step2 from "./Travel/StepperComponent/Step2";
+import Step3 from "./Travel/StepperComponent/Step3";
+import Step4 from "./Travel/StepperComponent/Step4";
+
 const App = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   const user = true;
   return (
     <>
-    {/* <CabDetail/> */}
+      {/* <StepperComponent/> */}
+      {/* <CabDetail/> */}
       {/* <Test3 /> */}
       {/* <HotelSelection/> */}
       {/* <HotelPaymentDetail/> */}
@@ -55,7 +62,7 @@ const App = () => {
       {/* <FerryTravelDetail /> */}
       {/* <DivInput/> */}
       {/* <FerrySlider/> */}
-      <FerryLists/>
+      {/* <FerryLists/> */}
       {/* <FerryInputComponent/> */}
       {/* <FerryBookingProcess/> */}
       {/* <WhyBooking/> */}
@@ -87,6 +94,14 @@ const App = () => {
           // matching user and mobile condition if user is logged in
         </Routes>
       </BrowserRouter> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Step1 />} />
+          <Route path="/step2" element={<Step2 />} />
+          <Route path="/step3" element={<Step3 />} />
+          <Route path="/step4" element={<Step4 />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 };

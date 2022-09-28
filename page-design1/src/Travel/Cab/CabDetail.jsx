@@ -51,6 +51,7 @@ const CabDetail = () => {
             Cab and driver details will be shared up to 30 mins prior to
             departure.
           </p>
+          
           <p className={styles.hygenic}>Driver & Cab details</p>
           <div className={styles.safetyDiv}>
             <div className={styles.maskDiv}>
