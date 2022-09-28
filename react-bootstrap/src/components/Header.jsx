@@ -5,6 +5,7 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import Layout from "./Layout";
 const Header = () => {
   return (
     <>
@@ -41,11 +42,12 @@ const Header = () => {
                 className="me-2"
                 aria-label="Search"
               />
-              <Button variant="outline-success">Search</Button>
+              <Button variant="success">Search</Button>
             </Form>
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <Layout/>
     </>
   );
 };
