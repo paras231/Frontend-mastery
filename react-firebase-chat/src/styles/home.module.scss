@@ -8,7 +8,7 @@
 .container {
   width: 65%;
   height: 80%;
-  background-color: red;
+  background-color: rgb(221, 199, 242);
   display: flex;
   border-radius: 10px;
   overflow: hidden;
@@ -16,8 +16,67 @@
 .sidebar {
   flex: 1;
   border-right: 1px solid black;
-  background-color: antiquewhite;
+  background-color: rgb(73, 115, 244);
 }
 .chat {
   flex: 2;
+  .chatInfo {
+    height: 4vmax;
+    background-color: rgb(179, 101, 179);
+    display: flex;
+    justify-content: space-between;
+    .chatIcons {
+      display: flex;
+      gap: 1vmax;
+      .icon {
+        height: 2vmax;
+        width: 2vmax;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.search {
+  border-bottom: 1px solid grey;
+  .searchForm {
+    padding: 10px;
+    input {
+      background-color: transparent;
+      border: none;
+      color: white;
+      outline: none;
+      &::placeholder {
+        color: white;
+      }
+    }
+  }
+}
+.userChat {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 2vmax;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(50, 50, 220);
+  }
+  img {
+    height: 2vmax;
+    width: 2vmax;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .userchatInfo {
+    span {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      color: lightgray;
+    }
+  }
 }

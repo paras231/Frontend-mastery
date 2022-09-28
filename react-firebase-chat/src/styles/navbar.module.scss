@@ -1,0 +1,31 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: purple;
+  height: 2vmax;
+  padding: 10px;
+  justify-content: space-between;
+  color: white;
+  .logo {
+    font-weight: bold;
+  }
+  .user {
+    display: flex;
+    gap: 1vmax;
+    img{
+        height: 1vmax;
+        width: 1vmax;
+        border-radius: 50%;
+        background-color:pink;
+        object-fit:cover;
+    }
+    button{
+        background-color:pink;
+        color: white;
+        font-size: 10px;
+        border: none;
+        cursor: pointer;
+        width: 5vmax;
+    }
+  }
+}
