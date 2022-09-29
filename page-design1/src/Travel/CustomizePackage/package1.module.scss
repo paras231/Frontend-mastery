@@ -1,0 +1,137 @@
+.mainContainer {
+  margin: 5% 5% 0 5%;
+  width: 95%;
+}
+
+.planning {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.iconTextwrapper {
+  display: flex;
+  gap: 70vmax;
+  img {
+    width: 1vmax;
+    height: 1vmax;
+    margin-top: 3vmax;
+  }
+}
+.andman {
+  text-decoration: underline;
+  color: #145843;
+  font-weight: 600;
+  margin-top: 2vmax;
+}
+.lineContainer {
+  display: flex;
+  gap: 3vmax;
+  margin-top: 5vmax;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 9vmax;
+  }
+}
+
+.when {
+  font-weight: 600;
+  margin-top: 3vmax;
+}
+
+.monthCOntainer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 3vmax 2vmax;
+  flex-wrap: wrap;
+  margin-top: 3vmax;
+  .monthCard {
+    width: 16vmax;
+    height: 18vmax;
+    // background: red;
+    border: 2px solid #9f9f9f;
+    border-radius: 10px;
+    text-align: center;
+
+    p {
+      padding: 3vmax;
+      font-weight: 600;
+    }
+    button {
+      background: #0da274;
+      border-radius: 30px;
+      width: 80%;
+      height: 2vmax;
+      border: none;
+      outline: none;
+      color: white;
+    }
+    .weatherText {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 3vmax 0 0 0;
+      gap: 1vmax;
+      img {
+        width: 1.5vmax;
+        height: 1.5vmax;
+      }
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+  .textwrapper {
+    width: 33vmax;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    margin: 6% 3% 0 2%;
+  }
+}
+
+.shoppingContainer {
+  display: flex;
+  margin: 5% 5% 0 5%;
+  justify-content: flex-start;
+  gap: 3vmax 6vmax;
+  flex-wrap: wrap;
+
+  .shoppingCard {
+    width: 16vmax;
+    height: 18vmax;
+
+    border: 2px solid #9f9f9f;
+    border-radius: 10px;
+    text-align: center;
+    img {
+      margin: 2vmax 0 0 0;
+      width: 60%;
+    }
+    p {
+      padding: 2vmax;
+    }
+  }
+}
+
+.travelContainer {
+  display: flex;
+  margin: 3% 3% 0 3%;
+  justify-content: flex-start;
+  gap: 3vmax 2vmax;
+  flex-wrap: wrap;
+  .travelCard {
+    width: 15vmax;
+    height: 18vmax;
+
+    border: 2px solid #9f9f9f;
+    border-radius: 10px;
+    text-align: center;
+    img {
+      margin: 2vmax 0 0 0;
+      width: 60%;
+    }
+    p {
+      padding: 1vmax;
+    }
+  }
+}

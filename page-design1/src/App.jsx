@@ -38,11 +38,9 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CabDetail from "./Travel/Cab/CabDetail";
-import StepperComponent from "./Travel/StepperComponent/StepperComponent";
-import Step1 from "./Travel/StepperComponent/Step1";
-import Step2 from "./Travel/StepperComponent/Step2";
-import Step3 from "./Travel/StepperComponent/Step3";
-import Step4 from "./Travel/StepperComponent/Step4";
+import Package1 from "./Travel/CustomizePackage/Package1";
+import Package2 from "./Travel/CustomizePackage/Package2";
+import Package3 from "./Travel/CustomizePackage/Package3";
 
 const App = () => {
   const theme = useTheme();
@@ -50,6 +48,7 @@ const App = () => {
   const user = true;
   return (
     <>
+      {/* <Package1 /> */}
       {/* <StepperComponent/> */}
       {/* <CabDetail/> */}
       {/* <Test3 /> */}
@@ -95,12 +94,11 @@ const App = () => {
         </Routes>
       </BrowserRouter> */}
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Step1 />} />
-          <Route path="/step2" element={<Step2 />} />
-          <Route path="/step3" element={<Step3 />} />
-          <Route path="/step4" element={<Step4 />} />
-        </Routes>
+      <Routes>
+        <Route path="/" element={<Package1/>}/>
+        <Route path="/package2" element={<Package2/>}/>
+        <Route path="/package3" element={<Package3/>}/>
+      </Routes>
       </BrowserRouter>
     </>
   );

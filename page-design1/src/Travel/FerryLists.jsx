@@ -5,6 +5,7 @@ import FerryCard from "./FerryCard";
 import FerryCheckbox from "./MobileView/FerryCheckbox";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
+
 const MainContainer = styled.div`
   display: flex;
   gap: 4vmax;
