@@ -1,0 +1,49 @@
+.mainDiv {
+  background: #145843;
+  height: 9vmax;
+  width: 100%;
+  margin-top: 10vmax;
+}
+
+.inputContainer {
+
+
+ overflow-x: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+   padding: 2vmax;
+  .inputTextWrapper{
+    display: flex;
+    flex-direction: column;
+     gap: 1vmax;
+     span{
+      color: white;
+      font-weight: 500;
+     }
+  }
+  .datepicker{
+     display: flex;
+     flex-direction: column;
+     gap: 1vmax;
+     span{
+      color: white;
+      font-weight: 500;
+     }
+  }
+  input {
+    color: white;
+    padding-left: 10px;
+    background-color: rgba(13, 162, 116, 0.8);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 15vmax;
+    height: 3vmax;
+    position: relative;
+    &::placeholder{
+      color:white;
+    }
+  }
+}
+

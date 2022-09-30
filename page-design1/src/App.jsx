@@ -41,13 +41,14 @@ import CabDetail from "./Travel/Cab/CabDetail";
 import Package1 from "./Travel/CustomizePackage/Package1";
 import Package2 from "./Travel/CustomizePackage/Package2";
 import Package3 from "./Travel/CustomizePackage/Package3";
-
+import  BannerInput  from "./Travel/Bannerinput/BannerInput";
 const App = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   const user = true;
   return (
     <>
+    <BannerInput/>
       {/* <Package1 /> */}
       {/* <StepperComponent/> */}
       {/* <CabDetail/> */}
@@ -93,13 +94,13 @@ const App = () => {
           // matching user and mobile condition if user is logged in
         </Routes>
       </BrowserRouter> */}
-      <BrowserRouter>
+      {/* <BrowserRouter>
       <Routes>
         <Route path="/" element={<Package1/>}/>
         <Route path="/package2" element={<Package2/>}/>
         <Route path="/package3" element={<Package3/>}/>
       </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </>
   );
 };
