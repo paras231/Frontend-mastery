@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/register.module.scss";
-import {FcAddImage} from "react-icons/fc";
+import { FcAddImage } from "react-icons/fc";
 
 const Register = () => {
   return (
@@ -15,7 +15,7 @@ const Register = () => {
             <input type="password" placeholder="Password" />
             <input type="file" style={{ display: "none" }} id="file" />
             <label htmlFor="file">
-              <FcAddImage/>
+              <FcAddImage />
               <span>Add an Avatar</span>
             </label>
             <button>Signup</button>

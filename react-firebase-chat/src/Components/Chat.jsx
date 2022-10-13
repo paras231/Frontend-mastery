@@ -3,7 +3,8 @@ import styles from "../styles/home.module.scss";
 import { AiOutlineVideoCamera } from "react-icons/ai";
 import { AiOutlineUserAdd } from "react-icons/ai";
 import { BiDotsHorizontalRounded } from "react-icons/bi";
-
+import Messages from "./Messages";
+import Input from "./Input";
 const Chat = () => {
   return (
     <>
@@ -15,7 +16,10 @@ const Chat = () => {
             <AiOutlineUserAdd className={styles.icon} />
             <BiDotsHorizontalRounded className={styles.icon} />
           </div>
+         
         </div>
+        <Messages />
+        <Input/>
       </div>
     </>
   );

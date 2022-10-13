@@ -80,3 +80,85 @@
     }
   }
 }
+
+.messages {
+  background-color: grey;
+  padding: 10px;
+  height: calc(100% - 140px);
+  overflow: scroll;
+  .message {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    .messageInfo {
+      display: flex;
+      flex-direction: column;
+      color: lightgray;
+      font-weight: 300;
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+    .messageContent {
+      max-width: 80%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      P {
+        background-color: white;
+        padding: 10px 20px;
+        border-radius: 0px 10px 10px 10px;
+        max-width: max-content;
+      }
+      img {
+        width: 50%;
+      }
+    }
+    &.owner {
+      flex-direction: row-reverse;
+      .messageContent {
+        align-items: flex-end;
+        P {
+          background-color: pink;
+          color: white;
+          border-radius: 10px 0px 10px 10px;
+        }
+      }
+    }
+  }
+}
+
+.input {
+  height: 50px;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    &::placeholder {
+      color: lightgray;
+    }
+  }
+  .send {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    button {
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      background-color: pink;
+      &:focus {
+        outline: 1px solid black;
+      }
+    }
+  }
+}
