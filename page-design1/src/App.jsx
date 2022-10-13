@@ -48,7 +48,7 @@ const App = () => {
   const user = true;
   return (
     <>
-    <BannerInput/>
+    {/* <BannerInput/> */}
       {/* <Package1 /> */}
       {/* <StepperComponent/> */}
       {/* <CabDetail/> */}
@@ -66,7 +66,7 @@ const App = () => {
       {/* <FerryInputComponent/> */}
       {/* <FerryBookingProcess/> */}
       {/* <WhyBooking/> */}
-      {/* <Cabs/> */}
+      <Cabs/>
       {/* <MultipleInputs/> */}
       {/* <Share/> */}
       {/* <Category />

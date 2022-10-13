@@ -8,7 +8,6 @@
 .inputContainer {
 
 
- overflow-x: hidden;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -38,7 +37,7 @@
     border-radius: 5px;
     border: none;
     outline: none;
-    width: 15vmax;
+    width: 17vmax;
     height: 3vmax;
     position: relative;
     &::placeholder{

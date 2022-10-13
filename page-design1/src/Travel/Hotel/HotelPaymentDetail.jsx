@@ -6,7 +6,17 @@ import { MdLocationOn } from "react-icons/md";
 import Couple from "../../assets/Couple.png";
 import checkmark from "../../assets/checkmark.png";
 
+
+
+
 const HotelPaymentDetail = () => {
+ 
+ const handleOpen = ()=>{
+
+ }
+
+
+
   return (
     <>
       {/* this page has been devided into two section  section one will be flex-3 and section two will be flex1 */}
@@ -290,8 +300,11 @@ const HotelPaymentDetail = () => {
           </div>
         </section>
       </section>
+     
     </>
   );
 };
 
 export default HotelPaymentDetail;
+
+
