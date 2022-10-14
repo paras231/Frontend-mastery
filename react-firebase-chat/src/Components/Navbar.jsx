@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "../styles/navbar.module.scss";
+import { signOut } from "firebase/auth";
+import {auth} from "../Firebase";
 
 const Navbar = () => {
   const url =
@@ -11,7 +13,7 @@ const Navbar = () => {
         <div className={styles.user}>
           <img src={url} alt="" />
           <span>Jhon</span>
-          <button>Logout</button>
+          <button onClick={() => signOut(auth)}>Logout</button>
         </div>
       </div>
     </>
