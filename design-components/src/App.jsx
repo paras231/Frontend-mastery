@@ -4,7 +4,8 @@ import Form from "./Components/MultistepForm/Form";
 import Dropdown from "./Components/Dropdown/Dropdown";
 import RadioButtonFilter from "./Components/Filters/RadioButtonFilter";
 import Modal1 from "./Components/Modal/Modal1";
-import "./app.css";
+import Navbar from "./Components/Navbar/Navbar";
+import Home from "./Components/Home";
 
 const App = () => {
   return (
@@ -14,7 +15,9 @@ const App = () => {
       {/* <Dropdown/>
        */}
       {/* <RadioButtonFilter/> */}
-      <Modal1 />
+      {/* <Modal1 /> */}
+      <Navbar />
+      <Home/>
     </>
   );
 };
