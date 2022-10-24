@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.css";
+import NewTest from "./AdvancedComponents/NewTest";
+import CheckBoxWrapper from "./AdvancedComponents/CheckBoxWrapper";
 import HotelPaymentDetail from "./Travel/Hotel/HotelPaymentDetail";
 import HotelSelection from "./Travel/Hotel/HotelSelection";
 import WaterActivityMain from "./Travel/Wateractivity/WaterActivityMain";
@@ -48,6 +50,7 @@ const App = () => {
   const user = true;
   return (
     <>
+    <NewTest/>
     {/* <BannerInput/> */}
       {/* <Package1 /> */}
       {/* <StepperComponent/> */}
@@ -66,7 +69,7 @@ const App = () => {
       {/* <FerryInputComponent/> */}
       {/* <FerryBookingProcess/> */}
       {/* <WhyBooking/> */}
-      <Cabs/>
+      {/* <Cabs/> */}
       {/* <MultipleInputs/> */}
       {/* <Share/> */}
       {/* <Category />

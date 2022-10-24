@@ -13,11 +13,13 @@ const Search = () => {
       collection(db, "users"),
       where("displayName", "==", userName)
     );
+ console.log(userName);
     try {
       const querySnapshot = await getDocs(q);
       querySnapshot.forEach((doc) => {
         setUser(doc.data());
-        console.log(doc.id, " => ", doc.data());
+        console.log(doc);
+        console.log(doc.id, " => ", doc.data(),"doc data here");
       });
     } catch (error) {
       setErr(true);
@@ -26,7 +28,7 @@ const Search = () => {
   };
 
   const handleKey = (e) => {
-    e.code === "Enter" && handleSearch();
+    e.code==="Enter" && handleSearch();
   };
   const url =
     "https://images.unsplash.com/photo-1664374170305-31a1630b2038?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60";
