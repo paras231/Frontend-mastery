@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import HotelList from "./Travel/HotelListComponent/HotelList";
 import NewTest from "./AdvancedComponents/NewTest";
 import CheckBoxWrapper from "./AdvancedComponents/CheckBoxWrapper";
 import HotelPaymentDetail from "./Travel/Hotel/HotelPaymentDetail";
@@ -43,15 +44,17 @@ import CabDetail from "./Travel/Cab/CabDetail";
 import Package1 from "./Travel/CustomizePackage/Package1";
 import Package2 from "./Travel/CustomizePackage/Package2";
 import Package3 from "./Travel/CustomizePackage/Package3";
-import  BannerInput  from "./Travel/Bannerinput/BannerInput";
+import BannerInput from "./Travel/Bannerinput/BannerInput";
+
 const App = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   const user = true;
   return (
     <>
-    <NewTest/>
-    {/* <BannerInput/> */}
+    <HotelList/>
+      {/* <NewTest/> */}
+      {/* <BannerInput/> */}
       {/* <Package1 /> */}
       {/* <StepperComponent/> */}
       {/* <CabDetail/> */}
