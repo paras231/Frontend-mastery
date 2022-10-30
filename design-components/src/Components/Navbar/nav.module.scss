@@ -1,0 +1,50 @@
+.heading {
+  color: red;
+}
+
+.navcontainer {
+  width: 100%;
+  background-color: black;
+  padding: 1%;
+  box-sizing: border-box;
+  position: sticky;
+   top: 0;
+  //  its important to use z index
+   z-index: 1;  
+}
+
+.navwrapper {
+  //  background-color: purple;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logowrapper {
+  cursor: pointer;
+  display: flex;
+  gap: 2vmax;
+  img {
+    width: 4vmax;
+    height: 4vmax;
+  }
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.rightnav {
+  margin-top: 1%;
+  ul {
+    display: flex;
+    gap: 4vmax;
+    list-style: none;
+  }
+  ul > li {
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: whitesmoke;
+    &:hover {
+      color: green;
+    }
+  }
+}

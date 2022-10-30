@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Review from "./Travel/Review/Review";
 import HotelList from "./Travel/HotelListComponent/HotelList";
 import NewTest from "./AdvancedComponents/NewTest";
 import CheckBoxWrapper from "./AdvancedComponents/CheckBoxWrapper";
@@ -52,7 +53,8 @@ const App = () => {
   const user = true;
   return (
     <>
-    <HotelList/>
+      {/* <Review /> */}
+      <HotelList />
       {/* <NewTest/> */}
       {/* <BannerInput/> */}
       {/* <Package1 /> */}

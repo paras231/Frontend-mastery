@@ -1,0 +1,46 @@
+.reviewmain {
+  //   width: 98%;
+  margin: 4% 2% 2% 2%;
+  //   background-color: red;
+}
+
+.revwrapper {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto auto auto;
+  grid-gap: 30px;
+}
+
+.revcard {
+  display: flex;
+  flex-direction: column;
+  gap: 2vmax;
+}
+
+.uppersection {
+  display: flex;
+  gap: 3vmax;
+}
+
+.icontext {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vmax;
+}
+
+.stardiv {
+  display: flex;
+  gap: 10px;
+}
+
+.lowersection {
+  text-align: justify;
+}
+
+.centertext {
+  color: #145843;
+  font-weight: 600;
+  font-size: 28px;
+  margin-top: 2vmax;
+//   line-height: 42px;
+}

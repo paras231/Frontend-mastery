@@ -6,18 +6,26 @@ import RadioButtonFilter from "./Components/Filters/RadioButtonFilter";
 import Modal1 from "./Components/Modal/Modal1";
 import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/Home";
+import Navbar2 from "./Components/Navbar/Navbar2";
 
 const App = () => {
   return (
     <>
-      {/* <Card/> */}
+     
       {/* <Form/> */}
-      {/* <Dropdown/>
+      {/*
        */}
       {/* <RadioButtonFilter/> */}
       {/* <Modal1 /> */}
       <Navbar />
-      <Home/>
+      {/* <Home/> */}
+      {/* <Dropdown/> */}
+      <Navbar2 />
+       <Card/>
+       <Card/>
+       <Card/>
+       <Card/>
+       <Card/>
     </>
   );
 };

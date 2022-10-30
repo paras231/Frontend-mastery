@@ -10,6 +10,7 @@ import whiteline from "../../assets/whiteline.png";
 import line36 from "../../assets/line36.png";
 import line30 from "../../assets/line30.png";
 import line31 from "../../assets/line31.png";
+import Review from "../Review/Review";
 
 const HotelList = () => {
   return (
@@ -208,6 +209,7 @@ const HotelList = () => {
           <img src={line31} alt="" />
         </div>
       </div>
+      <Review/>
     </>
   );
 };
