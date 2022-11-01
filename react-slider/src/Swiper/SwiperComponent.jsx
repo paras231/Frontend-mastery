@@ -17,7 +17,7 @@ const SwiperComponent = () => {
   return (
     <>
       <Swiper
-        spaceBetween={8}
+        spaceBetween={18}
         slidesPerView={3}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
