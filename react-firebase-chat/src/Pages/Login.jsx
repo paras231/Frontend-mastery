@@ -5,16 +5,15 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../Firebase";
 const Login = () => {
   const [err, setErr] = React.useState(false);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const email = e.target[0].value;
-    const password = e.target[1].vlaue;
-
     try {
-   const user =    await signInWithEmailAndPassword(auth, email, password);
-   console.log(user);
+      const user = await signInWithEmailAndPassword(auth, email, password);
+      console.log(user);
       navigate("/");
     } catch (error) {
       setErr(true);
@@ -31,8 +30,18 @@ const Login = () => {
             <span className={styles.logo}>React Chat</span>
             <span className={styles.title}>Login</span>
 
-            <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Password" />
+            <input
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <input
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+            />
 
             <button type="submit">Login</button>
             {err && <span style={{ color: "red" }}>Something went wrong</span>}
