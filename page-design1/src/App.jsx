@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.css";
+import SelectMultipleDiv from "./AdvancedComponents/SelectMultipleDiv";
+import ArrayMethods from "./AdvancedComponents/ArrayMethods";
 import Review from "./Travel/Review/Review";
 import HotelList from "./Travel/HotelListComponent/HotelList";
 import NewTest from "./AdvancedComponents/NewTest";
@@ -53,8 +55,10 @@ const App = () => {
   const user = true;
   return (
     <>
+    <SelectMultipleDiv/>
+      {/* <ArrayMethods /> */}
       {/* <Review /> */}
-      <HotelList />
+      {/* <HotelList /> */}
       {/* <NewTest/> */}
       {/* <BannerInput/> */}
       {/* <Package1 /> */}
