@@ -1,6 +1,7 @@
 .list-wrapper {
   display: none;
   position: absolute;
+  
 }
 .container{
     position: relative;
@@ -10,8 +11,11 @@
 .container:hover .list-wrapper {
   display: block;
 }
+/* padding is esseintial for ul tag here */
 .list-wrapper > ul {
   list-style-type: none;
+  display: block;
+  padding: 12px 16px;      
 }
 .list-wrapper{
     width:10vmax;
@@ -19,4 +23,13 @@
 .list-wrapper>ul>li:hover{
     background-color:rgba(219, 188, 193, 0.679);
     cursor: pointer;
+}
+
+.my-button{
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
