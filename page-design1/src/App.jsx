@@ -55,7 +55,7 @@ const App = () => {
   const user = true;
   return (
     <>
-    <SelectMultipleDiv/>
+    {/* <SelectMultipleDiv/> */}
       {/* <ArrayMethods /> */}
       {/* <Review /> */}
       {/* <HotelList /> */}
@@ -93,7 +93,7 @@ const App = () => {
       {/* <InputComponents/> */}
       {/* <Cards/> */}
       {/* <Footer2/> */}
-      {/* <Input/> */}
+      <Input/>
       {/* <AmazoneHome/> */}
 
       {/* <BrowserRouter>
