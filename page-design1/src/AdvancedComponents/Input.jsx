@@ -6,7 +6,7 @@ const Input = () => {
 
   const [child, setChild] = React.useState(0);
   const [adult, setAdult] = React.useState(0);
-  const [show, setShow] = React.useState("");
+  const [show, setShow] = React.useState(false);
   const handleShow = () => {
     setShow(!show);
   };
@@ -31,7 +31,7 @@ const Input = () => {
       <div>
         <input
           onClick={handleShow}
-          style={{ width: "10vmax" }}
+          style={{ width: "auto", outline: "none", border: "none" }}
           value={`children: ${child}  , Adults:  ${adult}`}
         />
 
@@ -41,7 +41,12 @@ const Input = () => {
               <span>Children</span>
               <button onClick={decrementChild}>-</button>
               <input
-                style={{ width: "6vmax" }}
+                style={{
+                  width: "2vmax",
+                  border: "none",
+                  outline: "none",
+                  backgroundColor: "red",
+                }}
                 type="text"
                 aria-label="Children"
                 value={child}
