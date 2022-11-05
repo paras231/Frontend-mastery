@@ -1,7 +1,41 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Input.css";
+import axios from "axios";
+
 
 const Input = () => {
+  const [data, setData] = useState([]);
+
+  const myData = [
+    {
+      name: "Hellow world",
+      location: "Jaipur",
+    },
+    {
+      name: "Javascript",
+      location: "Ajmer",
+    },
+    {
+      name: "Pyhton",
+      location: "Alwar",
+    },
+    {
+      name: "Hellow world",
+      location: "Jaipur",
+    },
+  ];
+  const location = "Andman"
+  console.log(location)
+  const handleFetch = async () => {
+    const  {data}  = await axios.post(
+      "https://travel-andman.herokuapp.com/api/user/search/hotel",
+      {location}
+
+    );
+    // console.log("data here",data?.hotels);
+    setData(data?.hotels);
+
+  };
   const [maininput, setMaininput] = React.useState("");
 
   const [child, setChild] = React.useState(0);
@@ -26,6 +60,7 @@ const Input = () => {
     if (adult <= 1) return;
     setAdult(adult - 1);
   };
+  console.log(data,'fetched data here')
   return (
     <>
       <div>
@@ -71,6 +106,7 @@ const Input = () => {
           </div>
         )}
       </div>
+      <button onClick={handleFetch}>Click me</button>
     </>
   );
 };

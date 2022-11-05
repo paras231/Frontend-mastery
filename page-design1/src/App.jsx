@@ -1,5 +1,9 @@
 import React from "react";
 import "./App.css";
+import MultipleCheckbox from "./Filters/MultipleCheckbox";
+import Filter from "./AdvancedComponents/Filter";
+import MainList from "./TestApi/MainList";
+import ClickFetch from "./TestApi/ClickFetch";
 import SelectMultipleDiv from "./AdvancedComponents/SelectMultipleDiv";
 import ArrayMethods from "./AdvancedComponents/ArrayMethods";
 import Review from "./Travel/Review/Review";
@@ -55,7 +59,9 @@ const App = () => {
   const user = true;
   return (
     <>
-    {/* <SelectMultipleDiv/> */}
+    <MultipleCheckbox/>
+      {/* <Filter /> */}
+      {/* <SelectMultipleDiv/> */}
       {/* <ArrayMethods /> */}
       {/* <Review /> */}
       {/* <HotelList /> */}
@@ -93,7 +99,7 @@ const App = () => {
       {/* <InputComponents/> */}
       {/* <Cards/> */}
       {/* <Footer2/> */}
-      <Input/>
+      {/* <Input/> */}
       {/* <AmazoneHome/> */}
 
       {/* <BrowserRouter>
@@ -105,13 +111,6 @@ const App = () => {
           ) : null}
           // matching user and mobile condition if user is logged in
         </Routes>
-      </BrowserRouter> */}
-      {/* <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Package1/>}/>
-        <Route path="/package2" element={<Package2/>}/>
-        <Route path="/package3" element={<Package3/>}/>
-      </Routes>
       </BrowserRouter> */}
     </>
   );
