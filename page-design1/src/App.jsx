@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import MobileHoteList from "./Mobileview/MobileHoteList"
 import MultipleCheckbox from "./Filters/MultipleCheckbox";
 import Filter from "./AdvancedComponents/Filter";
 import MainList from "./TestApi/MainList";
@@ -59,7 +60,8 @@ const App = () => {
   const user = true;
   return (
     <>
-    <MultipleCheckbox/>
+    <MobileHoteList/>
+    {/* <MultipleCheckbox/> */}
       {/* <Filter /> */}
       {/* <SelectMultipleDiv/> */}
       {/* <ArrayMethods /> */}
