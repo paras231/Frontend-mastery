@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { useSwiper } from "swiper/react";
 import "swiper/css";
 import Card from "./Card";
+import Cards2 from "./Cards2";
 
 const SwiperButtonNext = ({ children }) => {
   const swiper = useSwiper();
@@ -14,50 +15,33 @@ const SwiperButtonNext = ({ children }) => {
 };
 
 const SwiperComponent = () => {
+  const data = [
+    <Cards2 />,
+    <Cards2 />,
+    <Cards2 />,
+    <Cards2 />,
+    <Cards2 />,
+    <Cards2 />,
+    <Cards2 />,
+    <Cards2 />,
+    <Cards2 />,
+  ];
   return (
     <>
       <Swiper
-        spaceBetween={18}
-        slidesPerView={3}
+        spaceBetween={20}
+        slidesPerView={2}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
       >
-        <SwiperSlide className="next">
-          <Card />
-        </SwiperSlide>
-        <SwiperSlide className="next">
-          <Card />
-        </SwiperSlide>
-        <SwiperSlide className="next">
-          <Card />
-        </SwiperSlide>
-        <SwiperSlide className="next">
-          <Card />
-        </SwiperSlide>
-        <SwiperSlide className="next">
-          <Card />
-        </SwiperSlide>
-        <SwiperSlide className="next">
-          <Card />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card />
-        </SwiperSlide>
+        {data.map((value) => {
+          return (
+            <>
+              <SwiperSlide className="next">{value}</SwiperSlide>
+            </>
+          );
+        })}
+
         <SwiperButtonNext>Slide</SwiperButtonNext>
       </Swiper>
     </>

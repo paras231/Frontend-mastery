@@ -1,0 +1,47 @@
+.mainwrapper {
+  /* background-color: blue; */
+  margin: 0% 2% 0% 2%;
+}
+
+.heading {
+  color: red;
+}
+
+.cardwrapper {
+  width: 180px;
+  /* background-color: red; */
+  margin-top: 20px;
+  background: #ffffff;
+  box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align:justify;
+
+}
+
+.cardimg {
+  width: 100%;
+}
+
+.location {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.desc {
+  text-align: justify;
+  font-size: 12px;
+}
+
+.pricerating {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+
+.cardbottom{
+  margin-top: 20px;
+}

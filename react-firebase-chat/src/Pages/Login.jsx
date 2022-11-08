@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "../styles/register.module.scss";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Link } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../Firebase";
 const Login = () => {
@@ -45,7 +45,7 @@ const Login = () => {
 
             <button type="submit">Login</button>
             {err && <span style={{ color: "red" }}>Something went wrong</span>}
-            <p>Don't have Account? Signup here</p>
+      <Link to="/register"><p>Don't have Account? Signup here</p></Link>      
           </form>
         </div>
       </div>

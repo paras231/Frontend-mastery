@@ -21,13 +21,14 @@
   cursor: pointer;
 }
 
-@media (min-width: 320px) and (max-width: 375px) {
+@media (min-width: 320px) and (max-width: 420px) {
   .main-container {
     display: grid;
     height: 220px;
     width: 120px;
     background-color: pink;
     text-align: center;
+    margin-top: 40px;
   }
   .upper-card {
     width: 120px;
