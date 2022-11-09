@@ -9,10 +9,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/lab": "^5.0.0-alpha.107",
+    "@mui/material": "^5.10.13",
     "bootstrap": "^5.2.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "sass": "^1.56.1",
+    "swiper": "^8.4.4"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
