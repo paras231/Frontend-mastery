@@ -8,6 +8,8 @@
   background: rgba(92, 203, 160, 0.15);
   margin: 0% 2% 0% 2%;
   padding: 10px;
+  box-shadow: 6px 8px 23px rgba(122, 122, 122, 0.1);
+  border-radius: 12px;
 }
 
 .formwrapper {
@@ -15,14 +17,14 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-  label{
+  label {
     font-weight: 600;
   }
 }
 
 .selectgen {
   background-color: transparent;
-  width: 260px;
+  // width: 260px;
   height: 30px;
   outline: none;
   border-radius: 5px;
@@ -49,5 +51,19 @@
     &::placeholder {
       padding-left: 10px;
     }
+  }
+}
+
+.paynowbtn {
+  background: linear-gradient(90deg, #2fbf8c 0%, #0da274 54.69%, #4ed19e 100%);
+  border-radius: 35px;
+  border: none;
+  outline: none;
+  height: 35px;
+  color: white;
+  font-weight: 600;
+  // width: 130px;
+  &:focus {
+    outline: 1px solid black;
   }
 }

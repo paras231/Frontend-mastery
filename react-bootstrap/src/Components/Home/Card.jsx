@@ -2,6 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useSwiper } from "swiper/react";
 import "swiper/css";
+import styles from "./card.module.scss";
 
 const SwiperButtonNext = ({ children }) => {
   const swiper = useSwiper();
@@ -26,10 +27,10 @@ const Card = () => {
     "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60";
   return (
     <>
-      <div className="card ">
+      <div className={`card `}>
         <img className="card-img-top" src={url} alt="Card image cap" />
-        <div className="card-body">
-          <p className="card-text">
+        <div className={`card-body ${styles.cardstyle}`}>
+          <p className={`card-text ${styles.text}`}>
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>

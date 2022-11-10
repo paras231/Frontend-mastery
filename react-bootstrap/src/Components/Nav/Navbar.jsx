@@ -1,9 +1,9 @@
 import React from "react";
-
+import styles from "./nav.module.scss"
 const Navbar = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-light ">
+      <nav className={`navbar navbar-expand-lg bg-light  ${styles.mynav}`}>
         <div className="container-fluid ">
           <a className="navbar-brand px-2" href="#">
             Navbar

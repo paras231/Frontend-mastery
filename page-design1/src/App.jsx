@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.css";
+import MobilePackageBookForm from "./Mobileview/MobilePackageBookForm"
+import MobileCabBookForm from "./Mobileview/MobileCabBookForm";
 import MobileHotelBookForm from "./Mobileview/MobileHotelBookForm";
 import MobilePackageList from "./Mobileview/MobilePackageList";
 import MobileHoteList from "./Mobileview/MobileHoteList";
@@ -62,8 +64,10 @@ const App = () => {
   const user = true;
   return (
     <>
+    <MobilePackageBookForm/>
       {/* <MobilePackageList/> */}
-      <MobileHotelBookForm/>
+      {/* <MobileCabBookForm/> */}
+      {/* <MobileHotelBookForm/> */}
       {/* <MobileHoteList/> */}
       {/* <MultipleCheckbox/> */}
       {/* <Filter /> */}
