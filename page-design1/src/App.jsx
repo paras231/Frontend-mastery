@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.css";
-import MobileHoteList from "./Mobileview/MobileHoteList"
+import MobileHotelBookForm from "./Mobileview/MobileHotelBookForm";
+import MobilePackageList from "./Mobileview/MobilePackageList";
+import MobileHoteList from "./Mobileview/MobileHoteList";
 import MultipleCheckbox from "./Filters/MultipleCheckbox";
 import Filter from "./AdvancedComponents/Filter";
 import MainList from "./TestApi/MainList";
@@ -24,7 +26,7 @@ import FerryLists from "./Travel/FerryLists";
 import Input from "./AdvancedComponents/Input";
 import Cabs from "./Travel/Cabs";
 import WhyBooking from "./Travel/WhyBooking";
-import FerryInputComponent from "./Travel/FerryInputComponent";
+// import FerryInputComponent from "./Travel/FerryInputComponent";
 import FerryBookingProcess from "./Travel/FerryBookingProcess";
 import SignupNew from "./components/SignupNew";
 import Share from "./Pages/Share";
@@ -60,8 +62,10 @@ const App = () => {
   const user = true;
   return (
     <>
-    <MobileHoteList/>
-    {/* <MultipleCheckbox/> */}
+      {/* <MobilePackageList/> */}
+      <MobileHotelBookForm/>
+      {/* <MobileHoteList/> */}
+      {/* <MultipleCheckbox/> */}
       {/* <Filter /> */}
       {/* <SelectMultipleDiv/> */}
       {/* <ArrayMethods /> */}
@@ -114,6 +118,20 @@ const App = () => {
           // matching user and mobile condition if user is logged in
         </Routes>
       </BrowserRouter> */}
+
+      {/* {isMobile ? (
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<SignupNew />} />
+          </Routes>
+        </BrowserRouter>
+      ) : (
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Login />} />
+          </Routes>
+        </BrowserRouter>
+      )} */}
     </>
   );
 };
