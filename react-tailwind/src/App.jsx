@@ -3,6 +3,7 @@ import Navbar from "./Components/Navbar";
 import Navbar2 from "./Components/Navbar2";
 import Cards from "./Components/Cards";
 import Reviews from "./Components/Reviews";
+import Form from "./Components/Form";
 import "./App.css";
 
 const App = () => {
@@ -10,8 +11,9 @@ const App = () => {
     <>
       {/* <Navbar /> */}
       <Navbar2 />
-      <Cards/>
-      <Reviews/>
+      <Cards />
+      <Reviews />
+      <Form />
     </>
   );
 };

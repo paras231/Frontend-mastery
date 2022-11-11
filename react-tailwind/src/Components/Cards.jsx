@@ -7,7 +7,7 @@ const Cards = () => {
     <>
       <div className="container mx-auto  mt-20 w-full px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="shadow-lg	cursor-pointer p-1">
+          <div className="shadow-lg	cursor-pointer p-1 hover:bg-blue-500 ease-in duration-700 ">
             <img src={url} alt="" />
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Recusandae, veniam. Totam placeat labore quae pariatur expedita
