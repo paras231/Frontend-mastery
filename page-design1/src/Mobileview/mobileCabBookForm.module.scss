@@ -1,0 +1,72 @@
+.heading {
+  font-weight: 700;
+  margin-top: 20px;
+}
+.cabbookform {
+  display: flex;
+  justify-content: center;
+  // background: rgba(92, 203, 160, 0.15);
+  margin: 0% 2% 0% 2%;
+  padding: 10px;
+  box-shadow: 6px 8px 23px rgba(122, 122, 122, 0.1);
+  border-radius: 12px;
+}
+
+.formwrapper {
+  margin: 0% 3% 0% 3%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  label {
+    font-weight: 600;
+  }
+}
+
+.addresswrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  input {
+    background: transparent;
+    // outline: none;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    padding-left: 10px;
+    height: 40px;
+    font-size: 16px;
+    &::placeholder {
+      padding-left: 10px;
+    }
+  }
+}
+
+.genderwrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.radiowrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.malewrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.paynow {
+  background: linear-gradient(180deg, #2bbc89 0%, #10a476 47.92%, #44ca98 100%);
+  border-radius: 50px;
+  margin-bottom: 20px;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size:16px; 
+  color: white;
+  &:focus{
+    outline: 1px solid black;
+  }
+}

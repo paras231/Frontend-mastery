@@ -7,6 +7,7 @@ import Modal1 from "./Components/Modal/Modal1";
 import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/Home";
 import Navbar2 from "./Components/Navbar/Navbar2";
+import RangeFilter from "./Components/Filters/RangeFilter";
 
 const App = () => {
   return (
@@ -17,15 +18,16 @@ const App = () => {
        */}
       {/* <RadioButtonFilter/> */}
       {/* <Modal1 /> */}
-      <Navbar />
+      {/* <Navbar /> */}
       {/* <Home/> */}
       {/* <Dropdown/> */}
-      <Navbar2 />
+      {/* <Navbar2 />
        <Card/>
        <Card/>
        <Card/>
        <Card/>
-       <Card/>
+       <Card/> */}
+       <RangeFilter/>
     </>
   );
 };

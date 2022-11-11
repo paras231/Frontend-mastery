@@ -36,8 +36,30 @@ export const userProfiles = [
     gender: "Male",
   },
   {
-    id:3,
-    name:"Lol",
-    
-  }
+    id: 3,
+    name: "Lol",
+  },
+];
+
+export const products = [
+  {
+    id: 1,
+    price: 2000,
+    name: "Banana",
+  },
+  {
+    id: 2,
+    price: 2400,
+    name: "Nike Shoes",
+  },
+  {
+    id: 3,
+    price: 500,
+    name: "T- shirt",
+  },
+  {
+    id: 4,
+    price: 2900,
+    name: "Jeans",
+  },
 ];
