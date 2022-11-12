@@ -10,7 +10,7 @@ import Navbar2 from "./Components/Navbar/Navbar2";
 import RangeFilter from "./Components/Filters/RangeFilter";
 import A from "./StateManagement/A";
 import B from "./StateManagement/B";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
@@ -31,13 +31,22 @@ const App = () => {
        <Card/> */}
       {/* <RangeFilter/> */}
 
-  
-      <BrowserRouter>
+      {/*  use of memory router */}
+      {/* <MemoryRouter>
         <Routes>
           <Route path="/" element={<B />} />
           <Route path="/gotoa" element={<A />} />
         </Routes>
-      </BrowserRouter>
+      </MemoryRouter> */}
+
+      {/* use of hash router */}
+
+      <HashRouter>
+        <Routes>
+          <Route path="/" element={<B />} />
+          <Route path="/gotoa" element={<A />} />
+        </Routes>
+      </HashRouter>
     </>
   );
 };
