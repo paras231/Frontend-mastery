@@ -1,4 +1,5 @@
 import { useState } from "react";
+import chalk from "chalk";
 
 interface postProps {
   title: String;
@@ -8,6 +9,7 @@ interface postProps {
 }
 
 const Post = (props: postProps) => {
+  console.log(chalk.green.bgRed("Hello world!"));
   const [data, setData] = useState([
     {
       id: 1,

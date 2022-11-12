@@ -10,6 +10,7 @@ const Inputs = () => {
         onChange={(e) => setName(e.target.value)}
       />
       <h3>{name}</h3>
+     
     </>
   );
 };

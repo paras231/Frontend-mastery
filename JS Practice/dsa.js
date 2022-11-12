@@ -50,8 +50,18 @@ function checkAnagram(string1, string2) {
 
 const result = checkAnagram("hello", "ellohh");
 
-console.log(result);
+// console.log(result);
 
+// ? convert object into array
 
+const myObj = {
+  name: "Paras",
+  age: 23,
+  language: "JS",
+};
 
+const convertedValue = Object.entries(myObj);
 
+console.log(convertedValue); // gives 3 array with key value pair [name,"Paras"] , [age,23] ...
+
+const mappedValue = convertedValue.map((i) => console.log(i, "values of i"));
