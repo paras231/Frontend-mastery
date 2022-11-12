@@ -8,11 +8,13 @@ import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/Home";
 import Navbar2 from "./Components/Navbar/Navbar2";
 import RangeFilter from "./Components/Filters/RangeFilter";
+import A from "./StateManagement/A";
+import B from "./StateManagement/B";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
     <>
-     
       {/* <Form/> */}
       {/*
        */}
@@ -27,7 +29,15 @@ const App = () => {
        <Card/>
        <Card/>
        <Card/> */}
-       <RangeFilter/>
+      {/* <RangeFilter/> */}
+
+  
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<B />} />
+          <Route path="/gotoa" element={<A />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 };
