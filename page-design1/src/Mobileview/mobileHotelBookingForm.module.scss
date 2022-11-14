@@ -54,16 +54,27 @@
   }
 }
 
-.paynowbtn {
-  background: linear-gradient(90deg, #2fbf8c 0%, #0da274 54.69%, #4ed19e 100%);
-  border-radius: 35px;
-  border: none;
-  outline: none;
-  height: 35px;
-  color: white;
-  font-weight: 600;
-  // width: 130px;
-  &:focus {
-    outline: 1px solid black;
+.savebtnDiv {
+  display: flex;
+  justify-content: center;
+  .paynow {
+    background: linear-gradient(
+      180deg,
+      #2bbc89 0%,
+      #10a476 47.92%,
+      #44ca98 100%
+    );
+    border-radius: 50px;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 70%;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    &:focus {
+      outline: 1px solid black;
+    }
   }
 }

@@ -1,21 +1,20 @@
 import React from "react";
 import styles from "./mobileCabBookForm.module.scss";
 
-const MobilePackageBookForm = () => {
+const MobileWeddingBookForm = () => {
   return (
     <>
-      <center className={styles.heading}>Traveller Information</center>
-      <center className={styles.heading}>Trip Details</center>
+      <center className={styles.heading}>Book Wediing Form</center>
       <div className={styles.cabbookform}>
         <form action="">
           <div className={styles.formwrapper}>
             <div className={styles.addresswrapper}>
-              <label htmlFor="">Adult-1</label>
-              <input required type="text" placeholder="Enter Name" />
+              <label htmlFor="">Groom</label>
+              <input required type="text" placeholder="Enter Groom Name" />
             </div>
             <div className={styles.addresswrapper}>
-              <label htmlFor="">Adult-2</label>
-              <input required type="text" placeholder="Enter Name" />
+              <label htmlFor="">Bride</label>
+              <input required type="text" placeholder="Enter Bride Name" />
             </div>
             <div className={styles.addresswrapper}>
               <label htmlFor="">Email</label>
@@ -23,23 +22,26 @@ const MobilePackageBookForm = () => {
             </div>
 
             <div className={styles.addresswrapper}>
-              <label htmlFor="">Mobile</label>
-              <input required type="text" placeholder="Enter Contact No." />
-            </div>
-            <div className={styles.addresswrapper}>
-              <label htmlFor="">City</label>
-              <input required type="text" placeholder="Enter City" />
-            </div>
-            <div className={styles.addresswrapper}>
               <label htmlFor="">Address</label>
               <input required type="text" placeholder="Enter Address" />
+            </div>
+            <div className={styles.addresswrapper}>
+              <label htmlFor="">Mobile</label>
+              <input required type="text" placeholder="Enter Mobile No." />
+            </div>
+            <div className={styles.addresswrapper}>
+              <label htmlFor="">Arrival Date</label>
+              <input required type="text" placeholder="Enter Date" />
+            </div>
+            <div className={styles.addresswrapper}>
+              <label htmlFor="">Departure Date</label>
+              <input required type="text" placeholder="Enter Date" />
             </div>
             <div className={styles.savebtnDiv}>
               <button className={styles.paynow} type="submit">
                 Book Now
               </button>
             </div>
-           
           </div>
         </form>
       </div>
@@ -47,4 +49,4 @@ const MobilePackageBookForm = () => {
   );
 };
 
-export default MobilePackageBookForm;
+export default MobileWeddingBookForm;

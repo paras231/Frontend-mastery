@@ -45,9 +45,11 @@ const MobileCabBookForm = () => {
               <label htmlFor="">Contact Number</label>
               <input required type="text" placeholder="Enter Contact No." />
             </div>
-            <button className={styles.paynow} type="submit">
-              Book Now
-            </button>
+            <div className={styles.savebtnDiv}>
+              <button className={styles.paynow} type="submit">
+                Book Now
+              </button>
+            </div>
           </div>
         </form>
       </div>

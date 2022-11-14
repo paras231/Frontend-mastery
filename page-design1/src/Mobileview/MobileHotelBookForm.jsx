@@ -27,9 +27,11 @@ const MobileHotelBookForm = () => {
               <label htmlFor="">Email</label>
               <input type="email" placeholder="Email" />
             </div>
-            <button className={styles.paynowbtn} type="submit">
-              Proceed To Pay
-            </button>
+            <div className={styles.savebtnDiv}>
+              <button className={styles.paynow} type="submit">
+                Book Now
+              </button>
+            </div>
           </div>
         </form>
       </div>
