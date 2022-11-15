@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./select.css";
 
+//  when we have a data list and we want to select multiple data ,then this code can be used.
+
 const SelectMultipleDiv = () => {
   const hotelList = [
     {
