@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./mobilefooter.module.scss";
 
 const MobileFooter = () => {
+  const [url, setUrl] = useState("");
+  console.log(url);
+
   return (
     <>
       <div className={styles.footer}>

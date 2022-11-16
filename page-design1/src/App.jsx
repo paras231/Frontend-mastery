@@ -69,7 +69,10 @@ const App = () => {
   const user = true;
   return (
     <>
-    <MobileFooter/>
+      <Package1 />
+
+      <Package2 />
+      {/* <MobileFooter/> */}
       {/* <Footer /> */}
       {/* <MobileSearchOption/> */}
       {/* <MobileSightBookForm/> */}

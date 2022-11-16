@@ -4,21 +4,15 @@ import greenline from "../../assets/greenline.png";
 import greyline from "../../assets/greyline.png";
 import close from "../../assets/close.png";
 import sun from "../../assets/Sun.png";
-import { useNavigate } from "react-router-dom";
 
 const Package1 = () => {
-  const navigate = useNavigate();
-
-  const handleNavigate = (path) => {
-    navigate(path);
-  };
   return (
     <>
       <div className={styles.mainContainer}>
         <span className={styles.planning}>Planning Your Trip To</span>
         <div className={styles.iconTextwrapper}>
           <p className={styles.andman}>Andman</p>
-          <img src={close} alt="" />
+          {/* <img src={close} alt="" /> */}
         </div>
 
         <div className={styles.lineContainer}>
@@ -33,10 +27,7 @@ const Package1 = () => {
         </center>
 
         <div className={styles.monthCOntainer}>
-          <div
-            className={styles.monthCard}
-            onClick={() => handleNavigate("/package2")}
-          >
+          <div className={styles.monthCard}>
             <p>Sept</p>
             <button>Second Best</button>
             <div className={styles.weatherText}>

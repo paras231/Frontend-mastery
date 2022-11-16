@@ -1,6 +1,5 @@
 .mainContainer {
   margin: 5% 5% 0 5%;
-  width: 95%;
 }
 
 .planning {
@@ -9,7 +8,7 @@
 }
 .iconTextwrapper {
   display: flex;
-  gap: 70vmax;
+
   img {
     width: 1vmax;
     height: 1vmax;
@@ -24,43 +23,45 @@
 }
 .lineContainer {
   display: flex;
-  gap: 3vmax;
+  gap: 10px;
   margin-top: 5vmax;
   justify-content: center;
   align-items: center;
   img {
-    width: 9vmax;
+    width: 60px;
   }
 }
 
 .when {
   font-weight: 600;
-  margin-top: 3vmax;
+  margin-top: 20px;
 }
 
 .monthCOntainer {
   display: flex;
-  justify-content: flex-start;
-  gap: 3vmax 2vmax;
+  justify-content: center;
+
+  // flex-direction: column;
   flex-wrap: wrap;
   margin-top: 3vmax;
+  gap: 20px 20px;
   .monthCard {
-    width: 16vmax;
-    height: 18vmax;
+    // width: 16vmax;
+    // height: 18vmax;
     // background: red;
     border: 2px solid #9f9f9f;
     border-radius: 10px;
     text-align: center;
-
+    padding: 10px;
     p {
-      padding: 3vmax;
-      font-weight: 600;
+      padding: 10px;
+      font-weight: 500;
     }
     button {
       background: #0da274;
       border-radius: 30px;
       width: 80%;
-      height: 2vmax;
+      // height: 2vmax;
       border: none;
       outline: none;
       color: white;
