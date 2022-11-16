@@ -11,15 +11,15 @@ import footerbg from "../assets/footerbg.png";
 import { FiArrowRight } from "react-icons/fi";
 import "./Footer.css";
 const MainDiv = styled.div`
-  margin-top: 10vmax;
+  margin-top: 20px;
   background: url(${footerbg});
   background-repeat: no-repeat;
-  height: 90vmax;
+  height: 100%;
   width: 100%;
 `;
 
 const FutureText = styled.p`
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
   font-family: Poppins;
 `;
@@ -29,128 +29,49 @@ const Para = styled.p`
   font-family: Poppins;
 `;
 const Container = styled.div`
-  margin-top: 8vmax;
-  height: 75vmax;
+  margin-top: 30px;
+  /* height: 75vmax; */
   position: absolute;
-  background: rgba(255, 255, 255, 0.9);
-  width: 90%;
-  margin-left: 2vmax;
+  /* background: black; */
+  margin-left: 10px;
+  margin-right: 10px;
 `;
 const ListWrapper = styled.div`
-  margin-left: -45vmax;
   display: grid;
   cursor: pointer;
-  @media (min-width: 320px) and (max-width: 375px) {
-    margin-left: -33vmax;
-  }
-  @media (min-width: 376px) and (max-width: 420px) {
-    margin-left: -35vmax;
-  }
-  @media (min-width: 421px) and (max-width: 480px) {
-    margin-left: -42vmax;
-  }
+  font-size: 20px;
 `;
 
 const Text1 = styled.p`
-  margin-left: 3vmax;
-  @media (min-width: 320px) and (max-width: 375px) {
-    margin-left: 2vmax;
-  }
-  @media (min-width: 376px) and (max-width: 420px) {
-    margin-left: 2vmax;
-  }
+  margin-left: 10px;
 `;
 const Text2 = styled.p`
-  margin-left: 5vmax;
-  @media (min-width: 320px) and (max-width: 375px) {
-    margin-left: 4vmax;
-  }
-  @media (min-width: 376px) and (max-width: 420px) {
-    margin-left: 4vmax;
-  }
+  margin-left: 10px;
 `;
 const Text3 = styled.p`
-  margin-left: 7vmax;
-  @media (min-width: 320px) and (max-width: 375px) {
-    margin-left: 6vmax;
-  }
-  @media (min-width: 376px) and (max-width: 420px) {
-    margin-left: 5vmax;
-  }
-  @media (min-width: 421px) and (max-width: 480px) {
-    margin-left: 5.5vmax;
-  }
+  margin-left: 40px;
 `;
 const Text4 = styled.p`
-  margin-left: 9vmax;
-  @media (min-width: 320px) and (max-width: 375px) {
-    margin-left: 8vmax;
-  }
-  @media (min-width: 376px) and (max-width: 420px) {
-    margin-left: 7vmax;
-  }
-  @media (min-width: 421px) and (max-width: 480px) {
-    margin-left: 6vmax;
-  }
+  margin-left: 40px;
 `;
-const Number = styled.p`
-  margin-left: 18vmax;
-`;
+const Number = styled.p``;
 const Address = styled.p`
-  font-size: 1rem;
+  font-size: 18px;
   font-weight: bold;
   font-family: Poppins;
-  margin-left: -2vmax;
-  @media (min-width: 320px) and (max-width: 375px) {
-    margin-left: 2vmax;
-  }
-  @media (min-width: 376px) and (max-width: 420px) {
-    margin-left: 4vmax;
-  }
-  @media (min-width: 421px) and (max-width: 480px) {
-    margin-left: 3vmax;
-  }
+  margin-left: 30px;
 `;
-const Privacy = styled.p`
-  margin-left: 32vmax;
-  @media (min-width: 320px) and (max-width: 375px) {
-    margin-left: 28vmax;
-  }
-  @media (min-width: 376px) and (max-width: 420px) {
-    margin-left: 28vmax;
-  }
-  @media (min-width: 421px) and (max-width: 480px) {
-    margin-left: 28vmax;
-  }
-`;
+const Privacy = styled.p``;
 const ListWrapper2 = styled.div`
-  margin-left: -40vmax;
+  padding-right: 25px;
   display: grid;
   cursor: pointer;
-  @media (min-width: 320px) and (max-width: 375px) {
-    margin-left: -33vmax;
-  }
-  @media (min-width: 376px) and (max-width: 420px) {
-    margin-left: -35vmax;
-  }
-  @media (min-width: 421px) and (max-width: 480px) {
-    margin-left: -42vmax;
-  }
 `;
 
 const InputWrapper = styled.div`
   display: flex;
-  margin-left: 15vmax;
-  margin-top: 5vmax;
-  @media (min-width: 320px) and (max-width: 375px) {
-    margin-left: 10vmax;
-  }
-  @media (min-width: 376px) and (max-width: 420px) {
-    margin-left: 10vmax;
-  }
-  @media (min-width: 421px) and (max-width: 480px) {
-    margin-left: 15vmax;
-  }
+  justify-content: center;
+  margin-top: 20px;
 `;
 
 const Input = styled.input`
@@ -160,15 +81,7 @@ const Input = styled.input`
     padding-left: 14px;
   }
   border: 2px solid #0da274;
-  @media (min-width: 320px) and (max-width: 375px) {
-    height: 28px;
-  }
-  @media (min-width: 376px) and (max-width: 420px) {
-    height: 22px;
-  }
-  @media (min-width: 421px) and (max-width: 480px) {
-    height: 24px;
-  }
+  height: 35px;
 `;
 
 const Button = styled.button`
@@ -193,7 +106,7 @@ const Button = styled.button`
 const Copyright = styled.p`
   font-size: 1.2rem;
   font-weight: bold;
-  margin-top: 5vmax;
+  /* margin-top: 5vmax; */
 `;
 
 const Footer = () => {
@@ -207,79 +120,74 @@ const Footer = () => {
 
   return (
     <>
-      {isMobile ? (
-        <MainDiv>
-          <center>
-            <Container>
-              <FutureText>Be Future Ready</FutureText>
-              <Para>Get exclusive offer updates straight to your inbox.</Para>
-              <center>
-                <InputWrapper>
-                  <Input
-                    className="input-tab"
-                    type="email"
-                    placeholder="Email Address"
-                  />
-                  <Button>
-                    <FiArrowRight />
-                  </Button>
-                </InputWrapper>
-              </center>
-              <Accordion sx={{ marginTop: "8vh" }}>
-                <AccordionSummary
-                  expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel1a-content"
-                  id="panel1a-header"
-                >
-                  <p style={{ fontWeight: "bold" }}>Company</p>
-                </AccordionSummary>
-                <AccordionDetails>
-                  <ListWrapper>
-                    <p>Home</p>
-                    <Text1>About Us</Text1>
-                    <Text2>Testimonials</Text2>
-                  </ListWrapper>
-                </AccordionDetails>
-              </Accordion>
-              <Accordion>
-                <AccordionSummary
-                  expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel2a-content"
-                  id="panel2a-header"
-                >
-                  <p style={{ fontWeight: "bold" }}>Resources</p>
-                </AccordionSummary>
-                <AccordionDetails>
-                  <ListWrapper>
-                    <p>Blog</p>
-                    <Text3>News Letter</Text3>
-                    <Text4>Privacy Policy</Text4>
-                  </ListWrapper>
-                </AccordionDetails>
-              </Accordion>
-              <Accordion>
-                <AccordionSummary
-                  expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel2a-content"
-                  id="panel2a-header"
-                >
-                  <p style={{ fontWeight: "bold" }}>Contact Us</p>
-                </AccordionSummary>
-                <AccordionDetails>
-                  <ListWrapper2>
-                    <Number>735-587-0078, 743-521-4678</Number>
-                    <Address>Address</Address>
-                    <Privacy>7716 Kerluke Burgs, 1856 Tillman Parkway</Privacy>
-                  </ListWrapper2>
-                </AccordionDetails>
-              </Accordion>
-              <Copyright ref={copyRef}>
-                Copyright @ 2022. All Rights Reserved
-              </Copyright>
-            </Container>
-          </center>
-        </MainDiv>
-      ) : null}
+      <MainDiv>
+        <center>
+          <Container>
+            <FutureText>Be Future Ready</FutureText>
+            <Para>Get exclusive offer updates straight to your inbox.</Para>
+            <center>
+              <InputWrapper>
+                <Input
+                  className="input-tab"
+                  type="email"
+                  placeholder="Email Address"
+                />
+              </InputWrapper>
+            </center>
+            <Accordion sx={{ marginTop: "8vh" }}>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+              >
+                <p style={{ fontWeight: "bold" }}>Company</p>
+              </AccordionSummary>
+              <AccordionDetails>
+                <ListWrapper>
+                  <p>Home</p>
+                  <Text1>About Us</Text1>
+                  <Text2>Testimonials</Text2>
+                </ListWrapper>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel2a-content"
+                id="panel2a-header"
+              >
+                <p style={{ fontWeight: "bold" }}>Resources</p>
+              </AccordionSummary>
+              <AccordionDetails>
+                <ListWrapper>
+                  <p>Blog</p>
+                  <Text3>Wedding</Text3>
+                  <Text4>Privacy Policy</Text4>
+                </ListWrapper>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel2a-content"
+                id="panel2a-header"
+              >
+                <p style={{ fontWeight: "bold" }}>Contact Us</p>
+              </AccordionSummary>
+              <AccordionDetails>
+                <ListWrapper2>
+                  <Number>735-587-0078, 743-521-4678</Number>
+                  <Address>Address</Address>
+                  <Privacy>7716 Kerluke Burgs, 1856 Tillman Parkway</Privacy>
+                </ListWrapper2>
+              </AccordionDetails>
+            </Accordion>
+            <Copyright ref={copyRef}>
+              Copyright @ 2022. All Rights Reserved
+            </Copyright>
+          </Container>
+        </center>
+      </MainDiv>
     </>
   );
 };
