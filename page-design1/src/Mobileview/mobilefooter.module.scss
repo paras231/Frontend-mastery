@@ -1,0 +1,28 @@
+.footer {
+  // background-color:red;
+  margin-top: 30px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+
+.heading {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.input {
+  height: 32px;
+  border: 1px solid green;
+  padding-left: 10px;
+}
+
+.gridwrapper {
+  margin-top: 30px;
+}
+
+.griddiv {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
