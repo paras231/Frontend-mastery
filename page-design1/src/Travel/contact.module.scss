@@ -1,0 +1,75 @@
+.contactbtn {
+  background-color: green;
+  border-radius: 6px;
+  width: 7vmax;
+  height: 2vmax;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 16px;
+}
+
+.title {
+  color: red;
+  font-weight: bold;
+}
+
+.content {
+  padding: 10px;
+}
+
+.input {
+  width: 38vmax;
+  height: 3vmax;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+  ::placeholder {
+    font-weight: 700;
+    font-size:40px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 3vmax;
+}
+
+.main {
+  background-image: linear-gradient(
+    to bottom,
+    #04d6cb,
+    #00d0d2,
+    #00cbd7,
+    #09c4db,
+    hsl(190, 72%, 51%)
+  );
+}
+
+.textarea {
+  width: 38vmax;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+  padding-top: 10px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  button {
+    width: 15vmax;
+    height: 3vmax;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    :focus {
+      outline: 3px solid black;
+    }
+  }
+}

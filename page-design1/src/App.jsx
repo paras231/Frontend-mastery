@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import Contactus from "./Travel/Contactus";
 import MobileFooter from "./Mobileview/Footer";
 import MobileSearchOption from "./Mobileview/MobileSearchOption";
 import MobileSightBookForm from "./Mobileview/MobileSightBookForm";
@@ -69,9 +70,10 @@ const App = () => {
   const user = true;
   return (
     <>
-      <Package1 />
+    <Contactus/>
+      {/* <Package1 /> */}
 
-      <Package2 />
+      {/* <Package2 /> */}
       {/* <MobileFooter/> */}
       {/* <Footer /> */}
       {/* <MobileSearchOption/> */}

@@ -1,7 +1,11 @@
-import React from "react";
+import React,{ useState} from "react";
 import styles from "./mobileCabBookForm.module.scss";
 
 const MobilePackageBookForm = () => {
+  const [name,setName] = useState("");
+  const [email,setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  console.log("")
   return (
     <>
       <center className={styles.heading}>Traveller Information</center>
