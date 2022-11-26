@@ -9,7 +9,6 @@ import styles from "./contact.module.scss";
 
 const Contactus = () => {
   const [open, setOpen] = React.useState(false);
-
   const handleClickOpen = () => {
     setOpen(true);
   };
@@ -18,6 +17,7 @@ const Contactus = () => {
     setOpen(false);
   };
 
+ 
   return (
     <>
       <div>
