@@ -12,7 +12,7 @@ const Canvas = () => {
     const rect = new fabric.Rect({
       width: 50,
       height: 50,
-      fill: "transparent",
+      fill: "pink",
       angle: 10,
       top: 20,
       left: 20,
