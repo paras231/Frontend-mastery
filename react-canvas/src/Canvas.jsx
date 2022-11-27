@@ -3,11 +3,18 @@ import { fabric } from "fabric";
 
 const Canvas = () => {
   const canvasRef = useRef(null);
+  const height = (window.innerHeight * 70) / 100;
+  const width = (window.innerWidth * 90) / 100;
+
+
+
+
+
   useEffect(() => {
     const canvas = new fabric.Canvas(canvasRef.current, {
-      backgroundColor: "red",
-      height: window.innerHeight,
-      width: window.innerWidth,
+      height: height,
+      width: width,
+      backgroundColor: "purple",
     });
     const rect = new fabric.Rect({
       width: 50,
@@ -17,6 +24,7 @@ const Canvas = () => {
       top: 20,
       left: 20,
     });
+
     const textbox = new fabric.Textbox("Click on the Rectangle to move it.", {
       fontSize: 20,
       left: 50,
@@ -28,7 +36,7 @@ const Canvas = () => {
 
     canvas.on("object:moving", (e) => {
       e.target.opacity = 0.5;
-      e.target.backgroundColor = 'yellow'
+      e.target.backgroundColor = "yellow";
     });
     // UseEffect's cleanup function
     return () => {
@@ -37,9 +45,21 @@ const Canvas = () => {
   }, []);
   return (
     <>
-      <canvas id="my-fabric-canvas" ref={canvasRef} width="400" height="300" />
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <canvas ref={canvasRef} style={style} />
+      </div>
     </>
   );
 };
 
 export default Canvas;
+
+const style = {
+  border: "1px solid red",
+};
