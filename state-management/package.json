@@ -1,5 +1,5 @@
 {
-  "name": "react-canvas",
+  "name": "state-management",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,9 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "fabric": "^3.6.3",
+    "axios": "^1.2.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "zustand": "^4.1.4"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",

@@ -12,11 +12,11 @@ const App = () => {
   return (
     <>
      
-      <Test1/>
-      <Test2  />
+      {/* <Test1/>
+      <Test2  /> */}
       {/* <Todo />
       <Home />
-      <Post /> */}
+    
       {/* <Cart/> */}
       {/* <BrowserRouter>
         <Routes>
@@ -24,6 +24,7 @@ const App = () => {
           <Route path="/page2" element={<Page2 />} />
         </Routes>
       </BrowserRouter> */}
+        <Post /> 
     </>
   );
 };

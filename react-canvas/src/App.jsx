@@ -1,13 +1,12 @@
-import React from 'react'
-import Canvas from './Canvas'
-import Test from './Test'
+import React from "react";
+import MainComponent from "./components/MainComponent";
+
 const App = () => {
   return (
     <>
-    <Canvas/>
-    {/* <Test/> */}
+     <MainComponent/>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

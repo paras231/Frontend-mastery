@@ -11,7 +11,8 @@ export const FabricContext = createContext([])
 export const FabricContextProvider = ({ children }) => {
     const [canvas, setCanvas] = useState(null)
     const [activeObject, setActiveObject] = useState(null)
-
+    
+ // active objects are basically the shapes which are available on editor screen.
     const initCanvas = useCallback((el) => {
         const canvasOptions = {
             preserveObjectStacking: true,

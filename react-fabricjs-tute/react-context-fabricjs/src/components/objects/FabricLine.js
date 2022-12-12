@@ -9,6 +9,7 @@ import {
 
 const FabricLine = () => {
     const { canvas, activeObject } = useContext(FabricContext)
+    console.log(activeObject); // print how many objects are active .
     const [showTools, setShowTools] = useState(false)
     const [options, setOptions] = useState({
         left: 100,
