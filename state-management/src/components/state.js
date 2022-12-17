@@ -68,3 +68,21 @@ let cartStore = (set) => ({
 cartStore = persist(cartStore, { name: "cart" });
 
 export const userCart = create(cartStore);
+
+// handle input state->
+
+let inputStore = (set) => ({
+  name: "",
+  age: "",
+  email: "",
+  setName: (name) => set({ name }),
+  setAge: (age) => set({ age }),
+  setEmail: (email) => set({ email }),
+});
+
+inputStore = persist(inputStore, {
+  name: "inputdata",
+  getStorage: () => sessionStorage,
+});
+
+export const useInputStore = create(inputStore)
