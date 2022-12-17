@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import { AiFillPlusCircle } from "react-icons/ai";
 import { AiOutlineClose } from "react-icons/ai";
-import ferry from "../assets/ferry.png";
+// import ferry from "../assets/ferry.png";
 
 const HeaderImage = styled.img`
   width: 100%;
@@ -451,7 +451,7 @@ const FerryInputComponent = () => {
   const [selected, setSelected] = React.useState("");
   return (
     <>
-      <HeaderImage src={ferry} />
+      <HeaderImage  />
       <GreenWrapperMain>
         <GreenWrapper>
           <TextWrapper>Book Your Ferry</TextWrapper>

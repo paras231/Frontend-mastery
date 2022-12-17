@@ -34,7 +34,7 @@ import FerryLists from "./Travel/FerryLists";
 import Input from "./AdvancedComponents/Input";
 import Cabs from "./Travel/Cabs";
 import WhyBooking from "./Travel/WhyBooking";
-// import FerryInputComponent from "./Travel/FerryInputComponent";
+import FerryInputComponent from "./Travel/FerryInputComponent";
 import FerryBookingProcess from "./Travel/FerryBookingProcess";
 import SignupNew from "./components/SignupNew";
 import Share from "./Pages/Share";
@@ -108,7 +108,7 @@ const App = () => {
       {/* <DivInput/> */}
       {/* <FerrySlider/> */}
       {/* <FerryLists/> */}
-      {/* <FerryInputComponent/> */}
+      <FerryInputComponent/>
       {/* <FerryBookingProcess/> */}
       {/* <WhyBooking/> */}
       {/* <Cabs/> */}
