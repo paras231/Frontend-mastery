@@ -10,7 +10,7 @@ const Hotel = () => {
     location: "Havelock",
     price: 3400,
   };
-
+   
   const addNewHotel = () => {
     addHotel(hotel);
   };
