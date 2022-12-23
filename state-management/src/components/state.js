@@ -6,6 +6,8 @@ export const useStore = create((set) => ({
   increment: () => set((state) => ({ votes: state.votes + 1 })),
 }));
 
+
+// store user names
 let store = (set) => ({
   names: ["Paras", "deepak"],
   addName: (input) => {
@@ -18,6 +20,9 @@ let store = (set) => ({
 store = persist(store, { name: "usernames" });
 
 export const userInput = create(store);
+
+//? cart store add to cart feature->
+// this store will keep all the cart data inside the localstorage (by deafult) using persist
 
 let cartStore = (set) => ({
   // cart will be an array of products
@@ -69,7 +74,8 @@ cartStore = persist(cartStore, { name: "cart" });
 
 export const userCart = create(cartStore);
 
-// handle input state->
+// handle input state-> when page routing changes and we want to use the input data on other pages ,
+// this store will keep the all input values inside the session storage using zustand persist
 
 let inputStore = (set) => ({
   name: "",
@@ -85,4 +91,24 @@ inputStore = persist(inputStore, {
   getStorage: () => sessionStorage,
 });
 
-export const useInputStore = create(inputStore)
+export const useInputStore = create(inputStore);
+
+// lets create an store  which stores the hotels data and pass it to other componenrs->
+
+let hotel = (set) => ({
+  hotels: [],
+  addHotel: (hotel) => {
+    set((state) => ({
+      hotels: [...state.hotels, hotel],
+    }));
+  },
+});
+
+hotel = persist(hotel, {
+  name: "hotels",
+  getStorage: () => sessionStorage,
+});
+
+export const hotelStore = create(hotel);
+
+
