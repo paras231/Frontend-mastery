@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 
 const Hook = () => {
   //? create a counter using hook->
@@ -25,6 +25,9 @@ const Hook = () => {
       setErr(!err);
     }
   };
+
+  //? useMemo hook with an example ->
+
 
   return (
     <>
