@@ -165,3 +165,53 @@ function doSomething() {
 // }
 
  
+//? hoisting in javascript->
+
+console.log(a5)  // this will give undefined
+
+var a5 = "my name is paras"
+
+var x;
+
+console.log(x) // will show undefined.
+
+myVar = 20
+
+var myVar
+
+console.log(myVar) // will print 20
+
+
+//? NaN in js->  Not a number  .
+
+//? primitive data types-> that are immutable like string ,number,null, boolean
+
+//? non primtive data types -> that are mutable like array ,objects
+
+//! higher order function->
+
+// a funciton that takes another function as parameter and returns that function
+
+function higherOrderFunc(func){
+
+  func();
+
+}
+
+higherOrderFunc(function(){console.log('hof running')})
+
+// example 2 ->
+
+function higherOrder2() {
+  return function() {
+    return "Do something";
+  }
+}  
+
+var ho2 = higherOrder2()
+ho2()
+
+
+//! explain call(), apply()  and bind()
+
+// 1.

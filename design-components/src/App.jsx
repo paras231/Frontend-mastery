@@ -11,6 +11,7 @@ import RangeFilter from "./Components/Filters/RangeFilter";
 import A from "./StateManagement/A";
 import B from "./StateManagement/B";
 import { HashRouter, Route, Routes } from "react-router-dom";
+import MainLayout from "./Design/MainLayout";
 
 const App = () => {
   return (
@@ -43,7 +44,7 @@ const App = () => {
 
       <HashRouter>
         <Routes>
-          <Route path="/" element={<B />} />
+          <Route path="/" element={<MainLayout />} />
           <Route path="/gotoa" element={<A />} />
         </Routes>
       </HashRouter>
