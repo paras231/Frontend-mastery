@@ -4,6 +4,7 @@ import Products from "./components/Products";
 import PageOne from "./components/InputState/PageOne";
 import PageTwo from "./components/InputState/PageTwo";
 import Hotel from "./components/Hotel";
+import Userlist from "./components/Userlist";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
@@ -12,12 +13,14 @@ const App = () => {
       {/* <Home /> */}
 
       {/* <Products/> */}
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Hotel />} />
+          <Route path="/" element={<Userlist />} />
           <Route path="/two" element={<PageTwo />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+
+      <Userlist/>
     </>
   );
 };

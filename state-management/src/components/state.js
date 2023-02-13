@@ -1,11 +1,11 @@
 import create from "zustand";
 import { persist } from "zustand/middleware";
+import axios from "axios";
 
 export const useStore = create((set) => ({
   votes: 2,
   increment: () => set((state) => ({ votes: state.votes + 1 })),
 }));
-
 
 // store user names
 let store = (set) => ({
@@ -111,4 +111,20 @@ hotel = persist(hotel, {
 
 export const hotelStore = create(hotel);
 
+export const userStore = create((set) => ({
+  users: [],
+  fetchData: async () => {
+    const { data } = await axios.get(
+      "https://jsonplaceholder.typicode.com/users"
+    );
+    set({ users: data });
+  },
+  name:"Paras SHarma"
+}));
 
+
+export const useBearStore = create((set) => ({
+  bears: 0,
+  increasePopulation: () => set((state) => ({ bears: state.bears + 1 })),
+  removeAllBears: () => set({ bears: 0 }),
+}))
