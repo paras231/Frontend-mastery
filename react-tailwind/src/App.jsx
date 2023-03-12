@@ -13,12 +13,9 @@ const App = () => {
     <>
       {/* <Navbar /> */}
       <Navbar2 />
-      {/* <Cards />
-      <Reviews /> */}
+      <Cards />
+      <Reviews />
       {/* <Form /> */}
-     
-     <AnimatedCard/>
-     
     </>
   );
 };

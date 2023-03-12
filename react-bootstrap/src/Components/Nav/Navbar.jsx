@@ -1,9 +1,10 @@
 import React from "react";
-import styles from "./nav.module.scss"
+import "./nav.scss";
+
 const Navbar = () => {
   return (
     <>
-      <nav className={`navbar navbar-expand-lg bg-light  ${styles.mynav}`}>
+      <nav className="navbar navbar-expand-lg nav-bg">
         <div className="container-fluid ">
           <a className="navbar-brand px-2" href="#">
             Navbar
@@ -25,31 +26,27 @@ const Navbar = () => {
           >
             <ul className="navbar-nav mb-2 mb-lg-0">
               <li className="nav-item px-2">
-                <a
-                  className="nav-link active fs-4 fw-bold"
-                  aria-current="page"
-                  href="#"
-                >
+                <a className="nav-link active " aria-current="page" href="#">
                   Home
                 </a>
               </li>
               <li className="nav-item px-2">
-                <a className="nav-link fs-4 fw-bold" href="#">
+                <a className="nav-link  " href="#">
                   Cabs
                 </a>
               </li>
               <li className="nav-item px-2">
-                <a className="nav-link fs-4 fw-bold" href="#">
+                <a className="nav-link  " href="#">
                   Ferries
                 </a>
               </li>
               <li className="nav-item px-2">
-                <a className="nav-link fs-4 fw-bold" href="#">
+                <a className="nav-link  " href="#">
                   Package
                 </a>
               </li>
               <li className="nav-item px-2">
-                <a className="nav-link fs-4 fw-bold" href="#">
+                <a className="nav-link  " href="#">
                   Activity
                 </a>
               </li>
