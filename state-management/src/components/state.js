@@ -112,19 +112,22 @@ hotel = persist(hotel, {
 export const hotelStore = create(hotel);
 
 export const userStore = create((set) => ({
-  users: [],
   fetchData: async () => {
     const { data } = await axios.get(
       "https://jsonplaceholder.typicode.com/users"
     );
     set({ users: data });
   },
-  name:"Paras SHarma"
+  name: "Paras SHarma",
 }));
-
 
 export const useBearStore = create((set) => ({
   bears: 0,
   increasePopulation: () => set((state) => ({ bears: state.bears + 1 })),
   removeAllBears: () => set({ bears: 0 }),
-}))
+}));
+
+export const useToggleStore = create((set) => ({
+  active: false,
+  switchActive: () => set((state) => ({ active: !state.active })),
+}));

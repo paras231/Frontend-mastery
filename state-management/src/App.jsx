@@ -5,6 +5,7 @@ import PageOne from "./components/InputState/PageOne";
 import PageTwo from "./components/InputState/PageTwo";
 import Hotel from "./components/Hotel";
 import Userlist from "./components/Userlist";
+import PersistForm from "./components/PersistForm";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
@@ -20,7 +21,8 @@ const App = () => {
         </Routes>
       </BrowserRouter> */}
 
-      <Userlist/>
+      <Userlist />
+      <PersistForm />
     </>
   );
 };

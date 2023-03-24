@@ -1,6 +1,5 @@
 import React from "react";
-import { userStore } from "./state";
-
+import { userStore, useToggleStore } from "./state";
 
 const Userlist = () => {
   const fetchData = userStore((state) => state.fetchData);
@@ -8,19 +7,23 @@ const Userlist = () => {
   React.useEffect(() => {
     fetchData();
   }, []);
-  if (!users) {
-    return <h3>Loading...</h3>;
-  }
+
+  const active = useToggleStore((state) => state.active);
+
+  const switchActive = useToggleStore((state) => state.switchActive);
+
   return (
     <>
       <h3>userlist</h3>
       {users?.map((user) => {
         return (
-          <>
-            <span>{user.id}</span>
-          </>
+          <div key={user.id}>
+            <span>{user.name}</span>
+          </div>
         );
       })}
+      {active ? <h3>User is active</h3> : <h3>User offline</h3>}
+      <button onClick={switchActive}>Toggle</button>
     </>
   );
 };
