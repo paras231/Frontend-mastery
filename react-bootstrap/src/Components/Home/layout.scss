@@ -1,0 +1,26 @@
+.card-desc-section {
+  background: grey;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.review-card-btn {
+  background: crimson !important;
+  border: none !important;
+  outline: none !important;
+  &:hover {
+    background: purple !important;
+  }
+  transition: ease-in-out 1s !important;
+  border-radius: 20px !important;
+}
+
+.custom-card {
+  background: purple !important;
+  cursor: pointer;
+  &:hover {
+    background: crimson !important;
+    transition: ease-in-out 1s !important;
+    scale: 1.05 !important;
+  }
+}
