@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
-import { EditorState } from "draft-js";
+import { EditorState, ContentState, convertToRaw } from "draft-js";
 import { Editor } from "react-draft-wysiwyg";
 import { convertToHTML } from "draft-convert";
+import draftToHtml from "draftjs-to-html";
+import htmlToDraft from "html-to-draftjs";
 import DOMPurify from "dompurify";
 import "../App.css";
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
@@ -17,20 +19,9 @@ const DrafSetup = () => {
   }, []);
 
   const [editorState, setEditorState] = useState(EditorState.createEmpty());
-  const [convertedContent, setConvertedContent] = useState(null);
-  // converting editor content to hmtl
-  useEffect(() => {
-    let html = convertToHTML(editorState.getCurrentContent());
-    setConvertedContent(html);
-  }, [editorState]);
+  const [content, setContent] = useState("");
 
-  console.log(convertedContent);
-
-  function createMarkup(html) {
-    return {
-      __html: DOMPurify.sanitize(html),
-    };
-  }
+  console.log(content);
   return (
     <>
       <div className="App">
@@ -40,23 +31,38 @@ const DrafSetup = () => {
           ref={isMountedRef}
           onFocus={() => setEditorState(editorState)}
           editorState={editorState}
-          onEditorStateChange={(newState) => setEditorState(newState)}
+          onEditorStateChange={(newState) => {
+            setEditorState(newState);
+            setContent(draftToHtml(convertToRaw(newState.getCurrentContent())));
+          }}
           wrapperClassName="wrapper-class"
           editorClassName="editor-class"
           toolbarClassName="toolbar-class"
           toolbar={{
-            options: ['inline', 'blockType', 'fontSize', 'list', 'textAlign', 'history', 'embedded', 'emoji', 'image'],
+            options: [
+              "inline",
+              "blockType",
+              "fontSize",
+              "list",
+              "textAlign",
+              "history",
+              "embedded",
+              "emoji",
+              "image",
+            ],
             inline: { inDropdown: true },
             list: { inDropdown: true },
             textAlign: { inDropdown: true },
             link: { inDropdown: true },
             history: { inDropdown: true },
-        }}
+          }}
         />
       </div>
       <div
         className="preview"
-        dangerouslySetInnerHTML={createMarkup(convertedContent)}
+        dangerouslySetInnerHTML={{
+          __html: content,
+        }}
       ></div>
     </>
   );
