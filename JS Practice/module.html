@@ -7,10 +7,60 @@
     <title>Document</title>
   </head>
   <body>
+    <h2>Imported module file compiling Javascript...</h2>
     <script type="module">
       // we can use type module to import the js from other folders
-      import { data } from "./modules/helper.js";
-      console.log(data);
+      import { data, obj1, obj2 } from "./modules/helper.js";
+      console.log(obj2);
+      obj2.name = "Paras";
+      console.log(obj2);
+      const obj3 = {
+        name: "User3",
+        age: 3,
+      };
+      const cloned = Object.assign({}, obj3);
+      console.log(cloned, "cloned object");
+      cloned.name = "Updated";
+      console.log(cloned);
+
+      // delete a property from an object->
+      delete cloned.age;
+      console.log(cloned); // property age has been deleted.
+
+      // higher order function->
+
+      function parentFunc(a, b, cb) {
+        //  get data from callback function->
+        const data = cb();
+        // parent function is returning a function->
+        return function (value) {
+          const x = a * value;
+          const y = b * value;
+          return { x, y, ...data };
+        };
+      }
+      const hof = parentFunc(20, 30, () => {
+        return {
+          lang: "JAVASCRIPT",
+        };
+      });
+      const hofOutput = hof(3);
+
+      // promises->
+
+      function myPromise(x, y, cb) {
+        return new Promise((resolve, reject) => {
+          if (x > y) {
+            resolve("promise resolved");
+            return x;
+          } else {
+            // throw new Error("promise rejected");
+            reject("something went wrong");
+          }
+        });
+      }
+      const output = myPromise(40, 30);
+      console.log(output);
     </script>
   </body>
 </html>
