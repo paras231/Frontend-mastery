@@ -1,0 +1,11 @@
+/* writing important is essential to override bootstrap bg colors of button */
+
+.nav-search-btn:hover {
+  background: crimson !important;
+  border: none;
+  outline: none;
+}
+
+.nav_link:hover{
+    color: blue !important;
+}

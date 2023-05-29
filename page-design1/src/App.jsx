@@ -1,6 +1,9 @@
 import React from "react";
 import "./App.css";
 import Contactus from "./Travel/Contactus";
+import NavbarComponent from "./BootStrapDesigns/components/NavBar.Component";
+import HomeComponent from "./BootStrapDesigns/components/HomeComponent";
+import THome from "./TailwindDesigns/components/THome";
 import MobileFooter from "./Mobileview/Footer";
 import MobileSearchOption from "./Mobileview/MobileSearchOption";
 import MobileSightBookForm from "./Mobileview/MobileSightBookForm";
@@ -70,7 +73,7 @@ const App = () => {
   const user = true;
   return (
     <>
-    <Contactus/>
+      {/* <Contactus/> */}
       {/* <Package1 /> */}
 
       {/* <Package2 /> */}
@@ -108,7 +111,7 @@ const App = () => {
       {/* <DivInput/> */}
       {/* <FerrySlider/> */}
       {/* <FerryLists/> */}
-      <FerryInputComponent/>
+      {/* <FerryInputComponent/> */}
       {/* <FerryBookingProcess/> */}
       {/* <WhyBooking/> */}
       {/* <Cabs/> */}
@@ -153,6 +156,9 @@ const App = () => {
           </Routes>
         </BrowserRouter>
       )} */}
+      {/* <NavbarComponent /> */}
+      {/* <HomeComponent /> */}
+      <THome />
     </>
   );
 };
