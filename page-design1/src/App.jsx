@@ -4,6 +4,7 @@ import Contactus from "./Travel/Contactus";
 import NavbarComponent from "./BootStrapDesigns/components/NavBar.Component";
 import HomeComponent from "./BootStrapDesigns/components/HomeComponent";
 import THome from "./TailwindDesigns/components/THome";
+import ElearningCard from "./TailwindDesigns/components/ElearingCard";
 import MobileFooter from "./Mobileview/Footer";
 import MobileSearchOption from "./Mobileview/MobileSearchOption";
 import MobileSightBookForm from "./Mobileview/MobileSightBookForm";
@@ -158,7 +159,8 @@ const App = () => {
       )} */}
       {/* <NavbarComponent /> */}
       {/* <HomeComponent /> */}
-      <THome />
+      <ElearningCard/>
+      {/* <THome /> */}
     </>
   );
 };

@@ -9,14 +9,14 @@ const THome = () => {
         Why Us ?
       </div>
       <div className="container">
-        <div className="flex flex-col md:flex-row lg:flex-row justify-center items-center gap-10 text-justify ">
+        <div className="flex flex-col md:flex-row lg:flex-row justify-center items-center gap-10 text-justify p-7 ">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
             vero eveniet ea corporis maxime incidunt numquam quaerat
             perspiciatis exercitationem perferendis, distinctio corrupti sint!
             Totam veritatis doloribus voluptatem dolorum porro dolor.
           </p>
-          <img src={img} alt="set" />
+          <img className="" src={img} alt="set" />
         </div>
       </div>
     </>
