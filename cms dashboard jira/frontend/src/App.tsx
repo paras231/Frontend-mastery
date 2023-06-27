@@ -1,9 +1,9 @@
-import { useState } from "react";
+import Sidebar from "./Layout/Sidebar";
 
 function App() {
   return (
     <>
-      <h1>HELLO WORLD</h1>
+      <Sidebar />
     </>
   );
 }
