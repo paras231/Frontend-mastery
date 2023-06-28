@@ -9,8 +9,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@headlessui/react": "^1.7.15",
+    "@mui/material": "^5.13.6",
+    "@radix-ui/colors": "^1.0.0",
+    "@radix-ui/react-switch": "^1.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
     "react-pro-sidebar": "^1.1.0-alpha.1"
   },
   "devDependencies": {
