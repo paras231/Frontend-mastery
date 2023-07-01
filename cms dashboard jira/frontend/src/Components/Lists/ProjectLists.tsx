@@ -1,10 +1,15 @@
 import Box from "@mui/material/Box";
 import { DataGrid } from "@mui/x-data-grid";
 import Button from "@mui/material/Button";
+import Tooltip from "@mui/material/Tooltip";
+import { MdDetails } from "react-icons/md";
+import { BiSolidMessageRoundedDetail } from "react-icons/bi";
+import IconButton from "@mui/material/IconButton";
 import { MdCreateNewFolder } from "react-icons/md";
 import Typography from "@mui/material/Typography";
 import CreateProjectModal from "../Modals/CreateProjectModal";
 import { useState } from "react";
+
 const columns = [
   { field: "id", headerName: "ID", width: 90 },
   {
@@ -27,13 +32,22 @@ const columns = [
     editable: true,
   },
   {
-    field: "fullName",
-    headerName: "Full name",
+    field: "Actions",
+    headerName: "Actions",
     description: "This column has a value getter and is not sortable.",
     sortable: false,
     width: 160,
-    valueGetter: (params: any) =>
-      `${params.row.firstName || ""} ${params.row.lastName || ""}`,
+    renderCell: (params: any) => {
+      return (
+        <>
+          <Tooltip title="Overview">
+            <IconButton>
+              <BiSolidMessageRoundedDetail />
+            </IconButton>
+          </Tooltip>
+        </>
+      );
+    },
   },
 ];
 

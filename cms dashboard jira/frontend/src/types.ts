@@ -15,3 +15,7 @@ export type projectModalProps = {
   handleOpen: MouseEventHandler;
   handleClose: MouseEventHandler;
 };
+
+export type projectFormProps = {
+  handleClose: Function;
+};
