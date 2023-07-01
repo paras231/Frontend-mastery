@@ -1,0 +1,17 @@
+import { MouseEventHandler } from "react";
+
+export type HeaderProps = {
+  selectedItem: number;
+  handleSelect: Function;
+};
+
+export type tabProps = {
+  selectedItem: number;
+  handleSelect: Function;
+};
+
+export type projectModalProps = {
+  open: boolean;
+  handleOpen: MouseEventHandler;
+  handleClose: MouseEventHandler;
+};

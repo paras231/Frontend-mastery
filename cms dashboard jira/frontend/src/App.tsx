@@ -1,12 +1,9 @@
-import Sidebar from "./Layout/Sidebar";
-import ContentLayout from "./Layout/ContentLayout";
+import PageLayout from "./Layout/PageLayout";
+
 function App() {
   return (
     <>
-      <div className="flex ">
-        <Sidebar />
-        <ContentLayout />
-      </div>
+      <PageLayout /> 
     </>
   );
 }
