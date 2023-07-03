@@ -7,7 +7,7 @@ import { BiSolidMessageRoundedDetail } from "react-icons/bi";
 import IconButton from "@mui/material/IconButton";
 import { MdCreateNewFolder } from "react-icons/md";
 import Typography from "@mui/material/Typography";
-import CreateProjectModal from "../Modals/CreateProjectModal";
+import CreateTeamModal from "../Modals/CreateTeamModal";
 import ProjectDetailModal from "../Modals/ProjectDetailModal";
 import { useQuery } from "react-query";
 import axios from "axios";
@@ -78,22 +78,11 @@ const rows = [
   { id: 9, lastName: "Roxie", firstName: "Harvey", age: 65 },
 ];
 
-const ProjectLists = () => {
-  const { isError, isLoading, data } = useQuery(
-    "projects",
-    async () => {
-      const { data } = await axios.get(`${baseURL}/get/allprojects`);
-      return data;
-    },
-    {
-      refetchInterval: 6000,
-    }
-  );
-
+const TeamList = () => {
   return (
     <>
       <div>
-        <CreateProject />
+        <CreateTeam />
         <Box
           sx={{
             height: 500,
@@ -122,9 +111,7 @@ const ProjectLists = () => {
   );
 };
 
-export default ProjectLists;
-
-const CreateProject = () => {
+const CreateTeam = () => {
   const [open, setOpen] = useState(false);
   const handleOpenModal = () => {
     setOpen(true);
@@ -149,7 +136,7 @@ const CreateProject = () => {
         >
           Create
         </Button>
-        <CreateProjectModal
+        <CreateTeamModal
           open={open}
           handleOpen={handleOpenModal}
           handleClose={handleClose}
@@ -158,3 +145,5 @@ const CreateProject = () => {
     </>
   );
 };
+
+export default TeamList;

@@ -19,3 +19,19 @@ export type projectModalProps = {
 export type projectFormProps = {
   handleClose: Function;
 };
+
+export type projectDetailModalProps = {
+  open: boolean;
+  handleOpen: MouseEventHandler;
+  handleClose: MouseEventHandler;
+};
+
+export type teamModalProps = {
+  open: boolean;
+  handleOpen: MouseEventHandler;
+  handleClose: MouseEventHandler;
+};
+
+export type teamFormProps = {
+  handleClose: Function;
+}

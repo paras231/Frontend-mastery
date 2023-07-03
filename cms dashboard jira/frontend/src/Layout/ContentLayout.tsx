@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Header from "./Header";
 import ProjectLists from "../Components/Lists/ProjectLists";
-
+import TeamList from "../Components/Lists/TeamList";
 const ContentLayout = () => {
   const [selectedItem, setSelectedItem] = useState(0);
   const handleSelect = (idx: number) => {
@@ -15,6 +15,8 @@ const ContentLayout = () => {
         <Header selectedItem={selectedItem} handleSelect={handleSelect} />
         {selectedItem === 0 ? (
           <ProjectLists />
+        ) : selectedItem === 1 ? (
+          <TeamList />
         ) : (
           <div>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni ad
