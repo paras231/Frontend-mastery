@@ -5,11 +5,10 @@ import { fetchPosts } from "./Redux/postSlice";
 const Post = () => {
   const dispatch = useDispatch();
   const { posts, loading, error } = useSelector((state) => state.posts);
-  console.log(posts);
-
+  
   useEffect(() => {
     dispatch(fetchPosts());
-  });
+  },[]);
 
   if(loading){
     return <div>Loading...</div>;
